@@ -1,0 +1,3277 @@
+							<div class="panel panel-default">
+								<div class="panel-body">
+									<form method="post" enctype="multipart/form-data">
+										<div class="row" style="padding: 10px;">
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Today<span class="required">*</span>																<br />
+																<input type="text" class="form-control datepicker" name="today" placeholder="Please select Date" autocomplete="off" required />
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Monitor Name <span class="required">*</span>																<input type="text" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="mon_name" name="mon_name" required>
+																<div id="mon_name2122"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Select Monitor Type<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="type_mon" id="exampleRadiosunicef_consultant" value="unicef_consultant">
+																						UNICEF																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="type_mon" id="exampleRadiosngo_piramal" value="ngo_piramal">
+																						Piramal Swasthya																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="type_mon" id="exampleRadiosgovt_health" value="govt_health">
+																						Government - Health																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="type_mon" id="exampleRadiosgovt_icds" value="govt_icds">
+																						Government - ICDS																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="type_mon" id="exampleRadioscoe_aiims" value="coe_aiims">
+																						CoE - AIIMS Patna																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="type_mon" id="exampleRadiosother" value="other">
+																						Other																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Other Monitor Organization <span class="required">*</span>																<input type="text" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="other_mon" name="other_mon" required>
+																<div id="other_mon2124"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Date of Monitoring<span class="required">*</span>																<br />
+																<input type="text" class="form-control datepicker" name="date_of_monitoring" placeholder="Please select Date" autocomplete="off" required />
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Joint Visit<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="jv" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="jv" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Name of Accompanying Person <span class="required">*</span>																<input type="text" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="jv_name" name="jv_name" required>
+																<div id="jv_name2130"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Designation (Dept.) of Accompanying Person <span class="required">*</span>																<input type="text" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="jv_desigh" name="jv_desigh" required>
+																<div id="jv_desigh2131"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																	District<span class="required">*</span>																	<select class="form-control" name="district" required onchange="getOther(this), getSelectOptions(this.value)" data-id="district" id="district">
+																		<option value="">Select Option</option>
+																																					<option value="gaya">Gaya</option>
+																																					<option value="purnea">Purnea</option>
+																																					<option value="araria">Araria</option>
+																																			</select>
+																	<div id=""></div>
+																
+																
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																	Block Name<span class="required">*</span>																	<select class="form-control" name="block" required onchange="getOther(this), getSelectOptions(this.value)" data-id="block" id="block">
+																		<option value="">Select Option</option>
+																																					<option value="araria_sadar">Araria Sadar</option>
+																																					<option value="other">Other</option>
+																																			</select>
+																	<div id=""></div>
+																
+																
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Other Block Name <span class="required">*</span>																<input type="text" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="other_block" name="other_block" required>
+																<div id="other_block2136"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Village Name <span class="required">*</span>																<input type="text" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="village" name="village" required>
+																<div id="village2137"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Name of AWC Centre <span class="required">*</span>																<input type="text" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="awc_name" name="awc_name" required>
+																<div id="awc_name2138"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Code of AWC (11 digits) <span class="required">*</span>																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="code_awc" name="code_awc" required>
+																<div id="code_awc2139"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	ASHA Present at Session Site<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="asha_p" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="asha_p" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	AWW Present at Session Site<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="aww_p" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="aww_p" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Mother-child weighing machine (Adult)<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="Func_adult_wm" id="exampleRadiosfunc" value="func">
+																						Functional																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="Func_adult_wm" id="exampleRadiosnon_f" value="non_f">
+																						Non-Functional																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="Func_adult_wm" id="exampleRadiosna" value="na">
+																						Not Available																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Hemoglobinometer<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="hemo_meter" id="exampleRadiosdig_hf" value="dig_hf">
+																						Digital Hemoglobinometer-Functional																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="hemo_meter" id="exampleRadiosdig_hnf" value="dig_hnf">
+																						Digital Hemoglobinometer-Non Functional																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="hemo_meter" id="exampleRadiostal" value="tal">
+																						Tallquist Hemoglobin color Scale																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="hemo_meter" id="exampleRadiosna" value="na">
+																						Not Available																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Number of lancets <span class="required">*</span>																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="lancet" name="lancet" required>
+																<div id="lancet2150"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Number of strips <span class="required">*</span>																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="strips" name="strips" required>
+																<div id="strips2151"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															MCP Card (Blank) <span class="required">*</span>																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="b_mcp" name="b_mcp" required>
+																<div id="b_mcp2155"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Number IFA Red strips <span class="required">*</span>																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="no_ifa" name="no_ifa" required>
+																<div id="no_ifa2156"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Folic Acid Tablet strips <span class="required">*</span>																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="no_fa" name="no_fa" required>
+																<div id="no_fa2157"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Calcium Tablet strips <span class="required">*</span>																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="no_cal" name="no_cal" required>
+																<div id="no_cal2158"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Child weighing machine<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="func_child_wm" id="exampleRadiosfunc" value="func">
+																						Functional																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="func_child_wm" id="exampleRadiosnon_f" value="non_f">
+																						Non-Functional																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="func_child_wm" id="exampleRadiosna" value="na">
+																						Not Available																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Infantometer<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="func_infanto" id="exampleRadiosfun" value="fun">
+																						Functional																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="func_infanto" id="exampleRadiosfun_a" value="fun_a">
+																						Functional with adjustment																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="func_infanto" id="exampleRadiosnon_f" value="non_f">
+																						Non-Functional																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="func_infanto" id="exampleRadiosna" value="na">
+																						Not Available																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Stadiometer<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="func_stadio" id="exampleRadiosfun" value="fun">
+																						Functional																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="func_stadio" id="exampleRadiosfun_a" value="fun_a">
+																						Functional with adjustment																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="func_stadio" id="exampleRadiosnon_f" value="non_f">
+																						Non-Functional																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="func_stadio" id="exampleRadiosna" value="na">
+																						Not Available																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Any Nutrition counselling material (Job Aid)?<span class="required">*</span>																<select class="form-control js-example-basic-multiple select2" data-placeholder="Please Any Nutrition counselling material (Job Aid)?" multiple required>
+																																			<option value="kat_cham">Katori Chamach</option>
+																																			<option value="coun_card">Counselling cards</option>
+																																			<option value="pos_kit">Poshan kit</option>
+																																			<option value="mcp_car">MCP card</option>
+																																			<option value="na">Not available</option>
+																																			<option value="oth">Other</option>
+																																	</select>
+																														</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Specify other counselling material (Job Aid) AWW have? <span class="required">*</span>																<input type="text" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="Salter scale functional if - 1. if pointer can be calibrated to zero, 2. If showing correct and constant weight on multiple reading when using a standard weight (sealed THR packet or any object with known weight) ; take three readings; acceptable range +/- 100 grams" id="coun_mat_oth" name="coun_mat_oth" required>
+																<div id="coun_mat_oth2169"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Functional Thermometer<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="func_thermo" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="func_thermo" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	CMAM application available in ANM mobile<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="cmam_app_aval_anm" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="cmam_app_aval_anm" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	CMAM application available in AWW mobile<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="cmam_app_aval_aww" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="cmam_app_aval_aww" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Any SAM case registered on CMAM App<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="cmam_child_reg" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="cmam_child_reg" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Weight for height/length chart<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="wfh_chart" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="wfh_chart" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	SAM Management Handout<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam_handout" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam_handout" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Vitamin-A<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="vita" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="vita" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Zinc<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="zinc" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="zinc" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	ORS Packets<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="ors" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="ors" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Amoxicillin Tablet strips (125 mg/250 mg) <span class="required">*</span>																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="no_amox_tab" name="no_amox_tab" required>
+																<div id="no_amox_tab2185"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Amoxicillin Syrup bottles (125 mg/250 mg) <span class="required">*</span>																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="no_amox_syp" name="no_amox_syp" required>
+																<div id="no_amox_syp2186"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															IFA Syrup bottles <span class="required">*</span>																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="no_ifa_bot" name="no_ifa_bot" required>
+																<div id="no_ifa_bot2187"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Albendazole Tablets <span class="required">*</span>																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="no_alb_tab" name="no_alb_tab" required>
+																<div id="no_alb_tab2188"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Multi-vitamin Syp/ Drops bottles <span class="required">*</span>																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="no_multivit_syp" name="no_multivit_syp" required>
+																<div id="no_multivit_syp2189"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Weighing<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="weighing" id="exampleRadiosdone" value="done">
+																						Done																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="weighing" id="exampleRadioscorr_rec" value="corr_rec">
+																						Done and Correct recording (MCP card)																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="weighing" id="exampleRadiosnot_done" value="not_done">
+																						Not Done																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Height<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="height" id="exampleRadiosdone" value="done">
+																						Done																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="height" id="exampleRadioscorr_rec" value="corr_rec">
+																						Done and Correct recording (MCP card)																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="height" id="exampleRadiosnot_done" value="not_done">
+																						Not Done																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Haemoglobin<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="hemoglobin" id="exampleRadiosdone" value="done">
+																						Done																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="hemoglobin" id="exampleRadioscorr_rec" value="corr_rec">
+																						Done and Correct recording (MCP card)																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="hemoglobin" id="exampleRadiosnot_done" value="not_done">
+																						Not Done																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Blood Pressure<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="bp" id="exampleRadiosdone" value="done">
+																						Done																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="bp" id="exampleRadioscorr_rec" value="corr_rec">
+																						Done and Correct recording (MCP card)																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="bp" id="exampleRadiosnot_done" value="not_done">
+																						Not Done																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Abdominal check-up<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="abd_ckp" id="exampleRadiosdone" value="done">
+																						Done																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="abd_ckp" id="exampleRadioscorr_rec" value="corr_rec">
+																						Done and Correct recording (MCP card)																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="abd_ckp" id="exampleRadiosnot_done" value="not_done">
+																						Not Done																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	IFA distribution<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="ifa_dis" id="exampleRadiosdone" value="done">
+																						Done																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="ifa_dis" id="exampleRadioscorr_rec" value="corr_rec">
+																						Done and Correct recording (MCP card)																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="ifa_dis" id="exampleRadiosnot_done" value="not_done">
+																						Not Done																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Calcium distribution<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="cal_dis" id="exampleRadiosdone" value="done">
+																						Done																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="cal_dis" id="exampleRadioscorr_rec" value="corr_rec">
+																						Done and Correct recording (MCP card)																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="cal_dis" id="exampleRadiosnot_done" value="not_done">
+																						Not Done																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Albendazole distribution<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="albz_dis" id="exampleRadiosdone" value="done">
+																						Done																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="albz_dis" id="exampleRadioscorr_rec" value="corr_rec">
+																						Done and Correct recording (MCP card)																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="albz_dis" id="exampleRadiosnot_done" value="not_done">
+																						Not Done																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	ANC due list available<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="anc_duelist" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="anc_duelist" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Pregnancy trimester<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="preg_tri" id="exampleRadiosfirst" value="first">
+																						First																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="preg_tri" id="exampleRadiossec" value="sec">
+																						Second																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="preg_tri" id="exampleRadiosthird" value="third">
+																						Third																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Folic Acid Tablet distribution (if PW in first trimester)<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="fa_tab" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="fa_tab" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	LMP Date mentioned in MCP card<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="lmp_date" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="lmp_date" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Any instruction for consumption of IFA provided<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="ifa_ins" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="ifa_ins" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Number of IFA tabs distributed <span class="required">*</span>																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="no_ifa_dis" name="no_ifa_dis" required>
+																<div id="no_ifa_dis2216"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Any instruction for consumption of calcium provided<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="calc_ins" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="calc_ins" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Number of Calcium tabs distributed <span class="required">*</span>																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="no_cal_dis" name="no_cal_dis" required>
+																<div id="no_cal_dis2218"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	SAM child duelist available at session site<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam_duelist" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam_duelist" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															How many SAM cases have already received health services today <span class="required">*</span>																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="See the MCP card once the PW leave ANM" id="sam_alr_visited" name="sam_alr_visited" required>
+																<div id="sam_alr_visited2224"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Record available for SAM case(s) received service today on CMAM app<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam_alr_visited_cmam" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam_alr_visited_cmam" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Any SAM child available at session site at time of visit<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam_aval" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam_aval" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Type of visit of SAM case(s)<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="type_sam" id="exampleRadiosf_ckp" value="f_ckp">
+																						First checkup																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="type_sam" id="exampleRadiosfup_visit" value="fup_visit">
+																						Follow-up visit																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="type_sam" id="exampleRadiosboth" value="both">
+																						Both First checkup & Follow-up visit cases																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Services provided to SAM case<span class="required">*</span>																<select class="form-control js-example-basic-multiple select2" data-placeholder="Please Services provided to SAM case" multiple required>
+																																			<option value="wh">Weighing</option>
+																																			<option value="hl">Height / Length</option>
+																																			<option value="treatment">Treatment- provided medicines/micronutrients as per protocols</option>
+																																			<option value="nc">Nutritional counselling</option>
+																																			<option value="nrc_ref">NRC Referral</option>
+																																			<option value="no_ser">No service provided</option>
+																																	</select>
+																														</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															what medicines are provided in first checkup<span class="required">*</span>																<select class="form-control js-example-basic-multiple select2" data-placeholder="Please what medicines are provided in first checkup" multiple required>
+																																			<option value="anti">Amoxyicillin syrup/tablet</option>
+																																			<option value="foli">Folic acid tablet</option>
+																																			<option value="albe">Albendazole</option>
+																																			<option value="vita">Vitamin A</option>
+																																			<option value="iron">Iron Folic Acid syrup</option>
+																																			<option value="multi">Multivitamin syrup</option>
+																																			<option value="no_med">Not provided</option>
+																																	</select>
+																														</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Record of SAM case updated in CMAM app<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="ekav_sam_upd" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="ekav_sam_upd" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Any 0-5 month infant available at session site at time of visit<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="any_05_aval" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="any_05_aval" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Has AWW/ANM measured Weight of the infant<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="inf_weight" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="inf_weight" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Has AWW/ANM measured Length of the infant<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="inf_length" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="inf_length" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Has AWW updated records weight/length in poshan tracker<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="inf_pt_rec" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="inf_pt_rec" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Growth Monitoring chart in MCP card updated<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="inf_gc" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="inf_gc" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Is AWW/ ANM informing caregiver about the current nutrition status using mcp card<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="inf_curr_ns" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="inf_curr_ns" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Is ANM enquring about current/ recent episode of illness<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="inf_enq" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="inf_enq" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Is ANM/AWW/ASHA providing counselling on exclusive breastfeeding<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="inf_ebf_coun" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="inf_ebf_coun" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Infant Sex<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="inf_sex" id="exampleRadiosmale" value="male">
+																						Male																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="inf_sex" id="exampleRadiosfemale" value="female">
+																						Female																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Infant Delivery Type<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="inf_del" id="exampleRadiosnormal" value="normal">
+																						Normal																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="inf_del" id="exampleRadiosc_sec" value="c_sec">
+																						C-Section																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Infant Birth Weight (in Kgs) <span class="required">*</span>																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="inf_bw" name="inf_bw" required>
+																<div id="inf_bw2260"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Birth Order <span class="required">*</span>																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="inf_bo" name="inf_bo" required>
+																<div id="inf_bo2261"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	When did you first breastfed your child ?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="inf_eibf" id="exampleRadioswithin_1" value="within_1">
+																						Within 1 hour of Delivery																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="inf_eibf" id="exampleRadioswithin1_3" value="within1_3">
+																						1-3 hour of Delivery																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="inf_eibf" id="exampleRadiosgr_3" value="gr_3">
+																						After 3 hours same day																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="inf_eibf" id="exampleRadiosnext_day" value="next_day">
+																						next day of Delivery																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="inf_eibf" id="exampleRadioscant_rem" value="cant_rem">
+																						Cant remember																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	What did you give your baby in the last 24 hours?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="inf_ebf" id="exampleRadiosonly_bm" value="only_bm">
+																						Only Breastmilk																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="inf_ebf" id="exampleRadiosbm_fm" value="bm_fm">
+																						Breastmilk & Formula Milk																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="inf_ebf" id="exampleRadiosbm_am" value="bm_am">
+																						Breastmilk & Animal_milk																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="inf_ebf" id="exampleRadiosbm_water" value="bm_water">
+																						Breastmilk & water																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="inf_ebf" id="exampleRadiosfm" value="fm">
+																						Formula Milk																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="inf_ebf" id="exampleRadiosam" value="am">
+																						Animal_milk																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="inf_ebf" id="exampleRadiosnothing" value="nothing">
+																						Nothing																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															How many times AWW visited infant in last one month <span class="required">*</span>																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="aww_vis" name="aww_vis" required>
+																<div id="aww_vis2270"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															How many times ASHA visited infant in last one month <span class="required">*</span>																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="asha_vis" name="asha_vis" required>
+																<div id="asha_vis2271"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	I give my consent to the collection of my personal data to answer the question on the survey form.<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="consent" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="consent" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Any 9-24 month child available at session site at time of visit<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="any_924_aval" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="any_924_aval" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Type of immunization Visit of 9-24 months child<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="type_imm" id="exampleRadiosmon_9" value="mon_9">
+																						9 month(Measles Rubella)																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="type_imm" id="exampleRadiosmon_16" value="mon_16">
+																						16-24 month(DPT booster)																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Has child received IFA syrup bottle<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="ch_924_ifa" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="ch_924_ifa" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Has your child consumed IFA in last one week?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="ch_924_ifa_con" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="ch_924_ifa_con" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Was child weighed during the session<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="ch_924_wt" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="ch_924_wt" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Weight updated in MCP card<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="ch_924_wt_mcp" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="ch_924_wt_mcp" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Have you received any training on management of children with SAM?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam_trg" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam_trg" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	What is essential to assess SAM/MAM in children ?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam_iden" id="exampleRadioswflh" value="wflh">
+																						Weight and length/ height																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam_iden" id="exampleRadioslha" value="lha">
+																						length/ height and age																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam_iden" id="exampleRadioswa" value="wa">
+																						weight and age																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam_iden" id="exampleRadiosdnk" value="dnk">
+																						Dont know																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Can you demonstrate how to check for bilateral pitting oedema? (observe the steps mentioned)<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam_blp" id="exampleRadiosaware" value="aware">
+																						Aware																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam_blp" id="exampleRadiosnot_aware" value="not_aware">
+																						Not aware																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	What medical treatment shall a SAM case will receive if he/she has no illness and with good appetite?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam_no_illness" id="exampleRadiosaware" value="aware">
+																						Aware																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam_no_illness" id="exampleRadiosnot_aware" value="not_aware">
+																						Not aware																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Can you name the essential medicines/ nutritional supplements given to SAM case teated at the community level<span class="required">*</span>																<select class="form-control js-example-basic-multiple select2" data-placeholder="Please Can you name the essential medicines/ nutritional supplements given to SAM case teated at the community level" multiple required>
+																																			<option value="anti">Amoxyicillin syrup/tablet</option>
+																																			<option value="foli">Folic acid tablet</option>
+																																			<option value="albe">Albendazole</option>
+																																			<option value="vita">Vitamin A</option>
+																																			<option value="iron">Iron Folic Acid syrup</option>
+																																			<option value="multi">Multivitamin syrup</option>
+																																			<option value="dnk">Not aware</option>
+																																	</select>
+																														</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Case 1 - Amoxycillin bottle - 125 mg per 5 ml and bottle is 30 ml (no. of bottle(s)) <span class="required">*</span>																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="case_1" name="case_1" required>
+																<div id="case_12301"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Case 2 - Amoxycillin tablets - 125 mg per tablet (no. of tablets) <span class="required">*</span>																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="case_2" name="case_2" required>
+																<div id="case_22302"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	What medical treatment shall a SAM case will receive if he/she has illness or with poor appetite?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam_illness" id="exampleRadiosaware" value="aware">
+																						Aware																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam_illness" id="exampleRadiosnot_aware" value="not_aware">
+																						Not aware																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															How is a SAM childs progress followed up during the programme period?<span class="required">*</span>																<select class="form-control js-example-basic-multiple select2" data-placeholder="Please How is a SAM childs progress followed up during the programme period?" multiple required>
+																																			<option value="week">Weekly/ fortnightly home visit</option>
+																																			<option value="mont">Monthly VHSND/HWC visit</option>
+																																			<option value="awc_session">AWC based session</option>
+																																			<option value="dnk">dont know</option>
+																																	</select>
+																														</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	If the child does not gain weight or loses weight in two consecutive follow-ups visits<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam_not_gain" id="exampleRadiosvhsnd_session" value="vhsnd_session">
+																						VHSND session for community management																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam_not_gain" id="exampleRadiosnrc" value="nrc">
+																						NRC																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam_not_gain" id="exampleRadioschc_phc_rbsk" value="chc_phc_rbsk">
+																						Nearest health facility (PHC/ CHC)/ RBSK																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam_not_gain" id="exampleRadiosdnk" value="dnk">
+																						dont know																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															What activities are being done during a follow-up session (VHSND or Home visit) of child with SAM?<span class="required">*</span>																<select class="form-control js-example-basic-multiple select2" data-placeholder="Please What activities are being done during a follow-up session (VHSND or Home visit) of child with SAM?" multiple required>
+																																			<option value="weighing">Weighing</option>
+																																			<option value="moni_wt">Monitor weight improvement</option>
+																																			<option value="check_ill_sign">Checking for signs of illness</option>
+																																			<option value="check_med_comp">Checking compliance for medicines</option>
+																																			<option value="check_rd">Checking compliance for recommended diet</option>
+																																			<option value="couns_hyg_diet">Counselling - diet and hygiene</option>
+																																			<option value="rec_maintain">Maintaining records</option>
+																																			<option value="dnk">dont know</option>
+																																	</select>
+																														</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Till what time a SAM child will be followed up and continued in programme?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam_fup_dura" id="exampleRadiosaware" value="aware">
+																						Aware																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam_fup_dura" id="exampleRadiosnot_aware" value="not_aware">
+																						Not aware																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	What should be done if a child continues to remain in SAM category even after 3 months follow up period in CMAM program?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam_not_res" id="exampleRadiosrefer_nrc" value="refer_nrc">
+																						Refer to NRC/Health Facility																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam_not_res" id="exampleRadioscontinue_int_fup" value="continue_int_fup">
+																						Continue in the program with intensive follow-up																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam_not_res" id="exampleRadiosdnk" value="dnk">
+																						dont know																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Do you know what is "Early ANC registration"<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="anm_eanc" id="exampleRadiosreg_8" value="reg_8">
+																						Registration of PW within 8 weeks of Pregnancy																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="anm_eanc" id="exampleRadiosreg_12" value="reg_12">
+																						Registration of PW within 12 weeks of Pregnancy																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="anm_eanc" id="exampleRadiosreg_20" value="reg_20">
+																						Registration of PW within 20 weeks of Pregnancy																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="anm_eanc" id="exampleRadiosdnk" value="dnk">
+																						Dont Know																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Do you know what should be gestational weight gain during the entire pregnancy period<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="anm_gest" id="exampleRadioswtg_68" value="wtg_68">
+																						6-8 kg in entire pregnancy period																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="anm_gest" id="exampleRadioswtg_911" value="wtg_911">
+																						9-11 kg in entire pregnancy period																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="anm_gest" id="exampleRadioswtg_1314" value="wtg_1314">
+																						13-14 kg in entire pregnancy period																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="anm_gest" id="exampleRadiosdnk" value="dnk">
+																						Dont Know																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Below what heamoglobin level will a pregnant woman be anaemic?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="anm_heam" id="exampleRadiosgm_9" value="gm_9">
+																						9 gram/dl																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="anm_heam" id="exampleRadiosgm_7" value="gm_7">
+																						7 gram/dl																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="anm_heam" id="exampleRadiosgm_11" value="gm_11">
+																						11 gram/dl																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="anm_heam" id="exampleRadiosdnk" value="dnk">
+																						Dont Know																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	How many IFA tablets will an anaemic pregnant woman has to consume daily?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="anm_ifa" id="exampleRadiosone" value="one">
+																						1																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="anm_ifa" id="exampleRadiostwo" value="two">
+																						2																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="anm_ifa" id="exampleRadiosdnk" value="dnk">
+																						Dont Know																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	According to you when will be a newborn considered as Low Birth Weight(LBW)<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="lbw_confirm" id="exampleRadiosless_1800" value="less_1800">
+																						< 1800 Gms																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="lbw_confirm" id="exampleRadiosless_2000" value="less_2000">
+																						< 2000 Gms																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="lbw_confirm" id="exampleRadiosless_2500" value="less_2500">
+																						< 2500 Gms																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="lbw_confirm" id="exampleRadiosdnk" value="dnk">
+																						Dont Know																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															What services do you provide during HBNC visit<span class="required">*</span>																<select class="form-control js-example-basic-multiple select2" data-placeholder="Please What services do you provide during HBNC visit" multiple required>
+																																			<option value="bf_support">Breastfeeding support</option>
+																																			<option value="kmc">KMC</option>
+																																			<option value="temp">Temperature</option>
+																																			<option value="add_visit">Additional visit</option>
+																																			<option value="weighing">Weighing</option>
+																																			<option value="referral">Referral if required</option>
+																																			<option value="not_aware">Not aware</option>
+																																	</select>
+																														</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	ASHA trained on HBYC<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="asha_hbyc_trained" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="asha_hbyc_trained" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															What services do you provide to an infant aged six months during HBYC visit<span class="required">*</span>																<select class="form-control js-example-basic-multiple select2" data-placeholder="Please What services do you provide to an infant aged six months during HBYC visit" multiple required>
+																																			<option value="bf_supp">Breastfeeding support</option>
+																																			<option value="hw">Handwashing</option>
+																																			<option value="ps">Parenting support</option>
+																																			<option value="adm">Asssess developmental milestones</option>
+																																			<option value="sign_illness">Looking for signs of illness (Pneumonia & Diaorrhea)</option>
+																																			<option value="gc_mcp">Show growth chart on MCP card</option>
+																																			<option value="dnk">Not aware</option>
+																																	</select>
+																														</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Do you undertake HBYC visit along with AWW?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="do_hbyc" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="do_hbyc" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	To whom is IFA syrup provided?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="ben_ifa" id="exampleRadiosall_child" value="all_child">
+																						All children aged 6-59 months																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="ben_ifa" id="exampleRadiosonly_sam" value="only_sam">
+																						Only SAM child																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="ben_ifa" id="exampleRadiosdnk" value="dnk">
+																						Not aware																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	What are the doses of IFA syrup in children<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="dose_ifa" id="exampleRadiosaware" value="aware">
+																						Aware																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="dose_ifa" id="exampleRadiosnot_aware" value="not_aware">
+																						Not aware																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Can you demonstrate how to use IFA bottle<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="demo_ifa" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="demo_ifa" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Has ASHA organised any mothers meeting (MAA) in the previous month<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="maa-meet" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="maa-meet" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+																						<!--<div class="col-md-12 text-end" style="padding-bottom: 10px;">
+                  	<button type="button" class="btn btn-primary" name="saveData" >Submit</button>
+									</div>-->
+										</div>
+									</form>
+								</div>
+							</div>
+
+					

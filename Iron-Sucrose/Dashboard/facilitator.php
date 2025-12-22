@@ -1,0 +1,195 @@
+<?php include('includes/config.php'); ?>
+<?php include('includes/functions.php'); ?>
+<?php include('includes/headers.php'); ?>
+<?php
+
+$filter = "";
+$extraParams = [];
+
+// calculate pagenation
+$limit = isset($_GET['perpage']) ? (int)$_GET['perpage'] : 10;
+$extraParams['perpage'] = $limit;
+
+if (isset($_REQUEST['search'])) {
+    $fc_name = $_GET['fc_name'] ?? '';
+    $mo_no = $_GET['mo_no'] ?? '';
+
+    if (!empty($fc_name)) {
+        $filter .= "AND facilitator_name LIKE '%" . addslashes($fc_name) . "%'";
+        $extraParams['fc_name'] = $fc_name;
+    }
+    if (!empty($mo_no)) {
+        $filter .= " AND whatsAppNo LIKE '%" . addslashes($mo_no) . "%'";
+        $extraParams['mo_no'] = $mo_no;
+    }
+    $extraParams['search'] = $_GET['search'];
+}
+
+
+// Get current pages
+$page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
+$fwOffset = ($page - 1) * $limit;
+
+$total_fw = mysqli_fetch_row(mysqli_query($conn, "SELECT COUNT(*) FROM pw_facilitator WHERE 1=1 $filter"))[0];
+$totalfwPages = ceil($total_fw / $limit);
+
+?>
+<div class="main-content">
+
+    <div class="page-content">
+        <div class="container-fluid">
+
+            <!-- start page title -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                        <h4 class="mb-sm-0">Facilitator</h4>
+
+                        <div class="page-title-right">
+                            <ol class="breadcrumb m-0">
+                                <li class="breadcrumb-item"><a href="javascript: void(0);">Listing</a></li>
+                                <li class="breadcrumb-item active">Facilitator List</li>
+                            </ol>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- end page title -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-header d-flex">
+                            <?php $sqlfacilitator = mysqli_query($conn, "select * from pw_facilitator Where 1=1 $filter order by created_at desc LIMIT $limit OFFSET $fwOffset") ?>
+                            <h4 class="card-title mb-0 ">Facilitator List: <?= $total_fw ?></h4>
+                            <div class="col-sm">
+                                <form method="GET">
+                                    <div class="d-flex justify-content-sm-end">
+                                        <div class="ms-2">
+                                            <input type="text" name="fc_name" value="<?= htmlspecialchars($_GET['fc_name'] ?? '') ?>" class="form-control" placeholder="Name">
+                                        </div>
+                                        <div class="ms-2">
+                                            <input type="text" name="mo_no" value="<?= htmlspecialchars($_GET['mo_no'] ?? '') ?>" class="form-control " placeholder="WhatsApp No...">
+                                        </div>
+                                        <input type="hidden" name="perpage" value="<?= htmlspecialchars($_GET['perpage'] ?? 10) ?>">
+                                        <div class="ms-2">
+                                            <button type="submit" name="search" class="form-control btn btn-secondary">Search</button>
+                                        </div>
+                                        <div class="ms-2">
+                                            <button type="reset" name="reset" onclick="resetSearch()" class="form-control btn btn-danger">Reset</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div><!-- end card header -->
+
+                        <div class="card-body">
+                            <div class="listjs-table" id="customerList">
+                                <div class="table-responsive table-card mb-1">
+                                    <table class="table align-middle table-nowrap" id="customerTable">
+                                        <thead class="table-light">
+                                            <tr>
+                                                <th data-sort="customer_name">PW ID</th>
+                                                <th data-sort="customer_name">Name</th>
+                                                <th data-sort="whatsapp_no">WhatsApp No</th>
+                                                <th data-sort="email">District</th>
+                                                <th data-sort="phone">Facility</th>
+                                                <th data-sort="date">Registred On</th>
+                                                <th data-sort="status"> Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="list form-check-all">
+                                            <?php
+                                            while ($datafacilitator = mysqli_fetch_object($sqlfacilitator)) {
+                                            ?>
+                                                <tr>
+                                                    <td class="customer_name"><?= $datafacilitator->id ?></td>
+                                                    <td class="customer_name"><?= $datafacilitator->facilitator_name ?></td>
+                                                    <td class="whatsapp_no"><?= $datafacilitator->whatsAppNo ?></td>
+                                                    <td class="email"><?= $datafacilitator->district_name ?></td>
+                                                    <td class="phone"><?= $datafacilitator->facility_name ?></td>
+                                                    <td class="date"><?= date('d-F-Y', strtotime($datafacilitator->created_at)) ?></td>
+                                                    <td class="status"><span class="badge bg-success-subtle text-success text-uppercase">Active</span></td>
+                                                </tr>
+                                            <?php } ?>
+                                        </tbody>
+                                    </table>
+                                    <div class="noresult" style="display: none">
+                                        <div class="text-center">
+                                            <lord-icon src="https://cdn.lordicon.com/msoeawqm.json" trigger="loop" colors="primary:#121331,secondary:#08a88a" style="width:75px;height:75px"></lord-icon>
+                                            <h5 class="mt-2">Sorry! No Result Found</h5>
+                                            <p class="text-muted mb-0">We've searched more than 150+ Orders We did not find any orders for you search.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center">
+                                        <div class="col text-center">
+                                            <form id="perPageForm" method="get">
+                                                <select name="perpage" class="form-select w-auto d-inline-block shadow-none" id="recordsPerPage">
+                                                    <option value="10" <?= $limit == 10 ? 'selected' : '' ?>>10</option>
+                                                    <option value="50" <?= $limit == 50 ? 'selected' : '' ?>>50</option>
+                                                    <option value="100" <?= $limit == 100 ? 'selected' : '' ?>>100</option>
+                                                </select>
+                                            </form>
+                                        </div>
+                                        <div class="col-auto ms-auto me-3">
+                                            <?php echo pagination1($page, $totalfwPages, 'page', $extraParams); ?>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- end card -->
+                    </div>
+                    <!-- end col -->
+                </div>
+                <!-- end col -->
+            </div>
+
+        </div>
+        <!-- container-fluid -->
+    </div>
+    <!-- End Page-content -->
+
+    <?php include('includes/footers.php'); ?>
+    <!-- prismjs plugin -->
+    <script src="assets/libs/prismjs/prism.js"></script>
+    <script src="assets/libs/list.js/list.min.js"></script>
+    <script src="assets/libs/list.pagination.js/list.pagination.min.js"></script>
+
+    <!-- listjs init -->
+    <script src="assets/js/pages/listjs.init.js"></script>
+
+    <!-- Sweet Alerts js -->
+    <script src="assets/libs/sweetalert2/sweetalert2.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+    <script>
+        function getvsit(idd) {
+            $.ajax({
+                url: 'ajax/get_visit.php',
+                type: 'post',
+                data: {
+                    idd: idd
+                },
+
+                success: function(response) {
+                    $('#visit_modal_data').html(response);
+                },
+                error: function(response) {
+                    $('#visit-modal-content').html('<div class="text-danger">Error loading visit details.</div>');
+                }
+            })
+        }
+    </script>
+
+    <!-- reset page -->
+    <script>
+        function resetSearch() {
+            window.location.href = window.location.pathname;
+        }
+    </script>
+    <script>
+        document.getElementById("recordsPerPage").addEventListener("change", function() {
+            document.getElementById("perPageForm").submit();
+        });
+    </script>

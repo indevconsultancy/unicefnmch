@@ -1,0 +1,902 @@
+.userGuideWrapper {
+   margin-right: auto;
+   margin-left: auto;
+ }
+
+ .userGuideWrapper>.navbar-header,
+ .userGuideWrapper>.navbar-collapse {
+   margin-right: -15px;
+   margin-left: -15px;
+ }
+
+ @media (min-width: 768px) {
+
+   .userGuideWrapper>.navbar-header,
+   .userGuideWrapper>.navbar-collapse {
+     margin-right: 0;
+     margin-left: 0;
+   }
+ }
+
+ .userGuideWrapper .userGuideMain {
+   margin-right: auto;
+   margin-left: auto;
+   padding-left: 0;
+   padding-right: 0;
+   width: 100%;
+ }
+
+ /*@media (min-width: 768px) {*/
+ /*  .userGuideWrapper .userGuideMain {*/
+ /*    width: 750px;*/
+ /*  }*/
+ /*}*/
+ /*@media (min-width: 992px) {*/
+ /*  .userGuideWrapper .userGuideMain {*/
+ /*    width: 970px;*/
+ /*  }*/
+ /*}*/
+ /*@media (min-width: 1200px) {*/
+ /*  .userGuideWrapper .userGuideMain {*/
+ /*    width: 1170px;*/
+ /*  }*/
+ /*}*/
+ .userGuideWrapper .userGuideMain>.navbar-header,
+ .userGuideWrapper .userGuideMain>.navbar-collapse {
+   margin-right: -15px;
+   margin-left: -15px;
+ }
+
+ @media (min-width: 768px) {
+
+   .userGuideWrapper .userGuideMain>.navbar-header,
+   .userGuideWrapper .userGuideMain>.navbar-collapse {
+     margin-right: 0;
+     margin-left: 0;
+   }
+ }
+
+ .userGuideWrapper .userGuideMain .header {
+   margin-left: -15px;
+   margin-right: -15px;
+   position: relative;
+   background: none;
+ }
+
+ .userGuideWrapper .userGuideMain .header .headerImage {
+   position: relative;
+   float: left;
+   width: 100%;
+   min-height: 1px;
+   padding-left: 15px;
+   padding-right: 15px;
+ }
+
+ .userGuideWrapper .userGuideMain .header .headerImage img {
+   margin-top: 0em;
+   margin-bottom: 5px;
+   margin-left: auto;
+   margin-right: auto;
+   padding-top: 0.5em;
+   padding-bottom: 1.5em;
+   max-width: 160px;
+   max-height: 122px;
+   display: block;
+   max-width: 100%;
+   height: auto;
+ }
+
+ .userGuideWrapper .userGuideMain .header .headerTitle {
+   position: relative;
+   float: left;
+   width: 100%;
+   min-height: 1px;
+   padding-left: 0px;
+   padding-right: 0px;
+   text-align: center;
+   font-size: 2.4em;
+   font-weight: 700;
+ }
+
+ .userGuideWrapper .userGuideMain .header.main-top {
+   z-index: 1 !important;
+ }
+
+ .userGuideWrapper .userGuideMain .header.main-top .headerTitle h2 {
+   margin: 0;
+   font-weight: 700;
+   background-color: #003b64;
+   color: #fff;
+   /* width: 688px; */
+   margin-bottom: 10px;
+   padding: 10px;
+   /* margin: 0px 0px 0px 42%; */
+   margin-left: auto;
+   margin-right: auto;
+   border-radius: 20px 20px 0px 0px;
+
+ }
+
+ .userGuideWrapper .userGuideMain .header .headerText {
+   position: relative;
+   float: left;
+   width: 100%;
+   min-height: 1px;
+   padding-left: 15px;
+   padding-right: 15px;
+   text-align: center;
+   margin: auto;
+   padding: 9px 1em;
+ }
+
+ .userGuideWrapper .userGuideMain .userGuideNav {
+   position: relative;
+   min-height: 1px;
+   padding-left: 15px;
+   padding-right: 15px;
+ }
+
+ @media (min-width: 992px) {
+   .userGuideWrapper .userGuideMain .userGuideNav {
+     float: left;
+     width: 33.33333333%;
+   }
+ }
+
+ @media (max-width: 767px) {
+   .userGuideWrapper .userGuideMain .userGuideNav {
+     display: none !important;
+   }
+ }
+
+ @media (min-width: 768px) and (max-width: 991px) {
+   .userGuideWrapper .userGuideMain .userGuideNav {
+     display: none !important;
+   }
+
+   .userGuideWrapper .userGuideMain .header.main-top .headerTitle h2 {
+     width: max-content;
+   }
+ }
+
+ @media (min-width: 480px) and (max-width: 991px) {
+   .userGuideWrapper .userGuideMain .header.main-top .headerTitle h2 {
+     width: 100%;
+     font-size: 25px;
+   }
+ }
+
+ .userGuideWrapper .userGuideMain .userGuideNav>div {
+
+   border-radius: 5px;
+   background-color: #DCEDED;
+   position: fixed;
+   top: 88px;
+
+   min-width: 340px;
+ }
+
+ .userGuideWrapper .userGuideMain .userGuideNav>div>ul {
+   list-style-type: none;
+   padding: 0;
+   margin: 0;
+ }
+
+ .userGuideWrapper .userGuideMain .userGuideNav>div>ul>li {
+   position: sticky;
+   z-index: 1;
+ }
+
+ .wrapper .userGuideWrapper .userGuideMain .userGuideNav>div>ul>li>button,
+ .wrapper .userGuideWrapper .userGuideMain .userGuideNav>div>ul>li>a {
+   width: 100%;
+   height: 40px;
+   background-color: transparent;
+   border: 0;
+   font-weight: 600;
+   font-size: 10pt;
+   font-family: 'Helvetica', 'Arial', sans-serif;
+   color: #333333;
+   text-align: left;
+   padding-left: 20px;
+   padding-top: 10px;
+   display: block;
+
+ }
+
+ .wrapper .userGuideWrapper .userGuideMain .userGuideNav>div>ul>li>button:after {
+   font-family: 'Glyphicons Halflings';
+   content: "\e114";
+   float: right;
+   color: #8cc63f;
+   width: 30px;
+   height: 30px;
+   padding-top: 5px;
+ }
+
+ .wrapper .userGuideWrapper .userGuideMain .userGuideNav>div>ul>li>button.collapsed:after {
+   font-family: 'Glyphicons Halflings';
+   content: "\e080";
+ }
+
+ .wrapper .userGuideWrapper .userGuideMain .userGuideNav>div>ul>li>.active {
+   background-color: #8cc63f;
+   color: white;
+ }
+
+ .userGuideWrapper .userGuideMain .userGuideNav>div>ul>li>div>ul {
+   padding: 0;
+   list-style-type: none;
+ }
+
+ .userGuideWrapper .userGuideMain .userGuideNav>div>ul>li>div>ul>li {
+   position: relative;
+   z-index: 1;
+   vertical-align: middle;
+ }
+
+ .userGuideWrapper .userGuideMain .userGuideNav>div>ul>li>div>ul>li>a {
+   background-color: white;
+   border: none;
+   height: 40px;
+   font-weight: 500;
+   font-size: 10pt;
+   font-family: 'Helvetica', 'Arial', sans-serif;
+   text-align: left;
+   padding-left: 30px;
+   display: block;
+   text-decoration: none;
+   color: black;
+   padding-top: 10px;
+ }
+
+ .wrapper .userGuideWrapper .userGuideMain .userGuideNav>div>ul>li>div>ul>li>.active {
+   position: relative;
+   z-index: 1;
+   color: #8cc63f;
+
+ }
+
+ .wrapper .userGuideWrapper .userGuideMain .userGuideNav>div>ul>li>div>ul>li>.active:before {
+   position: absolute;
+   z-index: 2;
+   top: 0;
+   left: 0;
+   width: 3px;
+   bottom: 0;
+   content: "";
+   background-color: #8cc63f;
+ }
+
+ .wrapper .userGuideWrapper .userGuideMain .userGuideNav>div>ul>li>div>ul>li+li:before {
+   position: absolute;
+   z-index: 2;
+   top: 0;
+   left: 5px;
+   right: 5px;
+   height: 1px;
+   content: "";
+   background-color: #EDEDED;
+ }
+
+ .userGuideWrapper .userGuideMain .userGuideNav>div>ul>li+li:before {
+   position: absolute;
+   z-index: 2;
+   top: 0;
+   left: 1px;
+   right: 1px;
+   height: 1px;
+   content: "";
+   background-color: #F7F7F7;
+ }
+
+ .userGuideWrapper .userGuideMain .userGuideNav .downloadUserGuide {
+   text-align: center;
+   padding-top: 20px;
+   padding-bottom: 20px;
+ }
+
+ .wrapper .userGuideWrapper .userGuideMain .userGuideNav .downloadUserGuide>a {
+   display: inline-block;
+   margin-bottom: 0;
+   font-weight: normal;
+   text-align: center;
+   vertical-align: middle;
+   touch-action: manipulation;
+   cursor: pointer;
+   background-image: none;
+   border: 1px solid transparent;
+   white-space: nowrap;
+   padding: 6px 12px;
+   font-size: 14px;
+   line-height: 1.42857143;
+   border-radius: 4px;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+   color: #fff;
+   background-color: #003a63;
+   border-color: #003a63;
+   padding: 10px 16px;
+   font-size: 18px;
+   line-height: 1.3333333;
+   border-radius: 6px;
+ }
+
+ .userGuideWrapper .userGuideMain .userGuideNav .downloadUserGuide>a:focus,
+ .userGuideWrapper .userGuideMain .userGuideNav .downloadUserGuide>a:active:focus,
+ .userGuideWrapper .userGuideMain .userGuideNav .downloadUserGuide>a.active:focus,
+ .userGuideWrapper .userGuideMain .userGuideNav .downloadUserGuide>a.focus,
+ .userGuideWrapper .userGuideMain .userGuideNav .downloadUserGuide>a:active.focus,
+ .userGuideWrapper .userGuideMain .userGuideNav .downloadUserGuide>a.active.focus {
+   outline: thin dotted;
+   outline: 5px auto -webkit-focus-ring-color;
+   outline-offset: -2px;
+ }
+
+ .userGuideWrapper .userGuideMain .userGuideNav .downloadUserGuide>a:hover,
+ .userGuideWrapper .userGuideMain .userGuideNav .downloadUserGuide>a:focus,
+ .userGuideWrapper .userGuideMain .userGuideNav .downloadUserGuide>a.focus {
+   color: #333;
+   text-decoration: none;
+ }
+
+ .userGuideWrapper .userGuideMain .userGuideNav .downloadUserGuide>a:active,
+ .userGuideWrapper .userGuideMain .userGuideNav .downloadUserGuide>a.active {
+   outline: 0;
+   background-image: none;
+   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+ }
+
+ .userGuideWrapper .userGuideMain .userGuideNav .downloadUserGuide>a.disabled,
+ .userGuideWrapper .userGuideMain .userGuideNav .downloadUserGuide>a[disabled],
+ fieldset[disabled] .userGuideWrapper .userGuideMain .userGuideNav .downloadUserGuide>a {
+   cursor: not-allowed;
+   opacity: 0.65;
+   filter: alpha(opacity=65);
+   -webkit-box-shadow: none;
+   box-shadow: none;
+ }
+
+ a.userGuideWrapper .userGuideMain .userGuideNav .downloadUserGuide>a.disabled,
+ fieldset[disabled] a.userGuideWrapper .userGuideMain .userGuideNav .downloadUserGuide>a {
+   pointer-events: none;
+ }
+
+ .userGuideWrapper .userGuideMain .userGuideNav .downloadUserGuide>a:focus,
+ .userGuideWrapper .userGuideMain .userGuideNav .downloadUserGuide>a.focus {
+   color: #fff;
+   background-color: #8cc63f;
+   border-color: #8cc63f;
+ }
+
+ .userGuideWrapper .userGuideMain .userGuideNav .downloadUserGuide>a:hover {
+   color: #fff;
+   background-color: #8cc63f;
+   border-color: #8cc63f;
+ }
+
+ .userGuideWrapper .userGuideMain .userGuideNav .downloadUserGuide>a:active,
+ .userGuideWrapper .userGuideMain .userGuideNav .downloadUserGuide>a.active,
+ .open>.dropdown-toggle.userGuideWrapper .userGuideMain .userGuideNav .downloadUserGuide>a {
+   color: #fff;
+   background-color: #8cc63f;
+   border-color: #8cc63f;
+ }
+
+ .userGuideWrapper .userGuideMain .userGuideNav .downloadUserGuide>a:active:hover,
+ .userGuideWrapper .userGuideMain .userGuideNav .downloadUserGuide>a.active:hover,
+ .open>.dropdown-toggle.userGuideWrapper .userGuideMain .userGuideNav .downloadUserGuide>a:hover,
+ .userGuideWrapper .userGuideMain .userGuideNav .downloadUserGuide>a:active:focus,
+ .userGuideWrapper .userGuideMain .userGuideNav .downloadUserGuide>a.active:focus,
+ .open>.dropdown-toggle.userGuideWrapper .userGuideMain .userGuideNav .downloadUserGuide>a:focus,
+ .userGuideWrapper .userGuideMain .userGuideNav .downloadUserGuide>a:active.focus,
+ .userGuideWrapper .userGuideMain .userGuideNav .downloadUserGuide>a.active.focus,
+ .open>.dropdown-toggle.userGuideWrapper .userGuideMain .userGuideNav .downloadUserGuide>a.focus {
+   color: #fff;
+   background-color: #8cc63f;
+   border-color: #8cc63f;
+ }
+
+ .userGuideWrapper .userGuideMain .userGuideNav .downloadUserGuide>a:active,
+ .userGuideWrapper .userGuideMain .userGuideNav .downloadUserGuide>a.active,
+ .open>.dropdown-toggle.userGuideWrapper .userGuideMain .userGuideNav .downloadUserGuide>a {
+   background-image: none;
+ }
+
+ .userGuideWrapper .userGuideMain .userGuideNav .downloadUserGuide>a.disabled:hover,
+ .userGuideWrapper .userGuideMain .userGuideNav .downloadUserGuide>a[disabled]:hover,
+ fieldset[disabled] .userGuideWrapper .userGuideMain .userGuideNav .downloadUserGuide>a:hover,
+ .userGuideWrapper .userGuideMain .userGuideNav .downloadUserGuide>a.disabled:focus,
+ .userGuideWrapper .userGuideMain .userGuideNav .downloadUserGuide>a[disabled]:focus,
+ fieldset[disabled] .userGuideWrapper .userGuideMain .userGuideNav .downloadUserGuide>a:focus,
+ .userGuideWrapper .userGuideMain .userGuideNav .downloadUserGuide>a.disabled.focus,
+ .userGuideWrapper .userGuideMain .userGuideNav .downloadUserGuide>a[disabled].focus,
+ fieldset[disabled] .userGuideWrapper .userGuideMain .userGuideNav .downloadUserGuide>a.focus {
+   background-color: #003a63;
+   border-color: #003a63;
+ }
+
+ .userGuideWrapper .userGuideMain .userGuideNav .downloadUserGuide>a .badge {
+   color: #003a63;
+   background-color: #fff;
+ }
+
+ .userGuideWrapper .userGuideMain .userGuideContentArea {
+   position: relative;
+   min-height: 1px;
+   padding-left: 15px;
+   padding-right: 15px;
+ }
+
+ .userGuideWrapper .userGuideMain .userGuideContentArea p,
+ .userGuideWrapper .userGuideMain .userGuideContentArea ol li,
+ .userGuideWrapper .userGuideMain .userGuideContentArea ul li {
+   line-height: 22px;
+ }
+
+ .userGuideWrapper .userGuideMain .userGuideContentArea ol,
+ .userGuideWrapper .userGuideMain .userGuideContentArea ul {
+   margin-top: 0;
+   margin-bottom: 10px;
+   padding-left: 0px;
+ }
+
+ .userGuideWrapper .userGuideMain .userGuideContentArea ol li,
+ .userGuideWrapper .userGuideMain .userGuideContentArea ul li {
+   margin-bottom: 10px;
+ }
+
+ .userGuideWrapper .userGuideMain .userGuideContentArea ul.disk-bullet {
+   padding-left: 18px;
+ }
+
+ .userGuideWrapper .userGuideMain .userGuideContentArea ul.disk-bullet li {
+   list-style: disc;
+ }
+
+ .userGuideWrapper .userGuideMain .userGuideContentArea ol {
+   padding-left: 15px;
+ }
+
+ @media (min-width: 992px) {
+   .userGuideWrapper .userGuideMain .userGuideContentArea {
+     float: left;
+     width: 66.66666667%;
+   }
+ }
+
+ .userGuideWrapper .userGuideMain .userGuideContentArea .userGuideArticle {
+   background-color: #FFFFFF;
+   border: 1px solid #E7E7E7;
+   border-radius: 5px;
+   padding-left: 20px;
+   padding-right: 20px;
+   padding-bottom: 20px;
+   margin-bottom: 20px;
+   min-height: 1048px;
+   line-height: 2.7em;
+
+ }
+
+
+ .h3,
+ h3 {
+
+   background-color: #c7bcbc4f;
+   font-size: 24px;
+   min-width: 500px;
+   line-height: 43px;
+   padding-left: 12px;
+   border-radius: 0px;
+   border-right: 1px;
+   margin-bottom: 20px;
+   font-weight: 500 !important;
+
+ }
+
+ h4 {
+   background-color: #c7bcbc4f;
+   font-size: 24px;
+   min-width: 500px;
+   line-height: 43px;
+   padding-left: 12px;
+   border-radius: 0px;
+   border-right: 1px;
+   margin-bottom: 20px;
+   font-weight: 500 !important;
+ }
+
+ .userGuideWrapper .userGuideMain .userGuideContentArea .userGuideArticle>h3 {
+
+   font-weight: 700;
+ }
+
+ .userGuideWrapper .userGuideMain .userGuideContentArea .userGuideArticle>p {
+   padding-bottom: 1em;
+ }
+
+ .userGuideWrapper .userGuideMain .userGuideContentArea .userGuideArticle img {
+   display: block;
+   max-width: 100%;
+   height: auto;
+ }
+
+ @media (max-width: 991px) {
+   .userGuideWrapper .userGuideMain .userGuideContentArea .userGuideArticle video {
+     width: 270px;
+     height: 141px;
+   }
+ }
+
+ @media (max-width: 991px) {
+   .userGuideWrapper .userGuideMain .userGuideContentArea {
+     padding-left: 0px;
+     padding-right: 0px;
+   }
+
+ }
+
+ .userGuideDownloadRow {
+   margin-right: auto;
+   margin-left: auto;
+   padding-left: 15px;
+   padding-right: 15px;
+   width: 100%;
+ }
+
+
+
+ @media (min-width: 768px) {
+   /*.userGuideDownloadRow {*/
+   /*  width: 750px;*/
+   /*}*/
+ }
+
+ @media (min-width: 992px) {
+   /*.userGuideDownloadRow {*/
+   /*  width: 970px;*/
+   /*}*/
+ }
+
+ @media (min-width: 1200px) {
+   /*.userGuideDownloadRow {*/
+   /*  width: 1170px;*/
+   /*}*/
+ }
+
+ .userGuideDownloadRow>.navbar-header,
+ .userGuideDownloadRow>.navbar-collapse {
+   margin-right: -15px;
+   margin-left: -15px;
+ }
+
+ @media (min-width: 768px) {
+
+   .userGuideDownloadRow>.navbar-header,
+   .userGuideDownloadRow>.navbar-collapse {
+     margin-right: 0;
+     margin-left: 0;
+   }
+ }
+
+ .userGuideDownloadRow .downloadUserGuideSmall {
+   margin-left: -15px;
+   margin-right: -15px;
+   text-align: center;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   display: none;
+   background-color: aqua;
+ }
+
+ .userGuideDownloadRow .downloadUserGuideSmall>a {
+   display: inline-block;
+   margin-bottom: 0;
+   font-weight: normal;
+   text-align: center;
+   vertical-align: middle;
+   touch-action: manipulation;
+   cursor: pointer;
+   background-image: none;
+   border: 1px solid transparent;
+   white-space: nowrap;
+   padding: 6px 12px;
+   font-size: 14px;
+   line-height: 1.42857143;
+   border-radius: 4px;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+   color: #fff;
+   background-color: #003a63;
+   border-color: #003a63;
+   padding: 10px 16px;
+   font-size: 18px;
+   line-height: 1.3333333;
+   border-radius: 6px;
+ }
+
+ .userGuideDownloadRow .downloadUserGuideSmall>a:focus,
+ .userGuideDownloadRow .downloadUserGuideSmall>a:active:focus,
+ .userGuideDownloadRow .downloadUserGuideSmall>a.active:focus,
+ .userGuideDownloadRow .downloadUserGuideSmall>a.focus,
+ .userGuideDownloadRow .downloadUserGuideSmall>a:active.focus,
+ .userGuideDownloadRow .downloadUserGuideSmall>a.active.focus {
+   outline: thin dotted;
+   outline: 5px auto -webkit-focus-ring-color;
+   outline-offset: -2px;
+ }
+
+ .userGuideDownloadRow .downloadUserGuideSmall>a:hover,
+ .userGuideDownloadRow .downloadUserGuideSmall>a:focus,
+ .userGuideDownloadRow .downloadUserGuideSmall>a.focus {
+   color: #333;
+   text-decoration: none;
+ }
+
+ .userGuideDownloadRow .downloadUserGuideSmall>a:active,
+ .userGuideDownloadRow .downloadUserGuideSmall>a.active {
+   outline: 0;
+   background-image: none;
+   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+ }
+
+ .userGuideDownloadRow .downloadUserGuideSmall>a.disabled,
+ .userGuideDownloadRow .downloadUserGuideSmall>a[disabled],
+ fieldset[disabled] .userGuideDownloadRow .downloadUserGuideSmall>a {
+   cursor: not-allowed;
+   opacity: 0.65;
+   filter: alpha(opacity=65);
+   -webkit-box-shadow: none;
+   box-shadow: none;
+ }
+
+ a.userGuideDownloadRow .downloadUserGuideSmall>a.disabled,
+ fieldset[disabled] a.userGuideDownloadRow .downloadUserGuideSmall>a {
+   pointer-events: none;
+ }
+
+ .userGuideDownloadRow .downloadUserGuideSmall>a:focus,
+ .userGuideDownloadRow .downloadUserGuideSmall>a.focus {
+   color: #fff;
+   background-color: #8cc63f;
+   border-color: #8cc63f;
+ }
+
+ .userGuideDownloadRow .downloadUserGuideSmall>a:hover {
+   color: #fff;
+   background-color: #8cc63f;
+   border-color: #8cc63f;
+ }
+
+ .userGuideDownloadRow .downloadUserGuideSmall>a:active,
+ .userGuideDownloadRow .downloadUserGuideSmall>a.active,
+ .open>.dropdown-toggle.userGuideDownloadRow .downloadUserGuideSmall>a {
+   color: #fff;
+   background-color: #8cc63f;
+   border-color: #8cc63f;
+ }
+
+ .userGuideDownloadRow .downloadUserGuideSmall>a:active:hover,
+ .userGuideDownloadRow .downloadUserGuideSmall>a.active:hover,
+ .open>.dropdown-toggle.userGuideDownloadRow .downloadUserGuideSmall>a:hover,
+ .userGuideDownloadRow .downloadUserGuideSmall>a:active:focus,
+ .userGuideDownloadRow .downloadUserGuideSmall>a.active:focus,
+ .open>.dropdown-toggle.userGuideDownloadRow .downloadUserGuideSmall>a:focus,
+ .userGuideDownloadRow .downloadUserGuideSmall>a:active.focus,
+ .userGuideDownloadRow .downloadUserGuideSmall>a.active.focus,
+ .open>.dropdown-toggle.userGuideDownloadRow .downloadUserGuideSmall>a.focus {
+   color: #fff;
+   background-color: #8cc63f;
+   border-color: #8cc63f;
+ }
+
+ .userGuideDownloadRow .downloadUserGuideSmall>a:active,
+ .userGuideDownloadRow .downloadUserGuideSmall>a.active,
+ .open>.dropdown-toggle.userGuideDownloadRow .downloadUserGuideSmall>a {
+   background-image: none;
+ }
+
+ .userGuideDownloadRow .downloadUserGuideSmall>a.disabled:hover,
+ .userGuideDownloadRow .downloadUserGuideSmall>a[disabled]:hover,
+ fieldset[disabled] .userGuideDownloadRow .downloadUserGuideSmall>a:hover,
+ .userGuideDownloadRow .downloadUserGuideSmall>a.disabled:focus,
+ .userGuideDownloadRow .downloadUserGuideSmall>a[disabled]:focus,
+ fieldset[disabled] .userGuideDownloadRow .downloadUserGuideSmall>a:focus,
+ .userGuideDownloadRow .downloadUserGuideSmall>a.disabled.focus,
+ .userGuideDownloadRow .downloadUserGuideSmall>a[disabled].focus,
+ fieldset[disabled] .userGuideDownloadRow .downloadUserGuideSmall>a.focus {
+   background-color: #003a63;
+   border-color: #003a63;
+ }
+
+ .userGuideDownloadRow .downloadUserGuideSmall>a .badge {
+   color: #003a63;
+   background-color: #fff;
+ }
+
+ h5 strong {
+   color: #449a97;
+ }
+
+ @media (max-width: 991px) {
+   .userGuideDownloadRow .downloadUserGuideSmall {
+     display: block;
+     background-color: #F7F7F7;
+   }
+ }
+
+ .table {
+   box-sizing: border-box;
+   border: 1px solid black;
+   width: 150%;
+   margin-top: 10px;
+   margin-bottom: 10px;
+ }
+
+ table {
+   font-family: arial, sans-serif;
+   border-collapse: collapse;
+   width: 100%;
+
+ }
+
+ td,
+ th {
+   border: 1px solid #dddddd;
+   text-align: left;
+   padding: 8px;
+ }
+
+ .table3 {
+   margin-top: 10px;
+ }
+
+ .table4 {
+   margin-top: 10px;
+ }
+
+ .table5 {
+   margin-top: 10px;
+ }
+
+ .table7 {
+   margin-top: 10px;
+ }
+
+
+ .scrollbar {
+   height: 475px;
+   width: 335px;
+
+   overflow-y: scroll;
+   display: inline-block;
+ }
+
+ .div-child {
+   min-height: 650px;
+ }
+
+ #scroll::-webkit-scrollbar {
+   border-radius: 10px;
+   width: 10px;
+   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+ }
+
+ #scroll::-webkit-scrollbar-thumb {
+   border-radius: 10px;
+   width: 10px;
+   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+   background-color: #dceded;
+ }
+
+ .userGuideWrapper .userGuideMain .userGuideContentArea table tr th {
+   color: #ffffff !important;
+   border-color: #357775;
+   background: #449a97;
+ }
+
+ .userGuideWrapper .userGuideMain .userGuideContentArea td,
+ .userGuideWrapper .userGuideMain .userGuideContentArea th {
+   line-height: 22px;
+   vertical-align: top;
+ }
+
+ /* Ish css */
+ @media (max-width: 600px) {
+   .userGuideWrapper .userGuideMain .header.main-top .headerTitle h2 {
+     width: fit-content;
+   }
+
+   .userGuideArticle {
+     margin-top: 50px;
+   }
+
+   h3 {
+     min-width: auto;
+   }
+
+   h4 {
+     min-width: fit-content;
+   }
+
+   .input-group-btn {
+     top: -10px;
+   }
+ }
+
+ .accordion-button {
+   width: 100%;
+   height: 40px;
+   border: 0;
+   font-weight: 600;
+   font-size: 10pt;
+   font-family: 'Helvetica', 'Arial', sans-serif;
+   color: #394a59;
+   text-align: left;
+   padding-left: 20px;
+   padding-top: 10px;
+   display: block;
+   background: #dceded;
+ }
+
+ .accordion-button:not(.collapsed)::after {
+   background: none;
+   font-family: 'FontAwesome';
+   content: "\f077";
+   color: #449a97 !important;
+   transform: rotate(360deg);
+ }
+
+ .accordion-button::after {
+  background-image: none;
+  font-family: 'FontAwesome';
+  content: "\f078";
+  float: right;
+  color: #449a97 !important;
+}
+
+ .accordion .accordion-item .accordion-body ul li a{
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+  height: 40px;
+  font-weight: 500;
+  font-size: 10pt;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  text-align: left;
+  padding-left: 30px;
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding-top: 10px;
+ }
+
+ .accordion .accordion-item .accordion-body ul li .active {
+  position: relative;
+  z-index: 1;
+  color: #8cc63f !important;
+}
+
+
+.accordion .accordion-item .accordion-body ul li .active:before {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 3px;
+  bottom: 0;
+  content: "";
+  background-color: #8cc63f;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #ffffff;
+  background-color: #8cc63f;
+  box-shadow: inset 0 calc(-1* var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
+ 

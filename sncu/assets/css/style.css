@@ -1,0 +1,15 @@
+
+.logo-one {
+    background: #fff;
+    display: block;
+    border-radius: 50%;
+    padding: 10px;
+    line-height: 1 !important;
+    
+}
+.logo-one img{
+    aspect-ratio: 1 / 1;
+    width: 50px;
+    object-fit: contain;
+    object-position: center;
+}

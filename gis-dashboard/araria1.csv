@@ -1,0 +1,748 @@
+﻿,DISTRICT,DIST_LGD,SUB_DIST,Subdt_LGD,NAME,CEN_2001,TYPE,STATE,nutrition_idx,protection_idx,education_idx,health_idx,child_anaemia,early_marriage,anc_4plus
+1,Araria,188,Narpatganj,1112,Bela,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Narpatganj,1112,Bhairoganj,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Narpatganj,1112,Basmatiya,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Narpatganj,1112,Dombana,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Narpatganj,1112,Jitwarpur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Narpatganj,1112,Maheshpatti,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Narpatganj,1112,Ghurna,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Narpatganj,1112,Pathraha,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Kursakatta,1117,Asura Kalan Khola,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Sikti,1118,Majrakh,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Sikti,1118,Amgachhi,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Sikti,1118,Dehpur Majrakh Milik,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Narpatganj,1112,Bhawanipur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Narpatganj,1112,Manikpur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Narpatganj,1112,Kamat Pathraha,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Kursakatta,1117,Katpahar,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Kursakatta,1117,Bhaloa,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Kursakatta,1117,Lolokhur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Sikti,1118,Muraripur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Kursakatta,1117,Madhubani,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Sikti,1118,Dahipura,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Sikti,1118,Amgachhi Milik,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Narpatganj,1112,Madhubani,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Narpatganj,1112,Goarpuchhri,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Narpatganj,1112,Nawabganj,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Forbesganj,1113,Jogbani,1.007E+15,Town,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Kursakatta,1117,Kuari,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Sikti,1118,Amgachhi Milik Arazi,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Kursakatta,1117,Bhishunpur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Narpatganj,1112,Bhadwar,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Narpatganj,1112,Sonapur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Kursakatta,1117,Dumaria,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Kursakatta,1117,Phasimagrabi and Phasimashraqi,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Narpatganj,1112,Bhorhar,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Kursakatta,1117,Bhimpur Khar,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Sikti,1118,Dainia,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Narpatganj,1112,Amrori,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Sikti,1118,Pahara,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Sikti,1118,Sikti,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Sikti,1118,Pahara Sikti,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Sikti,1118,Kuan Pokhar,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Kursakatta,1117,Soksanand Bhag Khutpur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Sikti,1118,Palasmani,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Sikti,1118,Saidabad,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Kursakatta,1117,Sisabari,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Sikti,1118,Bhirbhiri,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Narpatganj,1112,Pokharia,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Narpatganj,1112,Kuchgaon,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Narpatganj,1112,Barmotra Arazi,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Sikti,1118,Kuchaha,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Sikti,1118,Khuthara Mashragi,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Sikti,1118,Barahmasia,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Kursakatta,1117,Haripur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Kursakatta,1117,Khuthura Magrabi,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Kursakatta,1117,Sundari,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Narpatganj,1112,Lachhmipur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Kursakatta,1117,Darha Pipra,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Narpatganj,1112,Chakorwa,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Kursakatta,1117,Rajaula,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Narpatganj,1112,Tope Nawabganj,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Narpatganj,1112,Hanumannagar,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Sikti,1118,Bokantari,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Kursakatta,1117,Banmali,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Sikti,1118,Tera Khurdah,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Sikti,1118,Dehpur Khardah Milik,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Kursakatta,1117,Harira,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Sikti,1118,Dithaura,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Narpatganj,1112,Anchraand Hanuman nagar,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Sikti,1118,Barahmasia Ranikatta,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Sikti,1118,Saida Pokhar,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Kursakatta,1117,Bhagtira,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Kursakatta,1117,Balchanda,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Kursakatta,1117,Chaita,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Narpatganj,1112,Bhanghi,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Kursakatta,1117,Maratibpur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Kursakatta,1117,Siktia,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Narpatganj,1112,Dumari,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Sikti,1118,Pararia Ranikatta,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Forbesganj,1113,Mirganj,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Forbesganj,1113,Baijnathpur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Forbesganj,1113,Damadighi,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Narpatganj,1112,Shyamnagar,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Sikti,1118,Barahmasia Simalbani,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Sikti,1118,Musanda,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Narpatganj,1112,Dahrahra,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Sikti,1118,Dahgawan,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Narpatganj,1112,Madhura,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Forbesganj,1113,Amauna,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Kursakatta,1117,Dhowabari,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Forbesganj,1113,Pokharia,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Forbesganj,1113,Tirakharda,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Kursakatta,1117,Kursakatta,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Forbesganj,1113,Hathwa,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Sikti,1118,Paraia,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Kursakatta,1117,Asabhag,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Narpatganj,1112,Sahabganj,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Forbesganj,1113,Nirpur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Forbesganj,1113,Bhawanipur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Forbesganj,1113,Bhawanipur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Kursakatta,1117,Gausnagar,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Sikti,1118,Barahmasia Istamrar,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Sikti,1118,Pararia,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Sikti,1118,Khoragachhi,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Forbesganj,1113,Baghua,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Sikti,1118,Milik Arazi,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Forbesganj,1113,Dipaul,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Sikti,1118,Thengpur Pipra,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Kursakatta,1117,Khajurbari,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Sikti,1118,Thengapur Pipra Milik Arazi,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Kursakatta,1117,Batraha,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Forbesganj,1113,Kusamaha,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Forbesganj,1113,Pipra,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Forbesganj,1113,Bhatiahi,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Forbesganj,1113,Amgachhi,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Sikti,1118,Kauakoh,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Sikti,1118,Dipnagar,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Forbesganj,1113,Bathnaha,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Sikti,1118,Thengapur Pipra Milik,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Narpatganj,1112,Posdaha,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Kursakatta,1117,Shankarpur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Forbesganj,1113,Kulharia Jagir,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Kursakatta,1117,Hata Bakhri,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Kursakatta,1117,Bakhri Milik,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Sikti,1118,Bardaha,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Kursakatta,1117,Shijhua Milik,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Narpatganj,1112,khaira,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Forbesganj,1113,Barantpur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Sikti,1118,Singhia,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Kursakatta,1117,Kamladorha,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Forbesganj,1113,Phena,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Narpatganj,1112,Barhepara,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Forbesganj,1113,Ramganj,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Kursakatta,1117,Mohiuddinpur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Forbesganj,1113,Nijkulharia,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Kursakatta,1117,Chikni,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Sikti,1118,Bhaptia,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Kursakatta,1117,Bhag Parasi,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Forbesganj,1113,Bhadesar,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Kursakatta,1117,Shijhua,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Narpatganj,1112,Rajganj,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Forbesganj,1113,Dumaria,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Palasi,1119,Balua,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Sikti,1118,Kabaia,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Kursakatta,1117,Bakhri Milik,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Sikti,1118,Dhengri,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Kursakatta,1117,Parasi,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Sikti,1118,Pipra,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Forbesganj,1113,Shahbazpur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Forbesganj,1113,Asuri,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Kursakatta,1117,Paikdara,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Sikti,1118,Khoragachhi Milik,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Sikti,1118,Khoragachhi,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Narpatganj,1112,Bardaha,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Kursakatta,1117,Maigara,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Sikti,1118,Ramnagar,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Araria,1116,Saranpur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Kursakatta,1117,Lachhmipur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Narpatganj,1112,Parasi,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Kursakatta,1117,Sonapur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Kursakatta,1117,Kolhua,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Forbesganj,1113,Gadaha,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Forbesganj,1113,Dhanpura,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Kursakatta,1117,Karahia,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Narpatganj,1112,Nathpur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Forbesganj,1113,Hanskosa,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Sikti,1118,Aulabari,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Kursakatta,1117,Mal Parasi,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Narpatganj,1112,Nathpur Arazi,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Forbesganj,1113,Hasanpur Khurd,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Sikti,1118,Pothia,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Forbesganj,1113,Matiari,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Kursakatta,1117,Goshainpur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Palasi,1119,Bhantabari,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Sikti,1118,Darhua,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Sikti,1118,Chhaparia,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Palasi,1119,Chhapania,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Forbesganj,1113,Dumaria,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Forbesganj,1113,Rangdaha,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Narpatganj,1112,Nathpur Arazi,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Narpatganj,1112,Nathpur Arazi,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Kursakatta,1117,Sinwari,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Sikti,1118,Belbari,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Forbesganj,1113,Hanskosa Khur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Palasi,1119,Pipra Bijwara,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Forbesganj,1113,Parwaha,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Sikti,1118,Bairgachhi,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Narpatganj,1112,Dargahiganj,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Forbesganj,1113,Bhantabari,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Forbesganj,1113,Potri,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Palasi,1119,Belsari,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Kursakatta,1117,Palasbani,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Palasi,1119,Bangawan,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Kursakatta,1117,Mahesh Khunt,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Kursakatta,1117,Tamkura,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Kursakatta,1117,Phulbari,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Forbesganj,1113,Bhagchaura,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Forbesganj,1113,Dhanpura,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Kursakatta,1117,Bhorha,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Araria,1116,Dabhara Jagir,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Kursakatta,1117,Musapur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Palasi,1119,Mahadeokol,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Palasi,1119,Charbana,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Forbesganj,1113,Baghmara,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Araria,1116,Dabhra,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Forbesganj,1113,Khamkol,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Narpatganj,1112,Baghua Dibiganj,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Narpatganj,1112,koskapur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Narpatganj,1112,Barhara,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Forbesganj,1113,Forbesganj,1.007E+15,Town,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Forbesganj,1113,Kirkichia,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Forbesganj,1113,Shahbazpur Jagir,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Narpatganj,1112,Rewahi,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Forbesganj,1113,Bhagkohilia,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Palasi,1119,Deghli,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Kursakatta,1117,Parbata,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Palasi,1119,Dharamganj Baghua,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Kursakatta,1117,Birban,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Kursakatta,1117,Hasanpur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Sikti,1118,Karahbari,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Forbesganj,1113,Rampur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Kursakatta,1117,MaheshKhunt Jagir,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Araria,1116,Jamua,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Palasi,1119,Karor,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Sikti,1118,Sohagmara,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Sikti,1118,Sohdi,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Forbesganj,1113,Majhua,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Forbesganj,1113,Amhara,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Kursakatta,1117,Padaria,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Kursakatta,1117,Itahi,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Palasi,1119,Phulsara,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Forbesganj,1113,Khair Khan,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Palasi,1119,Chauri,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Kursakatta,1117,Pakri,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Araria,1116,Kismat Jamua,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Palasi,1119,Karor Deghli,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Kursakatta,1117,Doria,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Narpatganj,1112,Pathraha,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Araria,1116,Tarabari,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Araria,1116,Phulbari,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Araria,1116,Khamgara,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Forbesganj,1113,Gopalpur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Kursakatta,1117,Kumaripur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Araria,1116,Tarauna,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Kursakatta,1117,Chikni,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Narpatganj,1112,Khapdeh,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Palasi,1119,Bakainia,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Narpatganj,1112,Fatehpur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Narpatganj,1112,Pharhi,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Narpatganj,1112,Belwa,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Palasi,1119,Kankhudia,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Palasi,1119,Korhaili,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Forbesganj,1113,Ghoraghat,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Narpatganj,1112,Damiya,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Kursakatta,1117,Rahatmina,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Forbesganj,1113,Samaul,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Palasi,1119,Gang Jhali,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Palasi,1119,Bhatauja,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Palasi,1119,Manbodhtanda,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Sikti,1118,Benga,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Kursakatta,1117,Kotahpur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Narpatganj,1112,Kandhaili,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Palasi,1119,Dogachhi,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Palasi,1119,Jahanpur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Araria,1116,Jitwarpur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Palasi,1119,Miapur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Forbesganj,1113,Binodpur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Palasi,1119,Baradbata,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Forbesganj,1113,Dholbaja,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Araria,1116,Gelhabari,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Palasi,1119,Hasanpur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Forbesganj,1113,Ramai,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Narpatganj,1112,Patehpur Arazi,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Palasi,1119,Dhantola,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Palasi,1119,Maldoar,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Kursakatta,1117,Shoirgaon,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Araria,1116,Bhagpuraini,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Araria,1116,Sahasmal,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Palasi,1119,Hasanpura,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Palasi,1119,Miapur Gachh,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Forbesganj,1113,Haripur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Palasi,1119,Dakaita,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Forbesganj,1113,Tiraskund,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Araria,1116,Saguna,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Forbesganj,1113,Bishunpur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Narpatganj,1112,Pithaura,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Palasi,1119,Urlaha,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Palasi,1119,Sobagmara,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Narpatganj,1112,Tamganj Toufir,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Palasi,1119,Garhara,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Narpatganj,1112,Sawaldeh,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Araria,1116,Pategna,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Palasi,1119,Kujri,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Palasi,1119,Gopalnagar,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Forbesganj,1113,Balua,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Forbesganj,1113,Baijnathpur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Palasi,1119,kalahi,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Palasi,1119,Dehti,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Forbesganj,1113,Madhura,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Forbesganj,1113,Khawaspur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Forbesganj,1113,Pothia,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Araria,1116,Kismat Khawaspur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Forbesganj,1113,Hatpothia,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Forbesganj,1113,Belai,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Narpatganj,1112,GokhulPur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Palasi,1119,Chahatpur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Araria,1116,Baturbari,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Palasi,1119,Dakaita,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Forbesganj,1113,Parwaha,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Palasi,1119,Dhangawan,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Palasi,1119,Bualdanti,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Narpatganj,1112,Tamganj,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Forbesganj,1113,Gogi,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Forbesganj,1113,Dak,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Narpatganj,1112,Gadhgawan,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Forbesganj,1113,Sukhirampur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Narpatganj,1112,Ajitnagar,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Palasi,1119,Majlispur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Palasi,1119,Bhatwara,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Forbesganj,1113,Eidgah,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Forbesganj,1113,Dakripur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Forbesganj,1113,Sirsia,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Forbesganj,1113,Ghiwba,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Forbesganj,1113,Deopura,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Forbesganj,1113,Lahsunganj,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Palasi,1119,Ramnagar,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Palasi,1119,Gohans,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Forbesganj,1113,Sukhi,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Forbesganj,1113,Halhalia,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Forbesganj,1113,Halhalia jagir,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Forbesganj,1113,Musahari,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Araria,1116,Kasaila Gachh Garha Bhagkasail,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Narpatganj,1112,Kochgaon,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Palasi,1119,Nakta,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Forbesganj,1113,Rahikpur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Palasi,1119,Belbari,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Narpatganj,1112,Mirdaul,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Palasi,1119,Daua,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Forbesganj,1113,Gurmahi,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Araria,1116,Madanpur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Palasi,1119,Dala,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Palasi,1119,Doargawan,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Palasi,1119,Nakta Khurd,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Palasi,1119,Lokhra,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Araria,1116,Jhamta,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Palasi,1119,Haribhasa,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Forbesganj,1113,Arraha,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Araria,1116,Metan,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Araria,1116,Mahisakol,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Araria,1116,Gamharia,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Palasi,1119,Behari,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Narpatganj,1112,Belsandi,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Forbesganj,1113,Rahikpur Thila Mohan,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Forbesganj,1113,Bhaghal Halia,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Narpatganj,1112,Bariarpur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Palasi,1119,Mohania,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Narpatganj,1112,Garuha Bishunpur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Palasi,1119,Chandipur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Forbesganj,1113,Manikpur Halhalia,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Palasi,1119,Pandubi,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Forbesganj,1113,Bara,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Forbesganj,1113,Simraha,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Palasi,1119,Sonakandar,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Palasi,1119,Naranga,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Forbesganj,1113,Bhagparwaha,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Palasi,1119,Pakri,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Araria,1116,Chanrarni,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Palasi,1119,Kashibari,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Araria,1116,Bochi,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Palasi,1119,Bargaon,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Forbesganj,1113,Kurwa Lachhmipur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Palasi,1119,Gerari,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Forbesganj,1113,Rampur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Araria,1116,Bansbari,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Palasi,1119,Khutti,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Forbesganj,1113,Lachhmipur Gachh,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Palasi,1119,Kathora,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Palasi,1119,Khapra,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Palasi,1119,Purandaha,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Palasi,1119,Majhua,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Palasi,1119,Pipra,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Palasi,1119,Mundmala,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Forbesganj,1113,Doria Sonapur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Forbesganj,1113,Shaifganj,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Forbesganj,1113,Shankarpur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Bhargama,1114,Simarbani,1.008E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Bhargama,1114,Kusmaul,1.005E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Forbesganj,1113,Ganj Bhag,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Forbesganj,1113,Arraha Madarganj,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Palasi,1119,Balua,1.008E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Palasi,1119,Sohandar,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Palasi,1119,Daulatpur,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Palasi,1119,Dipnagar,1.008E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Palasi,1119,Pothia,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Palasi,1119,Beni,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Palasi,1119,Pakri Kamat,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Palasi,1119,Bhikha,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Araria,1116,Rampur Mohanpur,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Palasi,1119,Barkumba,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Palasi,1119,Bhima,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Forbesganj,1113,Aurahi,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Bhargama,1114,Pranpath Patti,1.006E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Bhargama,1114,Shankarpur,1.017E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Palasi,1119,Budhi,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Forbesganj,1113,Basgara,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Palasi,1119,Pechaili,1.005E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Palasi,1119,Parwakhori,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Araria,1116,Pokharia,1.008E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Palasi,1119,Belbari,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Palasi,1119,Goshainpur,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Palasi,1119,Rangbaha,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Palasi,1119,Gyaspur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Forbesganj,1113,Kurwa,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Araria,1116,Bhagsadullah Gachh Kola,1.008E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Palasi,1119,Maina,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Araria,1116,Bahgi,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Forbesganj,1113,Jhirwa Pachhiari,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Araria,1116,Salaigarh,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Araria,1116,Samda,1.006E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Forbesganj,1113,Lachhmipur,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Palasi,1119,Tarbi,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Palasi,1119,Kumarkhand,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Palasi,1119,Bhadauna,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Forbesganj,1113,Jhirwa Purwari,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Forbesganj,1113,Hardia,1.008E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Forbesganj,1113,Mirzapur,1.008E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Palasi,1119,Bhatania,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Forbesganj,1113,Bokra,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Palasi,1119,Baraili,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Araria,1116,Kharhar,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Palasi,1119,Seyampur,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Araria,1116,Murbala,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Forbesganj,1113,Tharia Bakia,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Araria,1116,Haria,1.005E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Araria,1116,Basantpur,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Palasi,1119,Madhail,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Palasi,1119,Pharhara,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Palasi,1119,Rupail,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Palasi,1119,Domaria,1.008E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Palasi,1119,Ramnagar,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Palasi,1119,Marichgaon,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Palasi,1119,Denga,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Jokihat,1120,Duba,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Bhargama,1114,Jainagar,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Araria,1116,Rangdaha,1.005E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Jokihat,1120,Kesarra,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Palasi,1119,Pakri Arazi,1.006E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Palasi,1119,Dhurgaon,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Jokihat,1120,Taran,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Jokihat,1120,Satghara,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Palasi,1119,Jurail,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Araria,1116,Farasat,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Jokihat,1120,Semaria,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Palasi,1119,Sukhsaina,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Jokihat,1120,Jahanpur,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Jokihat,1120,Bagmara,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Raniganj,1115,Bishunpur,1.005E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Jokihat,1120,Bairgachhi,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Jokihat,1120,Kakan,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Raniganj,1115,Parmanpur,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Forbesganj,1113,Ahmadpur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Araria,1116,Araria,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Raniganj,1115,Kadwa,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Forbesganj,1113,Shankarpur,1.006E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Raniganj,1115,Motiari,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Araria,1116,Barakamatchistipur,1.008E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Jokihat,1120,Dharmeshwar Gachh,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Palasi,1119,Maya Khori,1.008E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Jokihat,1120,Khuti Kharia,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Raniganj,1115,Hingna,1.008E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Araria,1116,Araria,1.013E+15,Town,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Palasi,1119,Harwa,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Bhargama,1114,Sirsia Hanumanganj,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Jokihat,1120,Rani,1.006E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Raniganj,1115,Jogta,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Jokihat,1120,Artia,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Jokihat,1120,Hardar,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Raniganj,1115,Ahmadpur Pahi,1.006E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Forbesganj,1113,Mahachanda,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Jokihat,1120,Dhobinia,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Raniganj,1115,Bholapur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Jokihat,1120,Rani Istamrar,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Raniganj,1115,Bistaria,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Jokihat,1120,Shahpur,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Jokihat,1120,Khirdaha,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Jokihat,1120,Kathalbari,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Jokihat,1120,Jokihat,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Raniganj,1115,Banbhag,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Raniganj,1115,Dhama,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Raniganj,1115,Kopari,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Bhargama,1114,Shaikhpura,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Jokihat,1120,Mahadewa,1.006E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Jokihat,1120,Naua Nankar,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Raniganj,1115,Dhaniain,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Araria,1116,Belbari,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Jokihat,1120,Dhanpura,1.017E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Jokihat,1120,Malchhari,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Jokihat,1120,Pathrabari,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Araria,1116,Milik,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Raniganj,1115,Hirdepur,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Raniganj,1115,Raghunathpur,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Jokihat,1120,Gamharia,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Araria,1116,Azmatpur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Jokihat,1120,Kajleta,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Jokihat,1120,Bhagwanpur,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Jokihat,1120,Satbhita,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Jokihat,1120,Satbhita Kamat,1.017E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Jokihat,1120,Bagdahara,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Jokihat,1120,Gachh Mahadewa,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Bhargama,1114,Narhewa Diara,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Jokihat,1120,Sisauna,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Araria,1116,Bairgachhi,1.017E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Jokihat,1120,Masuria,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Araria,1116,Bhagmohabbat,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Araria,1116,Majkuri,1.008E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Raniganj,1115,Pachera,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Raniganj,1115,Basgara,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Jokihat,1120,Singar Mohani,1.008E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Raniganj,1115,Bhagphasia,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Jokihat,1120,Matiari,1.008E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Araria,1116,Belwa,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Raniganj,1115,Naraenpur,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Jokihat,1120,Girda,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Raniganj,1115,Sanjhaili,1.017E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Jokihat,1120,Bankora,1.006E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Jokihat,1120,Baharbari,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Jokihat,1120,Bara Istamrar,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Raniganj,1115,Raghopur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Bhargama,1114,Raghunath Pur,1.008E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Bhargama,1114,Sirsia Kalan,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Raniganj,1115,Lachhmipur,1.017E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Raniganj,1115,Rupauli,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Raniganj,1115,Chhatiauna,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Jokihat,1120,Bagesari,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Araria,1116,Surjapur,1.017E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Jokihat,1120,Darsana,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Jokihat,1120,Gogra,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Jokihat,1120,Gerki,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Jokihat,1120,Bhag Turkaili,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Bhargama,1114,Dundbahadur Chakla,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Raniganj,1115,Kharsahi,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Raniganj,1115,Bitauna,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Raniganj,1115,Hansa,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Araria,1116,Sisauna,1.006E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Araria,1116,Itahara,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Araria,1116,Hasanpur,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Raniganj,1115,Kharhat,1.005E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Raniganj,1115,Garha,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Raniganj,1115,Kajra,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Jokihat,1120,Barhuwa,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Jokihat,1120,Turkaili,1.008E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Raniganj,1115,Belgachhi,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Jokihat,1120,Pirganj,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Jokihat,1120,Matiari,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Jokihat,1120,Laruabari,1.008E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Jokihat,1120,Rahikpur,1.008E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Jokihat,1120,Ramganj,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Bhargama,1114,Bishunpr  Bhaiaram,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Bhargama,1114,Jhumuk Lal Chakla,1.006E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Jokihat,1120,Lalia,1.017E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Araria,1116,Rajokhar,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Raniganj,1115,Hasanpur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Araria,1116,Hyatpur,1.008E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Raniganj,1115,Rahua,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Raniganj,1115,Gidhwas,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Araria,1116,Gaigari,1.005E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Raniganj,1115,Mirzapur,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Araria,1116,Bochi,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Raniganj,1115,Rampur,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Raniganj,1115,Kamalpur,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Jokihat,1120,Dabhra,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Jokihat,1120,Bhansia,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Araria,1116,Chanderdai,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Araria,1116,Lahna,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Jokihat,1120,Chirah,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Jokihat,1120,Chakai,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Jokihat,1120,Siswa,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Raniganj,1115,Mahasaili Gidhwas,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Jokihat,1120,Mahjaili,1.008E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Raniganj,1115,Binodpur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Bhargama,1114,Paik Para,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Araria,1116,Majgawan,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Bhargama,1114,Bhargaon,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Araria,1116,Rampur Kudarkatti,1.006E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Raniganj,1115,Daria Rai,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Bhargama,1114,Gamharia,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Jokihat,1120,Ghormara,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Raniganj,1115,Kamalpur,1.009E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Jokihat,1120,Marua,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Jokihat,1120,Uda,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Raniganj,1115,Mahsaili,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Jokihat,1120,Padampur,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Bhargama,1114,Gamharia Milik,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Raniganj,1115,Bhorha,1.017E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Jokihat,1120,Parshadpur,1.009E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Raniganj,1115,Raniganj,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Bhargama,1114,Manullahpatti,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Raniganj,1115,Nananpur,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Jokihat,1120,Mehadinagar,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Raniganj,1115,Gunwanti,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Araria,1116,Kamaldaha,1.005E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Raniganj,1115,Sakraili,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Jokihat,1120,Kursail,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Raniganj,1115,Barbana,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Raniganj,1115,Rajbaili,1.005E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Jokihat,1120,Kishunpur,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Jokihat,1120,Phulpur Pachhiari,1.009E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Araria,1116,Bangawan,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Araria,1116,Diari,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Jokihat,1120,Ukhwa,1.017E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Bhargama,1114,Rampuradi,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Raniganj,1115,Harpur,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Jokihat,1120,Phulpur Purwari,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Araria,1116,Chikni,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Raniganj,1115,Lutraha Bari,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Jokihat,1120,Chikania,1.009E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Raniganj,1115,Pahasra,1.011E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Bhargama,1114,Khajuri,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Jokihat,1120,Bardenga,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Raniganj,1115,Mohni,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Jokihat,1120,Dumaria,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Raniganj,1115,Barhepara,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Jokihat,1120,Mahalgaon,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Raniganj,1115,Karahia,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Raniganj,1115,Bagulaha,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Raniganj,1115,Rajbaili,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Bhargama,1114,Barhmotar Chakla,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Araria,1116,Kochgawan,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Raniganj,1115,Mirzapur,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Raniganj,1115,Indarpur,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Jokihat,1120,Chainpur,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Raniganj,1115,Barhara,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Araria,1116,Azamnagar,1.006E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Jokihat,1120,Bazidpur,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Raniganj,1115,Basaithi,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Raniganj,1115,Kumhra,1.009E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Jokihat,1120,Malharia,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Araria,1116,Kusiargaon,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Jokihat,1120,Karhara Chhaprail,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Raniganj,1115,Basaithi Math,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Jokihat,1120,Karahara,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Raniganj,1115,Jamghatti,1.017E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Raniganj,1115,Deothal,1.017E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Jokihat,1120,Kachnahar,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Jokihat,1120,Machhaila,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Jokihat,1120,Parshadpur,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Jokihat,1120,Pipra Pachhiari,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Jokihat,1120,Chaukta,1.012E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Bhargama,1114,Sukela,1.017E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Raniganj,1115,Ghaghri,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Araria,1116,Dhakia,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Raniganj,1115,Majhua,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Raniganj,1115,Bharaili,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Jokihat,1120,Parha,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Bhargama,1114,Chaura,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Bhargama,1114,Khajuri Milik,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Jokihat,1120,Durgapur,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Bhargama,1114,Khutha Baijnath,1.011E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Raniganj,1115,Parsahat,1.009E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Araria,1116,Deoria,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Araria,1116,Lahtora,1.017E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Bhargama,1114,Tharua Patti,1.019E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Jokihat,1120,Bagnagar,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Bhargama,1114,Lachmipur alias Baghwa,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Araria,1116,Lodipur,1.009E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Raniganj,1115,Uphrail,1.009E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Raniganj,1115,Latahri,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Jokihat,1120,Masuria,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Jokihat,1120,Chilhania,1.017E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Araria,1116,Gharakhal,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Raniganj,1115,Karankia,1.019E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Araria,1116,Lohtora,1.019E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Raniganj,1115,Koskapur,1.019E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Araria,1116,Paik Tola,1.019E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Araria,1116,Bishunpur,1.017E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Raniganj,1115,Baijnathpur,1.017E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Jokihat,1120,Pechaili,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Bhargama,1114,Tonha  Israin,1.019E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Raniganj,1115,Dumra,1.017E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Jokihat,1120,Bhuna Majgawan,1.017E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Araria,1116,Tirhutbita,1.017E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Raniganj,1115,Belsara,1.009E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Araria,1116,Tirhutbita,1.019E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Raniganj,1115,Bausi,1.017E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Bhargama,1114,Chiraiya,1.017E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Araria,1116,Mirzapur,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Jokihat,1120,Majgawan,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Raniganj,1115,Dhobinia,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Bhargama,1114,Dhanesri,1.006E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Bhargama,1114,Baija Patti,1.019E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Raniganj,1115,Bhawani Nagar,1.019E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Jokihat,1120,Kakorha,1.019E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Bhargama,1114,Bisaria Patti,1.017E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Jokihat,1120,Bhuna,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Araria,1116,Chatar,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Raniganj,1115,Saidpur,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Bhargama,1114,Chandni Ghasi,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Bhargama,1114,Nawalgang Manpur,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Jokihat,1120,Sapa,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Araria,1116,Gainrha,1.017E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Jokihat,1120,Matiari,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Bhargama,1114,Chandni Ghasi,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Raniganj,1115,Ikra,1.017E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Araria,1116,Sandalpur,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Araria,1116,Domai,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Bhargama,1114,Baiju Patti Milik,1.019E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Raniganj,1115,Belwa,1.018E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Bhargama,1114,Chandni Ghasi,1.017E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Raniganj,1115,Pharkia,1.019E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Jokihat,1120,Domahana,1.017E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Raniganj,1115,Kala Balua,1.019E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Bhargama,1114,Baija Patti,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Bhargama,1114,Dhanesri,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Bhargama,1114,Nawalganj Pitamber,1.017E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Bhargama,1114,Bisaria,1.019E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Jokihat,1120,Saifullah Tola,1.019E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Bhargama,1114,Bhattaon Kamat,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Raniganj,1115,Parihari,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Jokihat,1120,Kariat,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Bhargama,1114,Birnagar,1.011E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Bhargama,1114,Dhanesri Milik,1.011E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Bhargama,1114,Akarthappa,1.012E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Bhargama,1114,Birnagar Milik,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Bhargama,1114,Hatibala,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Bhargama,1114,Bhatgaon Chakla,1.009E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Raniganj,1115,Kahbara Bishunpur,1.019E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Bhargama,1114,Tengraha,1.017E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Bhargama,1114,Lachhmipur,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Raniganj,1115,Gopalpur,1.008E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Bhargama,1114,Newa  Lal Chakla,1.009E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Bhargama,1114,Majrahi Chakla,1.017E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Bhargama,1114,Hingua Patti,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Bhargama,1114,Peare Lal Chakla,1.009E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Bhargama,1114,Hingua Milik,1.018E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Bhargama,1114,Hingua Jot,1.007E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Bhargama,1114,Birnagar Milik,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Raniganj,1115,Madhepura,1.018E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Bhargama,1114,Bhargaon,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Bhargama,1114,Jasodapur,1.016E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Bhargama,1114,Barmotara Hingua,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Bhargama,1114,Hingua Chakla,1.011E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Raniganj,1115,Malhepura,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Bhargama,1114,Hingua Milik,1.011E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Bhargama,1114,Harpur Kalan,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Bhargama,1114,Barmotara,1.014E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+1,Araria,188,Bhargama,1114,Hingua Milik,1.012E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+2,Araria,188,Bhargama,1114,Gopipur,1.013E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42
+3,Araria,188,Bhargama,1114,Harpur Chakla Kalan,1.017E+15,Village,Bihar,0.62,0.7,0.55,0.48,0.58,0.31,0.42

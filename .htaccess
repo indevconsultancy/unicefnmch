@@ -1,0 +1,72 @@
+<IfModule mod_rewrite.c>
+
+RewriteEngine On
+#RewriteCond %{REQUEST_METHOD} ^TRACE
+#RewriteRule .* - [F]
+RewriteCond %{SERVER_PORT} 80 
+RewriteRule ^(.*)$ https://unicef.indevconsultancy.in/$1 [R,L]
+</IfModule>
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php72” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddType application/x-httpd-ea-php72 .php .php7 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit
+
+#RewriteCond %{HTTP_REFERER} !^https://unicef.indevconsultancy.in [NC]
+#RewriteRule \.(gif|jpg|jpeg|png|mp4|mov|mkv|flv)$ - [F,L]
+
+<IfModule mod_expires.c>
+	ExpiresActive On
+	ExpiresByType image/jpg                "access plus 3 seconds"
+    ExpiresByType image/jpeg               "access plus 3 seconds"
+    ExpiresByType image/gif                "access plus 3 seconds"
+    ExpiresByType image/png                "access plus 3 seconds"
+    ExpiresByType image/bmp                "access plus 3 seconds"
+</IfModule>
+
+Options -Indexes
+
+<Files .env>
+    Order allow,deny
+    Deny from all
+</Files>
+
+
+
+<IfModule mod_php7.c>
+    #Session timeout
+    php_value session.cookie_lifetime 1440
+    php_value session.gc_maxlifetime 1440
+	#php_flag disable_functions phpinfo
+</IfModule>
+
+# BEGIN cPanel-generated php ini directives, do not edit
+# Manual editing of this file may result in unexpected behavior.
+# To make changes to this file, use the cPanel MultiPHP INI Editor (Home >> Software >> MultiPHP INI Editor)
+# For more information, read our documentation (https://go.cpanel.net/EA4ModifyINI)
+<IfModule php8_module>
+   php_flag display_errors Off
+   php_value max_execution_time 300
+   php_value max_input_time 600
+   php_value max_input_vars 1000
+   php_value memory_limit 128M
+   php_value post_max_size 80M
+   php_value session.gc_maxlifetime 1440
+   php_value session.save_path "/var/cpanel/php/sessions/ea-php81"
+   php_value upload_max_filesize 20M
+   php_flag zlib.output_compression Off
+</IfModule>
+<IfModule lsapi_module>
+   php_flag display_errors Off
+   php_value max_execution_time 300
+   php_value max_input_time 600
+   php_value max_input_vars 1000
+   php_value memory_limit 128M
+   php_value post_max_size 80M
+   php_value session.gc_maxlifetime 1440
+   php_value session.save_path "/var/cpanel/php/sessions/ea-php81"
+   php_value upload_max_filesize 20M
+   php_flag zlib.output_compression Off
+</IfModule>
+# END cPanel-generated php ini directives, do not edit

@@ -1,0 +1,969 @@
+							<div class="panel panel-default">
+								<div class="panel-body">
+									<form method="post" enctype="multipart/form-data">
+										<div class="row" style="padding: 10px;">
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															today																<br />
+																<input type="text" class="form-control datepicker" name="today" placeholder="Please select Date" autocomplete="off" />
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Monitor Name<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="q1" id="exampleRadios1" value="1">
+																						Suresh Tiwari																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="q1" id="exampleRadios2" value="2">
+																						Ravi Prakash Srivastava																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="q1" id="exampleRadios3" value="3">
+																						Anurag Singh																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="q1" id="exampleRadios4" value="4">
+																						Praveen Dubey																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="q1" id="exampleRadios5" value="5">
+																						Other																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Other Monitor Name <span class="required">*</span>																<input type="text" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="q2" name="q2" required>
+																<div id="q2310"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Select Monitor Type<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="q3" id="exampleRadios1" value="1">
+																						APC																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="q3" id="exampleRadios2" value="2">
+																						SPC																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="q3" id="exampleRadios3" value="3">
+																						Other																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Other Monitor Designation & organization <span class="required">*</span>																<input type="text" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="q4" name="q4" required>
+																<div id="q4312"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Date of Monitoring<span class="required">*</span>																<br />
+																<input type="text" class="form-control datepicker" name="q5" placeholder="Please select Date" autocomplete="off" required />
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	District<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="q6" id="exampleRadios1" value="1">
+																						Shravasti																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="q6" id="exampleRadios2" value="2">
+																						Gorakhpur																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																	Block Name<span class="required">*</span>																	<select class="form-control" name="q7" required onchange="getOther(this), getSelectOptions(this.value)" data-id="q7" id="q7">
+																		<option value="">Select Option</option>
+																																					<option value="1">Kaudiram</option>
+																																					<option value="2">JANGALKODIA</option>
+																																					<option value="3">Khorawar</option>
+																																					<option value="4">Bansgaon</option>
+																																					<option value="5">Pali</option>
+																																					<option value="6">Pipraich</option>
+																																					<option value="7">Sardarnagar</option>
+																																					<option value="8">Uruwa</option>
+																																					<option value="9">Barhalganj</option>
+																																					<option value="10">Belghat</option>
+																																					<option value="11">Sahjanawa</option>
+																																					<option value="12">Gorakhpur City</option>
+																																					<option value="13">Gola</option>
+																																					<option value="14">Gagha</option>
+																																					<option value="15">Chargaon</option>
+																																					<option value="16">Bhathat</option>
+																																					<option value="17">Bhrampur</option>
+																																					<option value="18">PIPRAULI</option>
+																																					<option value="19">KAMPIRGANJ</option>
+																																					<option value="20">KHAJNI</option>
+																																					<option value="21">Other</option>
+																																					<option value="22">Hariharpur (Bhinga)</option>
+																																					<option value="23">Gilaula</option>
+																																					<option value="24">EKAUNA</option>
+																																					<option value="25">JAMNUHA</option>
+																																					<option value="26">SIRSIA</option>
+																																					<option value="27">City</option>
+																																					<option value="28">Other</option>
+																																			</select>
+																	<div id=""></div>
+																
+																
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Other Block Name <span class="required">*</span>																<input type="text" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="q8" name="q8" required>
+																<div id="q8319"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Village Name <span class="required">*</span>																<input type="text" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="q50" name="q50" required>
+																<div id="q50320"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Health Sub centre Name <span class="required">*</span>																<input type="text" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="q9" name="q9" required>
+																<div id="q9324"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															ASHA Name <span class="required">*</span>																<input type="text" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="q10" name="q10" required>
+																<div id="q10325"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Date of Birth of child<span class="required">*</span>																<br />
+																<input type="text" class="form-control datepicker" name="q12" placeholder="Please select Date" autocomplete="off" required />
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Sex<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="q13" id="exampleRadios1" value="1">
+																						Male																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="q13" id="exampleRadios2" value="2">
+																						Female																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																	Select HBYC visit order<span class="required">*</span>																	<select class="form-control" name="q14" required onchange="getOther(this), getSelectOptions(this.value)" data-id="q14" id="q14">
+																		<option value="">Select Option</option>
+																																					<option value="1">Third month</option>
+																																					<option value="2">Sixth month</option>
+																																			</select>
+																	<div id=""></div>
+																
+																
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Is AWW accompanying ASHA for this home visit?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="q15" id="exampleRadios1" value="1">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="q15" id="exampleRadios2" value="2">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Did ASHA check appropriateness of weight according to the age<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="q16" id="exampleRadios1" value="1">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="q16" id="exampleRadios2" value="2">
+																						No																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="q16" id="exampleRadios3" value="3">
+																						Weight not recorded in MCP card																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="q16" id="exampleRadios4" value="4">
+																						MCP card not Available																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Did ASHA check the following in the newborn<span class="required">*</span>																<select class="form-control js-example-basic-multiple select2" data-placeholder="Please Did ASHA check the following in the newborn" multiple required>
+																																			<option value="1">Child had any illess/was sick</option>
+																																			<option value="2">Development delays</option>
+																																			<option value="3">Immunization status</option>
+																																			<option value="4">Nothing checked</option>
+																																	</select>
+																														</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Assessment of Breastfeeding by ASHA<span class="required">*</span>																<select class="form-control js-example-basic-multiple select2" data-placeholder="Please Assessment of Breastfeeding by ASHA" multiple required>
+																																			<option value="1">Enquiry on whether breastfeeding is continued</option>
+																																			<option value="2">Enquiry on frequency of breastfeeding</option>
+																																			<option value="3">Enquiry on Exclusive breastfeeding?</option>
+																																			<option value="4">Enquiry on any challenges related to breastfeeding</option>
+																																			<option value="5">Observation of positioning and attachment ?</option>
+																																			<option value="6">None of the above</option>
+																																	</select>
+																														</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Did ASHA provided ORS to the family<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="q19" id="exampleRadios1" value="1">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="q19" id="exampleRadios2" value="2">
+																						No																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="q19" id="exampleRadios3" value="3">
+																						Not available																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Is ASHA carrying blank MCP card with her<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="q20" id="exampleRadios1" value="1">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="q20" id="exampleRadios2" value="2">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Did ASHA counsel the mother and family on any of the below areas<span class="required">*</span>																<select class="form-control js-example-basic-multiple select2" data-placeholder="Please Did ASHA counsel the mother and family on any of the below areas" multiple required>
+																																			<option value="1">Importance of exclusive breastfeeding</option>
+																																			<option value="2">Importance of breastfeeding 7-8 times a day (including night time)</option>
+																																			<option value="3">Correct positioning and attachment</option>
+																																			<option value="4">Importance of weight and regular growth monitoring</option>
+																																			<option value="5">Introduction of complementary feeding at completion of 6 months (for 6months old babies)</option>
+																																			<option value="6">IFA syrup to infants (for 6months old babies)</option>
+																																			<option value="7">Hand washing</option>
+																																			<option value="8">Developmental milestones</option>
+																																			<option value="9">Didnt counsel</option>
+																																	</select>
+																														</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Did ASHA counsel the mother on regular uptake of<span class="required">*</span>																<select class="form-control js-example-basic-multiple select2" data-placeholder="Please Did ASHA counsel the mother on regular uptake of" multiple required>
+																																			<option value="1">IFA</option>
+																																			<option value="2">Calcium</option>
+																																			<option value="3">Importance of healthy diets during lactation period</option>
+																																			<option value="4">Didnt counsel</option>
+																																	</select>
+																														</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Why is the regular monitoring of infants weight is important?<span class="required">*</span>																<select class="form-control js-example-basic-multiple select2" data-placeholder="Please Why is the regular monitoring of infants weight is important?" multiple required>
+																																			<option value="1">Tells us if infant is feeding well</option>
+																																			<option value="2">Helps us to take timely action & referral</option>
+																																			<option value="3">Helps us in understanding overall health status of child</option>
+																																			<option value="4">Helps us in early identification of risks in infant</option>
+																																			<option value="5">Dont Know</option>
+																																	</select>
+																														</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Which infants are at risk of early growth faltering<span class="required">*</span>																<select class="form-control js-example-basic-multiple select2" data-placeholder="Please Which infants are at risk of early growth faltering" multiple required>
+																																			<option value="1">LBW</option>
+																																			<option value="2">Pre term babies</option>
+																																			<option value="3">Sudden Weight loss between two consecutive visits</option>
+																																			<option value="4">Infant with any illness</option>
+																																			<option value="5">Dont Know</option>
+																																	</select>
+																														</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															How do you know the child is not growing well<span class="required">*</span>																<select class="form-control js-example-basic-multiple select2" data-placeholder="Please How do you know the child is not growing well" multiple required>
+																																			<option value="1">Weight is not increasing</option>
+																																			<option value="2">Height is not increasing</option>
+																																			<option value="3">Height & Weight both not increasing</option>
+																																			<option value="4">Child is not taking feeds properly</option>
+																																			<option value="5">Child falls sick very frequently</option>
+																																			<option value="6">Dont Know</option>
+																																	</select>
+																														</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															What action do you take if baby is not growing well ?<span class="required">*</span>																<select class="form-control js-example-basic-multiple select2" data-placeholder="Please What action do you take if baby is not growing well ?" multiple required>
+																																			<option value="1">Refer to PHC/CHC for further examination & management</option>
+																																			<option value="2">Refer to ANM</option>
+																																			<option value="3">Refer to NRC</option>
+																																			<option value="4">Assess the breastfeeding issues, cousel and correct it</option>
+																																			<option value="5">Dont Know</option>
+																																	</select>
+																														</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Did she know Correct positioning for Breastfeeding?<span class="required">*</span>																<select class="form-control js-example-basic-multiple select2" data-placeholder="Please Did she know Correct positioning for Breastfeeding?" multiple required>
+																																			<option value="1">Mother relaxed and comfortable</option>
+																																			<option value="2">Mother sit straight and back supported</option>
+																																			<option value="3">Babys body close to mothers body and facing breast</option>
+																																			<option value="4">babys neck and body straight</option>
+																																			<option value="5">Babys whole body supported</option>
+																																			<option value="6">Dont Know</option>
+																																	</select>
+																														</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Did she know Correct attachment during Breastfeeding?<span class="required">*</span>																<select class="form-control js-example-basic-multiple select2" data-placeholder="Please Did she know Correct attachment during Breastfeeding?" multiple required>
+																																			<option value="1">babys chin touching the breast</option>
+																																			<option value="2">Mouth wide and open</option>
+																																			<option value="3">Lower lip turned outward</option>
+																																			<option value="4">More areola is seen above the babys mouth</option>
+																																			<option value="5">Dont Know</option>
+																																	</select>
+																														</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Did she know Correct frequency of Breastfeeding for infant?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="q28" id="exampleRadios1" value="1">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="q28" id="exampleRadios2" value="2">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Is ASHA being trained on expression of breastmilk<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="q29" id="exampleRadios1" value="1">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="q29" id="exampleRadios2" value="2">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	How ASHA is recording the HBYC visit details<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="q30" id="exampleRadios1" value="1">
+																						VHIR/ASHA Diary																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="q30" id="exampleRadios2" value="2">
+																						Separate register																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="q30" id="exampleRadios3" value="3">
+																						HBYC home visit format																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="q30" id="exampleRadios4" value="4">
+																						Not filling																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Is babys weight plotted in MCP card with the family? (Check in MCP card & verify)<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="q31" id="exampleRadios1" value="1">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="q31" id="exampleRadios2" value="2">
+																						No																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="q31" id="exampleRadios3" value="3">
+																						MCP not available																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	When did ASHA facilitator last visited your area<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="q32" id="exampleRadios1" value="1">
+																						Within 01 month																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="q32" id="exampleRadios2" value="2">
+																						Within last 03 months																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="q32" id="exampleRadios3" value="3">
+																						More than 03 months																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Name of AWW <span class="required">*</span>																<input type="text" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="q33" name="q33" required>
+																<div id="q33378"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Is childs name recorded in Poshan Tracker<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="q34" id="exampleRadios1" value="1">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="q34" id="exampleRadios2" value="2">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Is the following updated till last month in the Poshan Tracker<span class="required">*</span>																<select class="form-control js-example-basic-multiple select2" data-placeholder="Please Is the following updated till last month in the Poshan Tracker" multiple required>
+																																			<option value="1">Weight of the child</option>
+																																			<option value="2">Height of the child</option>
+																																			<option value="3">Not updated</option>
+																																	</select>
+																														</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Has AWW checked the child for developmental delay<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="q36" id="exampleRadios1" value="1">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="q36" id="exampleRadios2" value="2">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Did she counsel mother on any of the below<span class="required">*</span>																<select class="form-control js-example-basic-multiple select2" data-placeholder="Please Did she counsel mother on any of the below" multiple required>
+																																			<option value="1">Exclusive breastfeeding</option>
+																																			<option value="2">Usage of THR</option>
+																																			<option value="3">Initiation of complementary feeding (for 6months old babies)</option>
+																																			<option value="4">Regular growth monitoring</option>
+																																			<option value="5">Didnt counsel</option>
+																																	</select>
+																														</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Did she know following about Breastfeeding?<span class="required">*</span>																<select class="form-control js-example-basic-multiple select2" data-placeholder="Please Did she know following about Breastfeeding?" multiple required>
+																																			<option value="1">Correct positioning and attachment</option>
+																																			<option value="2">Adequacy of breastfeeding for infant</option>
+																																			<option value="3">Frequency of breastfeeding for infant</option>
+																																			<option value="4">Dont Know</option>
+																																	</select>
+																														</div>
+													</div>
+												
+												
+											
+												
+											
+												
+																						<!--<div class="col-md-12 text-end" style="padding-bottom: 10px;">
+                  	<button type="button" class="btn btn-primary" name="saveData" >Submit</button>
+									</div>-->
+										</div>
+									</form>
+								</div>
+							</div>
+
+					

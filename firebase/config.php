@@ -1,0 +1,5 @@
+<?php
+
+
+// Firebase API Key
+define('FIREBASE_API_KEY', 'AAAAUFB_0PY:APA91bFo1KdIPG3xmIyN_JgPKKLaDMrw1MOfj4Coh7eevUuh2rQq7VUt6m8PppTeVuqbxvR5AWi_TPse0-9cEQsYT_THz92-r-YH20fJxGO5ebOtxYNfWlI9rYbbJY2u0VPeEdYngp01');

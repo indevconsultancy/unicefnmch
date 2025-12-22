@@ -1,0 +1,70 @@
+<?php include_once('includes/config.php'); ?>
+<?php include_once('mycrypt.php'); ?>
+
+<?php
+
+if ($_SESSION['enckey'] === 0) {
+	die("You are not authorized to see the survey");
+}
+$mcrypt = new EncryptionUtils($_SESSION['enckey']);
+	
+	//$encydata="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";
+	// $encydata="yi2DY9YU+gpsCZiDYFteqvA/6TxuXVr+q1oBxNFLfekkk5L2rT5gluVsHz+yyk3tRaMQnHGysh/zFOiRbZX8d39YFps00TKUxTzOGBH/hynVhxI9iL+s8p8DHO5mJF6eP6lHpGWF2eauEBbOWW5N+As0iq57VQVuN08GC40sTyMd8qB4S5QTNZw/Bx1XmEH8BmcwLgxyuE24OLKm058FeHJwuhRohZqlMGaPCvehofH0hbqC6phatk0cCNFyfdRJN1kDp9ZKpVWQ3XxzFE1hyzfpfwCqFi5nAHZWcfxd7yfHhewqf8fFh9jKLBgMO99xUhTgyTHQp3VEaN9fqy+ovXrvAdjZO4++hg05kyCSKzj57+kKyDVrCc1y6XOvXGD+a08fgqa+/YO1kHhmm1Wg7UPfJnRGJ23e6WEQFkt2RQQrBMyYrAqtWw4+yuZtV1MxwKozli8AbsWYmhsj8glF+MAAJY98RrJQLmE7OmKT5UTcbnjSj1V25x8c/q8Lw/a9v+H7LlA0+vm2wyW18iQl4qXpqI4r/++iEmhp2AqGP8N/mp/MZF599w9vPrxLa0AVgcfFJ6iMFNepWdtTcYv+ZFdbXyyGeYeHXeNQxCmEgJtqyuHlw4UtFZNlvZAc5ecAEjt1p7jgJbDaxqH3zb/XSGwk9C5wsa3ou3n3w/nnwOc/Wa9jVKnwzlITpbRwOD4VAEukuXJFrivP+nQ+UQSeKvtQ7BzXNjb6RhyTVYfDErxtvPdDb4IQQbrJZytBHQ0Y/eG0jEEMRo/E6guWMxPyoP7irGoG2j+IwaUCiVyHBzF2kmu/Io1rJSL/FjXQfDIr+FKbcX/+YRYbC2IGa5DteZxcRMb4eQseFVY/zfnaxpRsvuvSFHoBzyRsEH5NA/gduEukhzldOWAEvnVMLfHUozxQ9kfqFC24iSYWbrjC+WMnpcqt4VFX9mFVzqFjEmQ8ySF7OVwBnksmOqQPxlNp16BJpn50GezJjO+5070e+iyu0QAjxGXLvNQpL5Q0clpbi9V4KXL3UxCyA6HsBBop+cTMipFtJGBGDfkOav39i0zQLJQewbU4AnjjHaARbmaD/Buz3m3ihoZqDcIh/m1ozI258PTI+ui/w99i9Jr55IO1P6++SneEwRRNUWADROSdsuHecmO8A5VTJchxJ9+ptvB2roYB5CW55FpSepFtQHSlbtUHrwN2U/if1QOPDsp0kdZSUnbelddRzdiirn6OSOFpKYO/EgmJt/mBmqurPheKjMACGlH4suDbXQyPH3P20a/BqiM9BKqtcFgl6sDSAnDzv0pMps71H/EGPAd0tpppUrSHhx/UVZK6UPgoJ6SgjsbDB5Be+lSL2zFbLS8DLqMG2yqEKQWO+dMd+KNnK5tL+dFsDQIXhIg8wVv7v8trfJ4xeRm859E7TDGXFirLfUSYLmldA8ET+NoGpk9tXxK7rGnVVPXBE71m1SuQNb9OO3HWXwGVt36dDsTLBj3MDzY2AmF6DWaAPtw3ZI3rm5AtPiezlum/x6sMnhe5LDA5+2yJcA5tGZquhyvbozkkeV/q4gh4NJVlFHtMzEnjcxLGyrPJLBn12/i7BCLa07//iDqS16VhsKkOUukS+OwvsAgLWQdfGlRvPdpRjxRAckaElRfhuMiJbUOOhauGeXCnfW+fxM5cDgXEkrJCZiJ/GqM2NzNePXOruReoZLrXseFIQFjhX61QSiIAJMzFQn2a0MWq5v5Xwr6WuDpvN7ryzPnrbadIsesKuL7uQ2HVfXmBPCdQOX2ePKfxRmAOkQearHH1pn+OydRYWb1LBMqY99SGSFfRmqHLHeoicJ8z+WOdkopwkk/ryMWPg/8CPklacYzm+JCFKpkvh5S2mHjasErBWk3w0380dWs3uYfQ3S7Z0/s/o7CCCvAGBJ0lOb9KdRbwY/zi4KVN6VOMsD8OK08LLEYlYO2qUWT+tXYBwLqkoLK2KfLUu5N9tz3utdjr2G3uoHe29J5Kr1QB4Cx4MqZjVRuFzq6OWWeKo3tS8ViiNiBZVdsZys3srxgLdtzKqs5tSHgRe4wv95SJLWpcDos+CL4dtJDJJ4ibmIzSicr9PwCHQOIIs2bnajvgXy8iXNb/hzdsYPX6y68gwDnNh6wjK3CBy4/NavgIdzFUulSF+bSuCtHQkdgaXwEszFfaKVc1v1CnjMqjzMdRWZbWsVr/z65Gu+rWTLGVCKxiLGu0xBoNowCBzcrfDncdlc62kb/MXlnASlYgCUraSPDfhVMYRjXQucK2KjLsMrdprwrbQe92oWmSqhiKDHCjseJjEgWmBxmCyPKbDNXbJZAaJA==";
+	// $DecryptedJson = $mcrypt->decrypt($encydata);
+	// $datas = json_decode($DecryptedJson, true);
+	// print_r($datas);
+	// die();
+	$survey_id=$_GET['survey_id'];
+	 $details_sql="SELECT * FROM survey_data_monitoring  where survey_name_id='".$survey_id."'";
+	//for($i=0; $i<=1000; $i++){
+		
+	
+	$details_query=mysqli_query($conn,$details_sql);
+	
+	while($details_data=mysqli_fetch_object($details_query))
+	{
+		$survey_data_id = $details_data->survey_data_id;
+		$survey_form_id = $details_data->survey_form_id;
+		$survey_id = $details_data->survey_id;
+		$user_id = $details_data->user_id;
+		$survey_data_json = $details_data->survey_data_json;
+		$full_json = $details_data->full_json;
+		$cluster_code = $details_data->cluster_code;
+		$survey_status = $details_data->survey_status;
+		$supervisor_id = $details_data->supervisor_id;
+		$user_type = $details_data->user_type;
+		$termination_reason = $details_data->termination_reason;
+		$created_on = $details_data->created_on;
+		$survey_name = $details_data->survey_name;
+		$survey_name_id = $details_data->survey_name_id;
+		
+		$client_id = $details_data->client_id;
+		$latitude = $details_data->latitude;
+		$longitude = $details_data->longitude;
+		$para_data = $details_data->para_data;
+		$hint_record = $details_data->hint_record;
+		$error_record = $details_data->error_record;
+		$description = $details_data->description;
+		$survey_data_json_coded = $details_data->survey_data_json_coded;
+		$language_id = $details_data->language_id;
+		$survey_data_json_export = $details_data->survey_data_json_export;
+		
+		//encrypt data
+		$survey_data_json_encrypt = $mcrypt->encrypt($survey_data_json);
+		
+		// $full_json_encrypt = $mcrypt->encrypt($full_json);
+		// $para_data_encrypt= $mcrypt->encrypt($para_data);
+		// $survey_data_json_coded_encrypt = $mcrypt->encrypt($survey_data_json_coded);
+		// $survey_data_json_export_encrypt = $mcrypt->encrypt($survey_data_json_export);
+		
+		$sqlinsert="insert into survey_data_monitoring set survey_data_id='".$survey_data_id."', survey_form_id='".$survey_form_id."', survey_id='".$survey_id."', user_id='".$user_id."', survey_data_json='".$survey_data_json."', full_json='".$full_json."', cluster_code='".$cluster_code."', survey_status='".$survey_status."', supervisor_id='".$supervisor_id."', user_type='".$user_type."', termination_reason='".$termination_reason."', created_on='".$created_on."', survey_name='".$survey_name."', survey_name_id='".$survey_name_id."', client_id='".$client_id."', latitude='".$latitude."', longitude='".$longitude."', para_data='".$para_data."', hint_record='".$hint_record."', error_record='".$error_record."', description='".$description."', survey_data_json_coded='".$survey_data_json_coded."', language_id='".$language_id."', survey_data_json_export='".$survey_data_json_export."'";
+		
+		$sqldata=mysqli_query($conn,$sqlinsert);
+		
+	//}
+	}
+	if($sqldata){
+		echo "Data Enctypted successfully!!";
+	}
+	
+?>

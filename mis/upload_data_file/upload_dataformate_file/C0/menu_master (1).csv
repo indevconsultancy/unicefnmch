@@ -1,0 +1,49 @@
+"menu_id","name","page","parent_id","status","sequence","icon","class_name"
+"1","Home","dashboard_new.php","0","0","1","fa fa-home",NULL
+"2","Form",NULL,"0","0","3","fa fa-indent",NULL
+"3","User Management",NULL,"0","0","7","fa fa-users",NULL
+"4","Client Management",NULL,"0","0","6","fa fa-handshake-o",NULL
+"5","Settings",NULL,"0","0","14","fa fa-cog",NULL
+"6","New Form","add-survey.php","2","0","0","icon_document_alt","create-icon"
+"7","List Forms","survey-list.php","2","0","0","icon_document_alt","list-icon"
+"8","Sequence Survey","view-survey-questions.php","2","1","0","icon_document_alt",NULL
+"9","Add User","add-user.php","3","0","0","icon_document_alt","create-icon"
+"10","List Users","user-list.php","3","0","0","icon_document_alt","list-icon"
+"11","Add Client","registration.php","4","0","0","icon_document_alt","create-icon"
+"12","List Clients","client-list.php","4","0","0","icon_document_alt","list-icon"
+"13","Add Parameter","add-parameter.php","5","1","0","icon_document_alt","create-icon"
+"14","List Parameter ","parameter-list.php","5","1","0","icon_document_alt","list-icon"
+"15","Categories",NULL,"0","1","0","icon_document_alt",NULL
+"16","Information Area","category-list.php","5","0","0","icon_document_alt","list-icon"
+"17","Repository",,"0","1","0","icon_document_alt",NULL
+"18","Question Bank",NULL,"0","0","9","fa fa-tasks",NULL
+"19","Add Question","add-question-bank.php","18","0","0","icon_document_alt","create-icon"
+"20","Show Questions","question-bank-list.php","18","0","0","icon_document_alt","list-icon"
+"21","Tools Archive",,"0","0","10","	fa fa-wrench",NULL
+"22","Add Tool","add-contribute-surveybank.php","21","0","0","icon_document_alt","create-icon"
+"23","Show Tools ","survey_bank.php","21","0","0","icon_document_alt","list-icon"
+"24","Data Repository",,"0","0","11","fa fa-newspaper-o",NULL
+"25","Add Dataset","add-contribute-databank.php","24","0","0","icon_document_alt","create-icon"
+"26","Show Dataset","data_bank.php","24","0","0","icon_document_alt","list-icon"
+"27","Sampling",NULL,"0","0","12","fa fa-braille",NULL
+"28","Simple Random Sampling ","simple-random-samling.php","27","0","0","fa fa-object-group","object-group"
+"29","Systematic Random Sampling","systematic_random.php","27","0","0","fa fa-object-ungroup","object-ungroup"
+"30","Validate Excel Form","validate_xlsform.php","2","0","0","fa fa-check","check-icon"
+"31","Data Lookup","data-lookup.php","2","1","0","icon_document_alt","create-icon"
+"32","Replace Form Builder","add-survey-replace.php","2","1","0","icon_document_alt","create-icon"
+"33","Media Lookup","media-lookup.php","2","1","0","icon_document_alt","create-icon"
+"34","Visualization","analysis_dashboard.php","0","0","4","fa fa-dashboard",NULL
+"36","Export Data","export_data.php","0","0","5","fa fa-download",NULL
+"37","Help","help_file.php","38","0","0","fa fa-info-circle","info-circle"
+"38","Resources",,"0","0","13","fa fa-search",NULL
+"40","Frequently Asked Questions","faqs.php","38","0","0","fa fa-question-circle-o","question-circle-o"
+"41","Device Management",NULL,"0","1","8","icon_document_alt",NULL
+"42","Add Device ","add-device.php","41","1","0","icon_document_alt","create-icon"
+"43","List Device","list-device.php","41","1","0","icon_document_alt","list-icon"
+"44","Support Services",,"0","0","15","icon_document_alt",NULL
+"45","Request Demo","request-list.php","44","0","0","icon_document_alt","list-icon"
+"46","Contact Us","contact-list.php","44","0","0","icon_document_alt","list-icon"
+"47","Theme","theme-list.php","5","0","0","icon_document_alt","list-icon"
+"48","Project Management",NULL,"0","0","2","fa fa-wpforms",NULL
+"49","Add Project","add-project.php","48","0","0","icon_document_alt","create-icon"
+"50","List Project","project-list.php","48","0","0","icon_document_alt","list-icon"

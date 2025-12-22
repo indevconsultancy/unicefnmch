@@ -1,0 +1,4175 @@
+							<div class="panel panel-default">
+								<div class="panel-body">
+									<form method="post" enctype="multipart/form-data">
+										<div class="row" style="padding: 10px;">
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Today																<br />
+																<input type="text" class="form-control datepicker" name="Today" placeholder="Please select Date" autocomplete="off" />
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Monitor Name <span class="required">*</span>																<input type="text" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="mon_name" name="mon_name" required>
+																<div id="mon_name2712"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Select Monitor Type (Organization name)<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="type_mon" id="exampleRadiosunicef_consultant" value="unicef_consultant">
+																						UNICEF																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="type_mon" id="exampleRadiosngo_piramal" value="ngo_piramal">
+																						Piramal Swasthya																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="type_mon" id="exampleRadiosgovt_health" value="govt_health">
+																						Government - Health																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="type_mon" id="exampleRadiosgovt_icds" value="govt_icds">
+																						Government - ICDS																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="type_mon" id="exampleRadioscoe_aiims" value="coe_aiims">
+																						CoE - AIIMS Patna																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="type_mon" id="exampleRadiosother" value="other">
+																						Other																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Other Monitor Organization <span class="required">*</span>																<input type="text" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="oth_mon" name="oth_mon" required>
+																<div id="oth_mon2714"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Date of Monitoring<span class="required">*</span>																<br />
+																<input type="text" class="form-control datepicker" name="dom" placeholder="Please select Date" autocomplete="off" required />
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Joint Visit<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="jv" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="jv" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Name of Accompanying Person <span class="required">*</span>																<input type="text" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="jv_name" name="jv_name" required>
+																<div id="jv_name2719"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Designation (Dept.) of Accompanying Person <span class="required">*</span>																<input type="text" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="jv_desigh" name="jv_desigh" required>
+																<div id="jv_desigh2720"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																	District<span class="required">*</span>																	<select class="form-control" name="district" required onchange="getOther(this), getSelectOptions(this.value)" data-id="district" id="district">
+																		<option value="">Select Option</option>
+																																					<option value="gaya">Gaya</option>
+																																					<option value="purnea">Purnea</option>
+																																					<option value="araria">Araria</option>
+																																			</select>
+																	<div id=""></div>
+																
+																
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																	Block Name<span class="required">*</span>																	<select class="form-control" name="block" required onchange="getOther(this), getSelectOptions(this.value)" data-id="block" id="block">
+																		<option value="">Select Option</option>
+																																					<option value="araria_sadar">Araria Sadar</option>
+																																					<option value="bhargama_">Bhargama</option>
+																																					<option value="farbishganj_">Farbishganj</option>
+																																					<option value="jokihaat_">Jokihaat</option>
+																																					<option value="kursakata_">Kursakata</option>
+																																					<option value="narpatganj_">Narpatganj</option>
+																																					<option value="palasi_">Palasi</option>
+																																					<option value="raniganj_">Raniganj</option>
+																																					<option value="sikati_">Sikati</option>
+																																					<option value="amour">Amour</option>
+																																					<option value="baisa">Baisa</option>
+																																					<option value="baisi">Baisi</option>
+																																					<option value="banmankhi">Banmankhi</option>
+																																					<option value="barhara">Barhara</option>
+																																					<option value="bhawanipur">Bhawanipur</option>
+																																					<option value="dagrua">Dagrua</option>
+																																					<option value="dhamdaha">Dhamdaha</option>
+																																					<option value="jalalgarh">Jalalgarh</option>
+																																					<option value="kasba">Kasba</option>
+																																					<option value="krityanandnagar">Krityanandnagar</option>
+																																					<option value="purnia_sadar_gramin">Purnia (Sadar + Gramin)</option>
+																																					<option value="rupauli">Rupauli</option>
+																																					<option value="srinagar">Srinagar</option>
+																																					<option value="amas">Amas</option>
+																																					<option value="atri">Atri</option>
+																																					<option value="bankebazar">Bankebazar</option>
+																																					<option value="barachatti">Barachatti</option>
+																																					<option value="belaganj">Belaganj</option>
+																																					<option value="bodh_gaya">Bodh-Gaya</option>
+																																					<option value="dhobhi">Dhobhi</option>
+																																					<option value="dumaria">Dumaria</option>
+																																					<option value="fathepur">Fathepur</option>
+																																					<option value="gaya_sadar_gramin">Gaya Sadar +Gramin</option>
+																																					<option value="guraru">Guraru</option>
+																																					<option value="gurua">Gurua</option>
+																																					<option value="imamganj">Imamganj</option>
+																																					<option value="khizarsarai">Khizarsarai</option>
+																																					<option value="konch">Konch</option>
+																																					<option value="maanpur">Maanpur</option>
+																																					<option value="mohanpur">Mohanpur</option>
+																																					<option value="mohara">Mohara</option>
+																																					<option value="nimchak_bathanahi">Nimchak Bathanahi</option>
+																																					<option value="pariya">Pariya</option>
+																																					<option value="sherghatti">Sherghatti</option>
+																																					<option value="tankuppa">Tankuppa</option>
+																																					<option value="tekari">Tekari</option>
+																																					<option value="wazirganj">Wazirganj</option>
+																																			</select>
+																	<div id=""></div>
+																
+																
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Village Name <span class="required">*</span>																<input type="text" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="village" name="village" required>
+																<div id="village2725"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															AWC Name <span class="required">*</span>																<input type="text" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="awc_name" name="awc_name" required>
+																<div id="awc_name2726"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Code of AWC (11 digits) <span class="required">*</span>																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="Cross-check the 11 digit AWC code from Poshan Tracker mobile application." id="code_awc" name="code_awc" required>
+																<div id="code_awc2727"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Name of AWW <span class="required">*</span>																<input type="text" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="aww_name" name="aww_name" required>
+																<div id="aww_name2730"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Number of 0-6 children registered in AWW Poshan Tracker <span class="required">*</span>																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="Go to MPR in Poshan tracker then tap growth monitoring than tap details to see 0-5 years child data" id="reg_05" name="reg_05" required>
+																<div id="reg_052731"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Number of 0-6 children measured by AWW last month <span class="required">*</span>																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="Go to MPR in Poshan tracker then tap growth monitoring than tap details to see 0-5 years child data" id="mes_05" name="mes_05" required>
+																<div id="mes_052732"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															SAM <span class="required">*</span>																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="no_sam" name="no_sam" required>
+																<div id="no_sam2736"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															MAM <span class="required">*</span>																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="no_mam" name="no_mam" required>
+																<div id="no_mam2737"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Child weighing machine<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="func_child_wm" id="exampleRadiosfun" value="fun">
+																						Functional																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="func_child_wm" id="exampleRadiosnon_f" value="non_f">
+																						Non-Functional																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="func_child_wm" id="exampleRadiosna" value="na">
+																						Not Available																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Mother-child weighing machine (Adult)<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="Func_adult_wm" id="exampleRadiosfun" value="fun">
+																						Functional																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="Func_adult_wm" id="exampleRadiosnon_f" value="non_f">
+																						Non-Functional																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="Func_adult_wm" id="exampleRadiosna" value="na">
+																						Not Available																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Infantometer<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="func_infanto" id="exampleRadiosfun" value="fun">
+																						Functional																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="func_infanto" id="exampleRadiosfun_a" value="fun_a">
+																						Functional with adjustment																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="func_infanto" id="exampleRadiosnon_f" value="non_f">
+																						Non-Functional																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="func_infanto" id="exampleRadiosna" value="na">
+																						Not Available																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Stadiometer<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="func_stadio" id="exampleRadiosfun" value="fun">
+																						Functional																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="func_stadio" id="exampleRadiosfun_a" value="fun_a">
+																						Functional with adjustment																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="func_stadio" id="exampleRadiosnon_f" value="non_f">
+																						Non-Functional																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="func_stadio" id="exampleRadiosna" value="na">
+																						Not Available																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	SAM Management Handout<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam_handout" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam_handout" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	SAM Management Protocol (CMAM) displayed<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="CMAM_manual" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="CMAM_manual" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															In which Month last THR distributed<span class="required">*</span>																<br />
+																<input type="text" class="form-control datepicker" name="thr_dis_month" placeholder="Please select Date" autocomplete="off" required />
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Hot cooked Meal distributed/ being cooked on the day of visit<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="hcm_prepared" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="hcm_prepared" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="hcm_prepared" id="exampleRadioshcm_not_started" value="hcm_not_started">
+																						HCM not started																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Does AWW have smart Mobile phone with Poshan Tracker installed<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="smart_m_pt" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="smart_m_pt" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Does AWW has any list/Due-list of SAM cases?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam_due_list" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam_due_list" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Does AWW has any counselling material (Job Aid)?<span class="required">*</span>																<select class="form-control js-example-basic-multiple select2" data-placeholder="Please Does AWW has any counselling material (Job Aid)?" multiple required>
+																																			<option value="kat_cham">Katori Chamach</option>
+																																			<option value="coun_card">Counselling cards</option>
+																																			<option value="pos_kit">Poshan kit</option>
+																																			<option value="mcp_car">MCP card</option>
+																																			<option value="na">Not available</option>
+																																			<option value="oth">Other</option>
+																																	</select>
+																														</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Specify other counselling material (Job Aid) AWW have? <span class="required">*</span>																<input type="text" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="coun_mat_oth" name="coun_mat_oth" required>
+																<div id="coun_mat_oth2766"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	What is the most severe form of malnutrition called as?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="aww_aware_mal" id="exampleRadiossam" value="sam">
+																						SAM																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="aww_aware_mal" id="exampleRadiosmam" value="mam">
+																						MAM																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="aww_aware_mal" id="exampleRadiossuw" value="suw">
+																						SUW (Atikuposhit/ gambhir alpvazan)																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="aww_aware_mal" id="exampleRadiosuw" value="uw">
+																						UW (Alpvazan)																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="aww_aware_mal" id="exampleRadiosdnk" value="dnk">
+																						dont know																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Have you received any training on management of children with SAM?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="aww_trg_sam" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="aww_trg_sam" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	What is essential to assess SAM/MAM in children at the AWC?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="aww_screen_sam" id="exampleRadioswt_hl" value="wt_hl">
+																						Weight and length/ height																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="aww_screen_sam" id="exampleRadiosl_h_age" value="l_h_age">
+																						length/ height and age																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="aww_screen_sam" id="exampleRadiosw_age" value="w_age">
+																						weight and age																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="aww_screen_sam" id="exampleRadiosdnk" value="dnk">
+																						Dont know																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															After measuring weight & height what tool do you (AWW) use to know the SAM/MAM category?<span class="required">*</span>																<select class="form-control js-example-basic-multiple select2" data-placeholder="Please After measuring weight & height what tool do you (AWW) use to know the SAM/MAM category?" multiple required>
+																																			<option value="pt">poshan tracker</option>
+																																			<option value="wlh_ref_chart">weight - length/height reference charts</option>
+																																			<option value="mcp_card_gc">MCP card- Growth chart</option>
+																																			<option value="not_aw">Not aware</option>
+																																	</select>
+																														</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Can you demonstrate how to check for bilateral pitting oedema?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="aww_aware_bl_pitting" id="exampleRadiosaware" value="aware">
+																						Aware																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="aww_aware_bl_pitting" id="exampleRadiosnot_aware" value="not_aware">
+																						Not aware																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															According to you, what are the steps for management of child with SAM?<span class="required">*</span>																<select class="form-control js-example-basic-multiple select2" data-placeholder="Please According to you, what are the steps for management of child with SAM?" multiple required>
+																																			<option value="st_1">Step 1 - Screening for identification of SAM (ICDS)</option>
+																																			<option value="st_2">Step 2 - Appetite test by AWW (ICDS)</option>
+																																			<option value="st_3">Step 3 - Medical management of SAM at VHSND / Health facility (HEALTH)</option>
+																																			<option value="st_4">Step 4 - Nutritional Management by AWW through home visits and THR distribution</option>
+																																			<option value="st_5">Step 5 - Follow up at monthly VHSND and fortnightly Home visit (Health & ICDS)</option>
+																																			<option value="dnk">dont know</option>
+																																	</select>
+																														</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Where will you mobilize the child if identified as SAM for the first time?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam_first_ref" id="exampleRadiosvhsnd" value="vhsnd">
+																						VHSND session for community management																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam_first_ref" id="exampleRadiosnrc" value="nrc">
+																						NRC																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam_first_ref" id="exampleRadioschc_phc_rbsk" value="chc_phc_rbsk">
+																						Nearest health facility (PHC/ CHC)/ RBSK																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam_first_ref" id="exampleRadiosawc" value="awc">
+																						Manage at AWC level only																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam_first_ref" id="exampleRadiosdnk" value="dnk">
+																						dont know																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	What medical treatment shall a SAM case will receive if he/she has no illness and with good appetite?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam_mt" id="exampleRadiosaware" value="aware">
+																						Aware																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam_mt" id="exampleRadiosnot_aware" value="not_aware">
+																						Not aware																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Can you name the essential medicines/ nutritional supplements given to SAM case treated at the community level<span class="required">*</span>																<select class="form-control js-example-basic-multiple select2" data-placeholder="Please Can you name the essential medicines/ nutritional supplements given to SAM case treated at the community level" multiple required>
+																																			<option value="anti">Antibiotic (Amoxicillin syrup)</option>
+																																			<option value="foli">Folic acid tablet</option>
+																																			<option value="albe">Albendazole</option>
+																																			<option value="vlta">Vitamin A</option>
+																																			<option value="iron">Iron Folic Acid syrup</option>
+																																			<option value="multivit">Multivitamin syrup</option>
+																																			<option value="dnk">Not aware</option>
+																																	</select>
+																														</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	What medical treatment shall a SAM case will receive if he/she has illness or with poor appetite?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="mt_poor_app" id="exampleRadiosaware" value="aware">
+																						Aware																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="mt_poor_app" id="exampleRadiosnot_aware" value="not_aware">
+																						Not aware																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															What are the steps taken by you for improving the nutritional status (i.e. SAM to Normal) of the SAM case?<span class="required">*</span>																<select class="form-control js-example-basic-multiple select2" data-placeholder="Please What are the steps taken by you for improving the nutritional status (i.e. SAM to Normal) of the SAM case?" multiple required>
+																																			<option value="week">Weekly/ fortnightly home visit</option>
+																																			<option value="coun">Counselling & demonstration for home based energy & nutrient enhancement of diet</option>
+																																			<option value="awc_sess">AWC based session</option>
+																																			<option value="prov_thr">Provide Take Home Ration (THR)</option>
+																																			<option value="dnk">dont know</option>
+																																	</select>
+																														</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Can you tell the key messages you give to the family of SAM case for enhancing the energy and nutrient of daily diet?<span class="required">*</span>																<select class="form-control js-example-basic-multiple select2" data-placeholder="Please Can you tell the key messages you give to the family of SAM case for enhancing the energy and nutrient of daily diet?" multiple required>
+																																			<option value="add_ghee">Adding Ghee/ Oil to meal</option>
+																																			<option value="three_m_2_sn">At least 3 meals & 2 snacks daily</option>
+																																			<option value="add_ground_soya_sattu">Adding Roasted groundnut/Soyabean/Sattu powder in meal</option>
+																																			<option value="milk">Milk</option>
+																																			<option value="egg">Eggs</option>
+																																			<option value="sea_fruit">One seasonal fruit</option>
+																																			<option value="green_yellow_veg">One green leafy or Yellow vegetable in diet</option>
+																																			<option value="thr_snack">THR based recipe/snacks</option>
+																																			<option value="bi_ifa">Biweekly IFA syrup</option>
+																																			<option value="dnk">Not aware</option>
+																																	</select>
+																														</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															How is SAM childs progress followed up during the programme period?<span class="required">*</span>																<select class="form-control js-example-basic-multiple select2" data-placeholder="Please How is SAM childs progress followed up during the programme period?" multiple required>
+																																			<option value="week">Weekly/ fortnightly home visit</option>
+																																			<option value="mont">Monthly VHSND/HWC visit</option>
+																																			<option value="awc_session">AWC based session</option>
+																																			<option value="dnk">dont know</option>
+																																	</select>
+																														</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	What you will do if the child does not gain weight or loses weight in two consecutive follow-ups visits<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="child_not_resp" id="exampleRadiosvhsnd_session" value="vhsnd_session">
+																						VHSND session for community management																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="child_not_resp" id="exampleRadiosnrc" value="nrc">
+																						NRC																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="child_not_resp" id="exampleRadioschc_phc_rbsk" value="chc_phc_rbsk">
+																						Nearest health facility (PHC/ CHC)/ RBSK																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="child_not_resp" id="exampleRadiosdnk" value="dnk">
+																						dont know																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															What activities are being done during a follow-up session (VHSND or Home visit) of child with SAM?<span class="required">*</span>																<select class="form-control js-example-basic-multiple select2" data-placeholder="Please What activities are being done during a follow-up session (VHSND or Home visit) of child with SAM?" multiple required>
+																																			<option value="weighing">Weighing</option>
+																																			<option value="moni_wt">Monitor weight improvement</option>
+																																			<option value="check_ill_sign">Checking for signs of illness</option>
+																																			<option value="check_med_comp">Checking compliance for medicines</option>
+																																			<option value="check_rd">Checking compliance for recommended diet</option>
+																																			<option value="couns_hyg_diet">Counselling - diet and hygiene</option>
+																																			<option value="rec_maintain">Maintaining records</option>
+																																			<option value="dnk">dont know</option>
+																																	</select>
+																														</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Till what time a SAM child will be followed up and continued in programme?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="fup_duration" id="exampleRadiosaware" value="aware">
+																						Aware																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="fup_duration" id="exampleRadiosnot_aware" value="not_aware">
+																						Not aware																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	What should be done if a child continues to remain in SAM category even after 4 months follow up period in CMAM program?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="what_done_aft_3mon" id="exampleRadiosrefer_nrc" value="refer_nrc">
+																						Refer to NRC/Health Facility																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="what_done_aft_3mon" id="exampleRadioscontinue_int_fup" value="continue_int_fup">
+																						Continue in the program with intensive follow-up																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="what_done_aft_3mon" id="exampleRadiosdnk" value="dnk">
+																						dont know																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Infantometer																<select class="form-control js-example-basic-multiple select2" data-placeholder="Please Infantometer" multiple >
+																																			<option value="child_below_2r">Child below two years</option>
+																																			<option value="firm_place">Infantometer placed on Firm, Flat surface</option>
+																																			<option value="head_corr">Head is touching the head piece(looking vertically upward)</option>
+																																			<option value="child_body_p">Childs body position - legs, back & head are in a straight line</option>
+																																			<option value="child_foot_corr">both foot are touching flat on foot piece</option>
+																																			<option value="supp_add_person">Support of any additional person taken while measurement</option>
+																																			<option value="sam_less2_na">Child less than 2 year not available</option>
+																																	</select>
+																														</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Weighing -Salter weighing scale																<select class="form-control js-example-basic-multiple select2" data-placeholder="Please Weighing -Salter weighing scale" multiple >
+																																			<option value="scale_hanged_corr">Weighing scale hanged properly</option>
+																																			<option value="cal_zero">Pointer calibrated to zero</option>
+																																			<option value="min_cloth">Weighing done in minimal clothing</option>
+																																			<option value="pointer-static">Weight recorded when pointer is static</option>
+																																			<option value="sam_less2_na">Child less than 1 year not available</option>
+																																	</select>
+																														</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Stadiometer																<select class="form-control js-example-basic-multiple select2" data-placeholder="Please Stadiometer" multiple >
+																																			<option value="child_gr_2yr">Child above two years</option>
+																																			<option value="firm_place">Stadiometer placed on Firm, Flat surface</option>
+																																			<option value="child_feet_p">Childs feet position - both feet touching each other</option>
+																																			<option value="child_body_p">Childs body position - heels, buttocks, back & head touching stadiometer in straight line</option>
+																																			<option value="stadio_touch_head">Stadiometer head piece touching childs head</option>
+																																			<option value="corr_eye_pos">AWWs eye level is at the level of head piece while recording height</option>
+																																			<option value="supp_add_person">Support of any additional person taken while measurement</option>
+																																			<option value="sam_gr2_na">Child greater than 2 year not available</option>
+																																	</select>
+																														</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Weighing -Digital weighing scale																<select class="form-control js-example-basic-multiple select2" data-placeholder="Please Weighing -Digital weighing scale" multiple >
+																																			<option value="flat_sur">Kept on flat and even surface</option>
+																																			<option value="tared_zero">Weighing scale tared to zero</option>
+																																			<option value="min_cloth">Weighing done in minimal clothing</option>
+																																			<option value="child_centre_ws">Child standing straight at centre of weighing scale</option>
+																																			<option value="sam_gr2_na">Child greater than 2 year not available</option>
+																																	</select>
+																														</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	AWW able to use ‘Weight for length/height z-score chart’, to classify the nutritional status (wasting) correctly?
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="aww_cal_wasting_cat" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="aww_cal_wasting_cat" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Child-1 Recorded weight **Poshan tracker** (Kgs) 																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="child1_rw" name="child1_rw" >
+																<div id="child1_rw2843"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Child-1 Recorded Height/Length **Poshan Tracker** (cm) 																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="child1_rhl" name="child1_rhl" >
+																<div id="child1_rhl2844"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Child-1 Wasting category **poshan tracker**
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="child1_rcat" id="exampleRadiossam" value="sam">
+																						SAM																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="child1_rcat" id="exampleRadiosmam" value="mam">
+																						MAM																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="child1_rcat" id="exampleRadiosnormal" value="normal">
+																						Normal																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Child-1 Current weight **as per Monitor** (Kgs) 																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="child1_cw" name="child1_cw" >
+																<div id="child1_cw2849"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Child-1 Current Height/Length **as per Monitor** (cm) 																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="child1_chl" name="child1_chl" >
+																<div id="child1_chl2850"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Child-1 Wasting category **as per Monitor**
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="child1_ccat" id="exampleRadiossam" value="sam">
+																						SAM																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="child1_ccat" id="exampleRadiosmam" value="mam">
+																						MAM																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="child1_ccat" id="exampleRadiosnormal" value="normal">
+																						Normal																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Child-2 Recorded weight **Poshan tracker** (Kgs) 																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="child2_rw" name="child2_rw" >
+																<div id="child2_rw2855"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Child-2 Recorded Height/Length **Poshan Tracker** (cm) 																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="child2_rhl" name="child2_rhl" >
+																<div id="child2_rhl2856"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Child-2 Wasting category **poshan tracker**
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="child2_rcat" id="exampleRadiossam" value="sam">
+																						SAM																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="child2_rcat" id="exampleRadiosmam" value="mam">
+																						MAM																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="child2_rcat" id="exampleRadiosnormal" value="normal">
+																						Normal																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Child-2 Current weight **as per Monitor** (Kgs) 																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="child2_cw" name="child2_cw" >
+																<div id="child2_cw2861"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Child-2 Current Height/Length **as per Monitor** (cm) 																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="child2_chl" name="child2_chl" >
+																<div id="child2_chl2862"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Child-2 Wasting category **as per Monitor**
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="child2_ccat" id="exampleRadiossam" value="sam">
+																						SAM																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="child2_ccat" id="exampleRadiosmam" value="mam">
+																						MAM																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="child2_ccat" id="exampleRadiosnormal" value="normal">
+																						Normal																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Child 1 weight Diffrence 																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="c1_wt_diff" name="c1_wt_diff" >
+																<div id="c1_wt_diff2865"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Child 2 weight Diffrence 																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="c2_wt_diff" name="c2_wt_diff" >
+																<div id="c2_wt_diff2866"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Child 1 height Diffrence 																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="c1_hl_diff" name="c1_hl_diff" >
+																<div id="c1_hl_diff2867"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Child 2 height Diffrence 																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="c2_hl_diff" name="c2_hl_diff" >
+																<div id="c2_hl_diff2868"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Number of SAM child available for home visit currently <span class="required">*</span>																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="Try to visit 2 SAM child, if 2 SAM child not available atleast visit 1 SAM child. If no SAM child available right now you can enter 0" id="child_aval_val" name="child_aval_val" required>
+																<div id="child_aval_val2885"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Childs Name <span class="required">*</span>																<input type="text" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="sam1_name" name="sam1_name" required>
+																<div id="sam1_name2889"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Mothers name <span class="required">*</span>																<input type="text" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="sam1_mother" name="sam1_mother" required>
+																<div id="sam1_mother2890"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Child Sex<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam1_sex" id="exampleRadiosmale" value="male">
+																						Male																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam1_sex" id="exampleRadiosfemale" value="female">
+																						Female																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Age (completed months) <span class="required">*</span>																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="sam1_age" name="sam1_age" required>
+																<div id="sam1_age2892"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Was your child weight measured in last one month?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam1_wt_measured_lm" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam1_wt_measured_lm" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															When was your childs weight last measured?<span class="required">*</span>																<br />
+																<input type="text" class="form-control datepicker" name="sam1_last_measured_date" placeholder="Please select Date" autocomplete="off" required />
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Was your child height/length measured in last one month?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam1_hl_measured_lm" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam1_hl_measured_lm" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Has AWW informed you about the childs current nutrition status?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam1_aww_informed_sam" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam1_aww_informed_sam" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Has your child received any medical treatment in last one month at any health facility?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam1_child_medical_mgmt" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam1_child_medical_mgmt" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	For what condition your child received the treatment?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam1_child_treat_con" id="exampleRadiosmm" value="mm">
+																						Malnutrition management																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam1_child_treat_con" id="exampleRadiosother_ped" value="other_ped">
+																						Any other paediatric illness - Diarrhoea, Fever, Cough etc.																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Where your child received medical treatment for "malnutrition"?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam1_child_mm_facility" id="exampleRadiosvhnd" value="vhnd">
+																						VHNSD																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam1_child_mm_facility" id="exampleRadiosss" value="ss">
+																						Sub-centre																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam1_child_mm_facility" id="exampleRadioshwc" value="hwc">
+																						Health Wellness Centre																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam1_child_mm_facility" id="exampleRadioschc_phc" value="chc_phc">
+																						CHC/PHC																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam1_child_mm_facility" id="exampleRadiosnrc" value="nrc">
+																						NRC																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	During treatment from "VHSND/Sub-centre", has child received some medicines?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam1_recd_med_vhsnd" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam1_recd_med_vhsnd" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Has AWW visited your home in last fifteen days to provide information on childs diet?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam1_aww_visit" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam1_aww_visit" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Can you recall a few messages that AWW gave during the visit?<span class="required">*</span>																<select class="form-control js-example-basic-multiple select2" data-placeholder="Please Can you recall a few messages that AWW gave during the visit?" multiple required>
+																																			<option value="add_ghee_oil">Adding Ghee/ Oil to meal</option>
+																																			<option value="atleast_3m_2s">At least 3 meals & 2 snacks daily</option>
+																																			<option value="add_gmut_soya_sattu">Adding Roasted groundnut/Soyabean/Sattu powder in meal</option>
+																																			<option value="milk">Milk</option>
+																																			<option value="egg">Eggs</option>
+																																			<option value="sea_fruit">One seasonal fruit</option>
+																																			<option value="veg_gy">One green leafy or Yellow vegetable in diet</option>
+																																			<option value="thr_rec_snack">THR based recipe/snacks</option>
+																																			<option value="biweekly_ifa">Biweekly IFA syrup</option>
+																																			<option value="gen_hygiene">General Hygiene</option>
+																																			<option value="cant_rem">Cant remember</option>
+																																	</select>
+																														</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Have you received THR in last one month for your child?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam1_thr_recd" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam1_thr_recd" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Who all were involved by AWW during the dietary counselling?<span class="required">*</span>																<select class="form-control js-example-basic-multiple select2" data-placeholder="Please Who all were involved by AWW during the dietary counselling?" multiple required>
+																																			<option value="mother">Mother</option>
+																																			<option value="father">Father</option>
+																																			<option value="grandparents">Grandparents</option>
+																																			<option value="others">others</option>
+																																	</select>
+																														</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Growth Monitoring of child updated in MCP card<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam1_gm_mcp" id="exampleRadiosmcp_not_aval" value="mcp_not_aval">
+																						MCP card not available																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam1_gm_mcp" id="exampleRadiosmcp_aval_gm_not_updated" value="mcp_aval_gm_not_updated">
+																						MCP card available & Growth Monitoring not updated																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam1_gm_mcp" id="exampleRadiosmcp_aval_gm_updated" value="mcp_aval_gm_updated">
+																						MCP card available & Growth Monitoring updated																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Has AWW updated childs weight and height/length in poshan tracker?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam1_gm_pt" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam1_gm_pt" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	How many meals child consumed in last 24 hours (except snacks)<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam1_meal_freq" id="exampleRadiosone" value="one">
+																						One																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam1_meal_freq" id="exampleRadiostwo" value="two">
+																						Two																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam1_meal_freq" id="exampleRadiosthree" value="three">
+																						Three or more																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam1_meal_freq" id="exampleRadioszero" value="zero">
+																						No meal received																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															What mother/ caregiver fed child in last 24 hours<span class="required">*</span>																<select class="form-control js-example-basic-multiple select2" data-placeholder="Please What mother/ caregiver fed child in last 24 hours" multiple required>
+																																			<option value="bm">Breastmilk</option>
+																																			<option value="cer">Cereals/Tuber</option>
+																																			<option value="led">Legume & Nuts</option>
+																																			<option value="ry_fruit_veg">Vitamin-A rich fruits and vegetables ( Red/ Yellow/Orange)</option>
+																																			<option value="oth_veg">Other fruits & Vegetables</option>
+																																			<option value="milk_pro">Milk & Milk products ( Dahi, Lassi, Chach, Paneer)</option>
+																																			<option value="egg">Egg</option>
+																																			<option value="meat">Meat/ Poultry/ Fish</option>
+																																			<option value="junk">Junk items - Chips, Biscuits, chocolate etc</option>
+																																	</select>
+																														</div>
+													</div>
+												
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Breastmilk 																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="bm1" name="bm1" >
+																<div id="bm12929"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Cereals/Tuber 																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="cer1" name="cer1" >
+																<div id="cer12930"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Legume & Nuts 																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="led1" name="led1" >
+																<div id="led12931"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Vitamin-A rich fruits and vegetables ( Red/ Yellow/Orange) 																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="ry_fruit_veg1" name="ry_fruit_veg1" >
+																<div id="ry_fruit_veg12932"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Other fruits & Vegetables 																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="oth_veg1" name="oth_veg1" >
+																<div id="oth_veg12933"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Milk & Milk products ( Dahi, Lassi, Chach, Paneer) 																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="dairy1" name="dairy1" >
+																<div id="dairy12934"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Egg 																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="egg1" name="egg1" >
+																<div id="egg12935"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Meat/ Poultry/ Fish 																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="meat1" name="meat1" >
+																<div id="meat12936"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Total Dietry Diversity Score 																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="tot_dd_sam1" name="tot_dd_sam1" >
+																<div id="tot_dd_sam12937"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Any food items used for enhancing energy and nutrient density of meals<span class="required">*</span>																<select class="form-control js-example-basic-multiple select2" data-placeholder="Please Any food items used for enhancing energy and nutrient density of meals" multiple required>
+																																			<option value="add_oil_ghee">Additional oil/ghee</option>
+																																			<option value="sat">Sattu</option>
+																																			<option value="pea_pow">Peanut Powder</option>
+																																			<option value="soy_pow">Soyabean Powder</option>
+																																			<option value="any_snack_meal">Any snack/meal made of THR</option>
+																																			<option value="oth">Other</option>
+																																			<option value="nothing">No item used</option>
+																																	</select>
+																														</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Specify other food items used for enhancing energy and nutrient density of meals <span class="required">*</span>																<input type="text" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="sam1_en_enh_food_oth" name="sam1_en_enh_food_oth" required>
+																<div id="sam1_en_enh_food_oth2942"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Has your child consumed IFA syrup in last one week?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam1_con_ifa" id="exampleRadiosconsumed" value="consumed">
+																						Consumed																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam1_con_ifa" id="exampleRadiosnot_con" value="not_con">
+																						Not consumed(bottle available)																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam1_con_ifa" id="exampleRadiosbottle_not_aval" value="bottle_not_aval">
+																						Bottle not available																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Has your child consumed multivitamin in last day?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam1_con_multivit" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam1_con_multivit" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam1_con_multivit" id="exampleRadiosnot_aval" value="not_aval">
+																						Not available																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Childs Name <span class="required">*</span>																<input type="text" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="sam2_name" name="sam2_name" required>
+																<div id="sam2_name2948"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Mothers name <span class="required">*</span>																<input type="text" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="sam2_mother" name="sam2_mother" required>
+																<div id="sam2_mother2949"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Child Sex<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam2_sex" id="exampleRadiosmale" value="male">
+																						Male																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam2_sex" id="exampleRadiosfemale" value="female">
+																						Female																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Age (completed months) <span class="required">*</span>																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="sam2_age" name="sam2_age" required>
+																<div id="sam2_age2951"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Was your child weight measured in last one month?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam2_wt_measured_lm" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam2_wt_measured_lm" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															When was your childs weight last measured?<span class="required">*</span>																<br />
+																<input type="text" class="form-control datepicker" name="sam2_last_measured_date" placeholder="Please select Date" autocomplete="off" required />
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Was your child height/length measured in last one month?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam2_hl_measured_lm" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam2_hl_measured_lm" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Has AWW informed you about the childs current nutrition status?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam2_aww_informed_sam" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam2_aww_informed_sam" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Has your child received any medical treatment in last one month at any health facility?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam2_child_medical_mgmt" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam2_child_medical_mgmt" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	For what condition your child received the treatment?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam2_child_treat_con" id="exampleRadiosmm" value="mm">
+																						Malnutrition management																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam2_child_treat_con" id="exampleRadiosother_ped" value="other_ped">
+																						Any other paediatric illness - Diarrhoea, Fever, Cough etc.																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Where your child received medical treatment for "malnutrition"?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam2_child_mm_facility" id="exampleRadiosvhnd" value="vhnd">
+																						VHNSD																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam2_child_mm_facility" id="exampleRadiosss" value="ss">
+																						Sub-centre																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam2_child_mm_facility" id="exampleRadioshwc" value="hwc">
+																						Health Wellness Centre																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam2_child_mm_facility" id="exampleRadioschc_phc" value="chc_phc">
+																						CHC/PHC																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam2_child_mm_facility" id="exampleRadiosnrc" value="nrc">
+																						NRC																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	During treatment from "VHSND/Sub-centre", has child received some medicines?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam2_recd_med_vhsnd" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam2_recd_med_vhsnd" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Has AWW visited your home in last fifteen days to provide information on childs diet?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam2_aww_visit" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam2_aww_visit" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Can you recall a few messages that AWW gave during the visit?<span class="required">*</span>																<select class="form-control js-example-basic-multiple select2" data-placeholder="Please Can you recall a few messages that AWW gave during the visit?" multiple required>
+																																			<option value="add_ghee_oil">Adding Ghee/ Oil to meal</option>
+																																			<option value="atleast_3m_2s">At least 3 meals & 2 snacks daily</option>
+																																			<option value="add_gmut_soya_sattu">Adding Roasted groundnut/Soyabean/Sattu powder in meal</option>
+																																			<option value="milk">Milk</option>
+																																			<option value="egg">Eggs</option>
+																																			<option value="sea_fruit">One seasonal fruit</option>
+																																			<option value="veg_gy">One green leafy or Yellow vegetable in diet</option>
+																																			<option value="thr_rec_snack">THR based recipe/snacks</option>
+																																			<option value="biweekly_ifa">Biweekly IFA syrup</option>
+																																			<option value="gen_hygiene">General Hygiene</option>
+																																			<option value="cant_rem">Cant remember</option>
+																																	</select>
+																														</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Have you received THR in last one month for your child?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam2_thr_recd" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam2_thr_recd" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Who all were involved by AWW during the dietary counselling?<span class="required">*</span>																<select class="form-control js-example-basic-multiple select2" data-placeholder="Please Who all were involved by AWW during the dietary counselling?" multiple required>
+																																			<option value="mother">Mother</option>
+																																			<option value="father">Father</option>
+																																			<option value="grandparents">Grandparents</option>
+																																			<option value="others">others</option>
+																																	</select>
+																														</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Growth Monitoring of child updated in MCP card<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam2_gm_mcp" id="exampleRadiosmcp_not_aval" value="mcp_not_aval">
+																						MCP card not available																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam2_gm_mcp" id="exampleRadiosmcp_aval_gm_not_updated" value="mcp_aval_gm_not_updated">
+																						MCP card available & Growth Monitoring not updated																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam2_gm_mcp" id="exampleRadiosmcp_aval_gm_updated" value="mcp_aval_gm_updated">
+																						MCP card available & Growth Monitoring updated																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Has AWW updated childs weight and height/length in poshan tracker?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam2_gm_pt" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam2_gm_pt" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	How many meals child consumed in last 24 hours (except snacks)<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam2_meal_freq" id="exampleRadiosone" value="one">
+																						One																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam2_meal_freq" id="exampleRadiostwo" value="two">
+																						Two																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam2_meal_freq" id="exampleRadiosthree" value="three">
+																						Three or more																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam2_meal_freq" id="exampleRadioszero" value="zero">
+																						No meal received																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															What mother/ caregiver fed child in last 24 hours<span class="required">*</span>																<select class="form-control js-example-basic-multiple select2" data-placeholder="Please What mother/ caregiver fed child in last 24 hours" multiple required>
+																																			<option value="bm">Breastmilk</option>
+																																			<option value="cer">Cereals/Tuber</option>
+																																			<option value="led">Legume & Nuts</option>
+																																			<option value="ry_fruit_veg">Vitamin-A rich fruits and vegetables ( Red/ Yellow/Orange)</option>
+																																			<option value="oth_veg">Other fruits & Vegetables</option>
+																																			<option value="milk_pro">Milk & Milk products ( Dahi, Lassi, Chach, Paneer)</option>
+																																			<option value="egg">Egg</option>
+																																			<option value="meat">Meat/ Poultry/ Fish</option>
+																																			<option value="junk">Junk items - Chips, Biscuits, chocolate etc</option>
+																																	</select>
+																														</div>
+													</div>
+												
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Breastmilk 																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="bm2" name="bm2" >
+																<div id="bm22988"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Cereals/Tuber 																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="cer2" name="cer2" >
+																<div id="cer22989"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Legume & Nuts 																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="led2" name="led2" >
+																<div id="led22990"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Vitamin-A rich fruits and vegetables ( Red/ Yellow/Orange) 																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="ry_fruit_veg2" name="ry_fruit_veg2" >
+																<div id="ry_fruit_veg22991"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Other fruits & Vegetables 																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="oth_veg2" name="oth_veg2" >
+																<div id="oth_veg22992"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Milk & Milk products ( Dahi, Lassi, Chach, Paneer) 																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="dairy2" name="dairy2" >
+																<div id="dairy22993"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Egg 																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="egg2" name="egg2" >
+																<div id="egg22994"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Meat/ Poultry/ Fish 																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="meat2" name="meat2" >
+																<div id="meat22995"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Total Dietry Diversity Score 																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="tot_dd_sam2" name="tot_dd_sam2" >
+																<div id="tot_dd_sam22996"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Any food items used for enhancing energy and nutrient density of meals<span class="required">*</span>																<select class="form-control js-example-basic-multiple select2" data-placeholder="Please Any food items used for enhancing energy and nutrient density of meals" multiple required>
+																																			<option value="add_oil_ghee">Additional oil/ghee</option>
+																																			<option value="sat">Sattu</option>
+																																			<option value="pea_pow">Peanut Powder</option>
+																																			<option value="soy_pow">Soyabean Powder</option>
+																																			<option value="any_snack_meal">Any snack/meal made of THR</option>
+																																			<option value="oth">Other</option>
+																																			<option value="nothing">No item used</option>
+																																	</select>
+																														</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Specify other food items used for enhancing energy and nutrient density of meals <span class="required">*</span>																<input type="text" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="sam2_en_enh_food_oth" name="sam2_en_enh_food_oth" required>
+																<div id="sam2_en_enh_food_oth3001"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Has your child consumed IFA syrup in last one week?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam2_con_ifa" id="exampleRadiosconsumed" value="consumed">
+																						Consumed																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam2_con_ifa" id="exampleRadiosnot_con" value="not_con">
+																						Not consumed(bottle available)																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam2_con_ifa" id="exampleRadiosbottle_not_aval" value="bottle_not_aval">
+																						Bottle not available																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Has your child consumed multivitamin in last day?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam2_con_multivit" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam2_con_multivit" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="sam2_con_multivit" id="exampleRadiosnot_aval" value="not_aval">
+																						Not available																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Infant Sex<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="infant_sex" id="exampleRadiosmale" value="male">
+																						Male																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="infant_sex" id="exampleRadiosfemale" value="female">
+																						Female																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Infant Delivery Type<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="infant_del" id="exampleRadiosnormal" value="normal">
+																						Normal																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="infant_del" id="exampleRadiosc_sec" value="c_sec">
+																						C-Section																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Infant Birth Weight (in Kgs) <span class="required">*</span>																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="If birth weight not available enter 0" id="infant_bw" name="infant_bw" required>
+																<div id="infant_bw3010"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Birth Order<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="infant_bo" id="exampleRadios1" value="1">
+																						1																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="infant_bo" id="exampleRadios2" value="2">
+																						2																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="infant_bo" id="exampleRadios3" value="3">
+																						3																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="infant_bo" id="exampleRadiosgr_3" value="gr_3">
+																						Greater than three																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	When did you first breastfed your child ?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="infant_eibf" id="exampleRadioswithin_1" value="within_1">
+																						Within 1 hour of Delivery																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="infant_eibf" id="exampleRadioswithin1_3" value="within1_3">
+																						1-3 hour of Delivery																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="infant_eibf" id="exampleRadiosafter_3" value="after_3">
+																						After 3 hour of Delivery																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="infant_eibf" id="exampleRadiosnext_day" value="next_day">
+																						next day of Delivery																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="infant_eibf" id="exampleRadioscant_rem" value="cant_rem">
+																						Cant remember																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	What did you give your baby in the last 24 hours?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="infant_ebf" id="exampleRadiosonly_bm" value="only_bm">
+																						Only Breastmilk																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="infant_ebf" id="exampleRadiosbm_fm" value="bm_fm">
+																						Breastmilk & Formula Milk																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="infant_ebf" id="exampleRadiosbm_am" value="bm_am">
+																						Breastmilk & Animal Milk																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="infant_ebf" id="exampleRadiosbm_water" value="bm_water">
+																						Breastmilk & water																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="infant_ebf" id="exampleRadiosfm" value="fm">
+																						Formula Milk																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="infant_ebf" id="exampleRadiosam" value="am">
+																						Animal Milk																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="infant_ebf" id="exampleRadiosnothing" value="nothing">
+																						Nothing																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	If child is on mixed or no breastfeeding, how are you feeding the child?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="feed_mode" id="exampleRadiosbottle" value="bottle">
+																						Bottle																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="feed_mode" id="exampleRadiostumbler" value="tumbler">
+																						Tumbler																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="feed_mode" id="exampleRadioskatori_c" value="katori_c">
+																						Katori-Chamach																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Has anyone counselled or supported you for promoting only breastfeeding?<span class="required">*</span>																<select class="form-control js-example-basic-multiple select2" data-placeholder="Please Has anyone counselled or supported you for promoting only breastfeeding?" multiple required>
+																																			<option value="aww">AWW</option>
+																																			<option value="anm">ANM</option>
+																																			<option value="asha">ASHA</option>
+																																			<option value="no_supp">No support received</option>
+																																	</select>
+																														</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Infants growth monitoring records available on Poshan Tracker<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="infant_gm_records_pt" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="infant_gm_records_pt" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Infants growth monitoring details updated on MCP card<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="infant_gm_records_mcp" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="infant_gm_records_mcp" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Caregivers aware about the nutrition status of the infant<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="infant_caregiver_aware_ns" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="infant_caregiver_aware_ns" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															How many times AWW visited infant in last one month <span class="required">*</span>																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="infant_aww_visit" name="infant_aww_visit" required>
+																<div id="infant_aww_visit3031"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															How many times ASHA visited infant in last one month <span class="required">*</span>																<input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="infant_asha_visit" name="infant_asha_visit" required>
+																<div id="infant_asha_visit3032"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Child Sex<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="child_sex" id="exampleRadiosmale" value="male">
+																						Male																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="child_sex" id="exampleRadiosfemale" value="female">
+																						Female																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Has AWW visited your home in last one month to counsel the caregiver for diet and feeding?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="aww_hw_coun_diet_feed" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="aww_hw_coun_diet_feed" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Has AWW visited your home in last one month to counsel the caregiver health, cleanliness and nutrition?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="aww_hw_coun_health_clean" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="aww_hw_coun_health_clean" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Have you attended any annaprasan ceremony at the AWC in last three months?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="attended_ann" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="attended_ann" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Was your child weight measured in last one month?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="child_wm_last_m" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="child_wm_last_m" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Was your child height/length measured in last one month?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="child_hl_m" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="child_hl_m" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Has AWW informed you about the childs current nutrition status?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="aww_informed_cns" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="aww_informed_cns" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Has the child been introduced to Complementary Feeding<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="cf_started_68" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="cf_started_68" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	How many meals child consumed in last 24 hours (except snacks)<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="food_freq_68" id="exampleRadiosone" value="one">
+																						One																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="food_freq_68" id="exampleRadiostwo" value="two">
+																						Two																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="food_freq_68" id="exampleRadiosthree" value="three">
+																						Three or more																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="food_freq_68" id="exampleRadioszero" value="zero">
+																						No meal received																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															What mother/ caregiver fed child in last 24 hours<span class="required">*</span>																<select class="form-control js-example-basic-multiple select2" data-placeholder="Please What mother/ caregiver fed child in last 24 hours" multiple required>
+																																			<option value="bm">Breastmilk</option>
+																																			<option value="cer">Cereals/Tuber</option>
+																																			<option value="led">Legume & Nuts</option>
+																																			<option value="ry_fruit_veg">Vitamin-A rich fruits and vegetables ( Red/ Yellow/Orange)</option>
+																																			<option value="oth_veg">Other fruits & Vegetables</option>
+																																			<option value="milk_pro">Milk & Milk products ( Dahi, Lassi, Chach, Paneer)</option>
+																																			<option value="egg">Egg</option>
+																																			<option value="meat">Meat/ Poultry/ Fish</option>
+																																			<option value="junk">Junk items - Chips, Biscuits, chocolate etc</option>
+																																	</select>
+																														</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Any food items used for enhancing energy and nutrient density of meals<span class="required">*</span>																<select class="form-control js-example-basic-multiple select2" data-placeholder="Please Any food items used for enhancing energy and nutrient density of meals" multiple required>
+																																			<option value="add_oil_ghee">Additional oil/ghee</option>
+																																			<option value="sat">Sattu</option>
+																																			<option value="pea_pow">Peanut Powder</option>
+																																			<option value="soy_pow">Soyabean Powder</option>
+																																			<option value="any_snack_meal">Any snack/meal made of THR</option>
+																																			<option value="oth">Other</option>
+																																			<option value="nothing">No item used</option>
+																																	</select>
+																														</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Specify other food items used for enhancing energy and nutrient density of meals <span class="required">*</span>																<input type="text" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="energy_food_oth" name="energy_food_oth" required>
+																<div id="energy_food_oth3060"></div>
+
+																													</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Does the child has separate utensils (like bowl, spoon, plate etc.)?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="child_sep_uten_68" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="child_sep_uten_68" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+																															Who all involved in child’s feeding in any way?<span class="required">*</span>																<select class="form-control js-example-basic-multiple select2" data-placeholder="Please Who all involved in child’s feeding in any way?" multiple required>
+																																			<option value="mother">Mother</option>
+																																			<option value="father">Father</option>
+																																			<option value="grandparents">Grandparents</option>
+																																			<option value="others">others</option>
+																																	</select>
+																														</div>
+													</div>
+												
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Has your child consumed IFA syrup in last one week?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="child_68_cons_ifa" id="exampleRadiosconsumed" value="consumed">
+																						Consumed																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="child_68_cons_ifa" id="exampleRadiosnot_con" value="not_con">
+																						Not consumed(bottle available)																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="child_68_cons_ifa" id="exampleRadiosbottle_not_aval" value="bottle_not_aval">
+																						Bottle not available																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+											
+												
+											
+													<div class="col-md-12" style="padding-bottom: 10px;">
+														<div class="form-group select-custom-margin">
+															
+																
+																																	Have you received THR in last one month for your child?<span class="required">*</span>
+																	<div class="form-check">
+																		<div class="custom-formchecks">
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="child_68_thr" id="exampleRadiosyes" value="yes">
+																						Yes																					</label>
+
+																				</div>
+																			
+																				<div class="custom-radio">
+																					<label>
+																						<input class="form-check-input" type="radio" name="child_68_thr" id="exampleRadiosno" value="no">
+																						No																					</label>
+
+																				</div>
+																																					</div>
+																	</div>
+
+																
+																													</div>
+													</div>
+												
+												
+											
+												
+											
+												
+																						<!--<div class="col-md-12 text-end" style="padding-bottom: 10px;">
+                  	<button type="button" class="btn btn-primary" name="saveData" >Submit</button>
+									</div>-->
+										</div>
+									</form>
+								</div>
+							</div>
+
+					

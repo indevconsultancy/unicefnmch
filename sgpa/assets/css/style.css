@@ -1,0 +1,36 @@
+.logo-one {
+    background: #fff;
+    display: block;
+    border-radius: 50%;
+    padding: 10px;
+    line-height: 1 !important;
+
+}
+
+.logo-one img {
+    aspect-ratio: 1 / 1;
+    width: 50px;
+    object-fit: contain;
+    object-position: center;
+}
+
+
+.logo-home {
+    border-radius: 50%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background: #fff;
+    width: 60px;
+    padding: 5px;
+}
+
+.logo-home img {
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    object-position: center;
+
+}
+.patner-carousel img{
+    height: 200px;
+    object-fit: contain;
+    object-position: center;
+    }

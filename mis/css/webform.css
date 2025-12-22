@@ -1,0 +1,502 @@
+/*custom font*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@primary-color: #63a2cb;
+@secondary-color: #67d5bf;
+
+/*basic reset*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* html {
+			height: 100%;
+			background: #0e0e0e;
+		} */
+
+body {
+	font-family: 'Lato';
+	background-color: whitesmoke;
+}
+
+/*form styles*/
+#msform {
+	/*width: 600px;*/
+	/* min-height: 555px;
+			margin: 50px auto; */
+	text-align: center;
+	position: relative;
+}
+
+#msform fieldset {
+	border: 0 none;
+	border-radius: 5px;
+	box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2);
+	padding: 20px;
+	box-sizing: border-box;
+	position: relative;
+	background-color: white;
+}
+
+#msform fieldset .fieldset-box {
+    height: 300px;
+    background-color: #449a9717;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+	display: none;
+}
+
+.select2-container {
+	display: block;
+	margin: 0;
+	margin: 0 auto;
+	width: 100% !important;
+}
+
+/*buttons*/
+#msform .prev-next-btn {
+	text-align: end;
+	margin-top: 15px;
+}
+
+#msform .action-button {
+	width: auto;
+    background: #003b64;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 0;
+    cursor: pointer;
+    padding: 5px 15px;
+    margin: 0 4px;
+}
+
+/* #msform .action-button[name="previous"] {
+			right: 130px;
+		} */
+
+#formSubmit {
+	background-color: green !important;
+}
+
+#msform .action-button:hover,
+#msform .action-button:focus {
+	/* box-shadow: 0 0 0 2px white, 0 0 0 3px #5f5fb9; */
+	background-color: #8cc63f;
+}
+
+/*headings*/
+.fs-title {
+	font-size: 16px;
+	text-transform: uppercase;
+	/* color: @primary-color;	
+			margin-bottom: 10px;
+			padding: 8px;
+			border-radius: 5px;
+			color: black;
+			font-weight: bold; */
+}
+
+.fs-subtitle {
+	font-size: 17px;
+	font-weight: 400 !important;
+	color: #666;
+	margin-bottom: 10px;
+	margin-top: 0px;
+	text-align: justify;
+}
+
+/* #msform fieldset .fs-subtitle:nth-of-type(1) {
+			width: 75%
+		} */
+
+/*progressbar*/
+#progressbar {
+	margin-bottom: 30px;
+	overflow: hidden;
+	/*CSS counters to number the steps*/
+	counter-reset: step;
+}
+
+#progressbar li {
+	list-style-type: none;
+	color: white;
+	text-transform: uppercase;
+	font-size: 9px;
+	width: 10%;
+	float: left;
+	position: relative;
+}
+
+#progressbar li:before {
+	content: counter(step);
+	counter-increment: step;
+	width: 20px;
+	line-height: 20px;
+	display: block;
+	font-size: 10px;
+	color: #333;
+	background: white;
+	border-radius: 3px;
+	margin: 0 auto 5px auto;
+}
+
+/*progressbar connectors*/
+#progressbar li:after {
+	content: '';
+	width: 100%;
+	height: 2px;
+	background: white;
+	position: absolute;
+	left: -50%;
+	top: 9px;
+	z-index: -1;
+	/*put it behind the numbers*/
+}
+
+#progressbar li:first-child:after {
+	/*connector not needed before the first step*/
+	content: none;
+}
+
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#progressbar li.active:before,
+#progressbar li.active:after {
+	background: @secondary-color;
+	color: white;
+}
+
+.help-block {
+	font-size: .8em;
+	color: #7c7c7c;
+	text-align: left;
+	margin-bottom: .5em;
+}
+
+.error_message {
+	color: #fff;
+	font-weight: 600 !important;
+	font-style: italic;
+	margin: 0px;
+	font-size: 18px;
+	margin-bottom: 20px;
+	margin-top: -15px;
+}
+
+.error_messaged {
+	color: #fff;
+	font-weight: 600 !important;
+	font-style: italic;
+	margin: 0px;
+	font-size: 18px;
+	margin-bottom: 20px;
+	margin-top: -15px;
+
+}
+
+.modal-title{
+	text-shadow: none;
+}
+
+/* ERROR MESSAGE ANIMATION CSS */
+.ssanimation {
+	-webkit-animation: sss_animate 0.4s 1 linear;
+	-moz-animation: sss_animate 0.4s 1 linear;
+	-o-animation: sss_animate 0.4s 1 linear;
+}
+
+@-webkit-keyframes sss_animate {
+	0% {
+		-webkit-transform: translate(30px);
+	}
+
+	20% {
+		-webkit-transform: translate(-30px);
+	}
+
+	40% {
+		-webkit-transform: translate(15px);
+	}
+
+	60% {
+		-webkit-transform: translate(-15px);
+	}
+
+	80% {
+		-webkit-transform: translate(8px);
+	}
+
+	100% {
+		-webkit-transform: translate(0px);
+	}
+}
+
+@-moz-keyframes sss_animate {
+	0% {
+		-moz-transform: translate(30px);
+	}
+
+	20% {
+		-moz-transform: translate(-30px);
+	}
+
+	40% {
+		-moz-transform: translate(15px);
+	}
+
+	60% {
+		-moz-transform: translate(-15px);
+	}
+
+	80% {
+		-moz-transform: translate(8px);
+	}
+
+	100% {
+		-moz-transform: translate(0px);
+	}
+}
+
+@-o-keyframes sss_animate {
+	0% {
+		-o-transform: translate(30px);
+	}
+
+	20% {
+		-o-transform: translate(-30px);
+	}
+
+	40% {
+		-o-transform: translate(15px);
+	}
+
+	60% {
+		-o-transform: translate(-15px);
+	}
+
+	80% {
+		-o-transform: translate(8px);
+	}
+
+	100% {
+		-o-origin-transform: translate(0px);
+	}
+}
+
+.legend {
+	width: max-content;
+	padding: 0px 4px;
+	margin-bottom: 0;
+	font-size: 18px;
+	letter-spacing: .02em;
+	font-weight: 500;
+	line-height: normal;
+	margin-top: -12px;
+	/*background: #fff; */
+	color: #003b64;
+	display: block;
+	margin-bottom: 10px;
+}
+
+.fieldset {
+	min-width: auto;
+	padding: 0px 20px 20px;
+	margin: 2rem 0px;
+	position: relative;
+	border: 1px solid #d8e2ef !important;
+	border-radius: 0.25rem;
+}
+
+/* body {
+			background-image: url("img/form3.png");
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+		} */
+
+.thankyou-page ._header {
+	padding: 45px 30px;
+	padding: 46px;
+	text-align: center;
+	background: #449a9717;
+	min-height: 297px;
+	border-radius: 4px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.thankyou-page ._header h3 {
+	margin-bottom: 20px;
+}
+
+._header h3{
+	color: #003b64 !important;
+    font-weight: bold !important;
+}
+._header h4{
+	color: #003b64;
+    font-weight: 500 !important;
+}
+
+.btn-primary {
+    color: #ffffff !important;
+    background-color: #449a97 !important;
+    border-color: #449a97 !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active {
+    color: #fff !important;
+    border-color: #61b7b8 !important;
+    background: #61b7b8 !important;
+}
+
+.d-none {
+	display: none;
+}
+
+ul>li {
+	cursor: pointer;
+	font-size: 16px;
+}
+
+.list-tab>li {
+	cursor: pointer;
+	font-size: 14px;
+	border-radius: 5px;
+	margin-bottom: 5px;
+	padding: 3px 5px;
+	border: 2px solid #449a97;
+	position: relative;
+}
+
+.list-tab>li.active {
+	background: #449a97;
+	color: #fff;
+}
+
+.list-tab>li.active i {
+	color: #fff;
+}
+
+ul>li i {
+	color: #449a97;
+}
+
+.custom-logo {
+	display: flex;
+	align-items: center;
+	margin-top: 5px;
+	justify-content: space-between;
+}
+
+.custom-logo h3 {
+	margin: 0;
+	font-weight: 800;
+}
+
+.start-survey {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	width: 75%;
+}
+
+#msform fieldset .form-control {
+	margin-bottom: 15px;
+}
+
+@media (max-width:991px) {
+	#msform fieldset {
+		width: 100% !important;
+		margin: 0 !important;
+	}
+
+	.start-survey {
+		max-width: 100%;
+	}
+
+	#msform {
+		margin-top: 17px;
+	}
+
+	.thankyou-page ._header {
+		padding: 23px;
+		display: flex;
+		height: 100%;
+		flex-direction: column;
+		justify-content: center;
+		min-height: 300px;
+	}
+
+	.thankyou-page ._header h3 {
+		margin-bottom: 15px;
+	}
+
+	#msform fieldset .fieldset-box {
+		height: auto;
+	}
+}
+
+/* css by neeraj bora */
+.survey-form {
+	box-shadow: rgb(197 197 197) 0px 10px 24px 0px, rgb(157 157 157) 0px 0px 0px 1px;
+	padding: 20px;
+	width: 75%;
+	margin: 20px auto;
+	border-radius: 5px;
+	background-color: #003b64;
+}
+
+.widget .padd, .modal-body{
+	background-color: #f7f7f7;
+}
+
+@media screen and (min-width: 768px) {
+    .modal-dialog {
+        min-width: 800px;
+    }
+}
+
+@media (max-width: 768px) {
+	.survey-form{
+        width: 100% !important;
+        padding: 15px !important;
+    }
+
+    #msform{
+        margin-top: 0px !important;
+    }
+
+    .thankyou-page ._header h3{
+        font-size: 20px !important;
+    }
+
+	.thankyou-page ._header , #msform fieldset{
+		padding: 10px;
+	}
+
+	._header h4{
+		font-size: 16px ;
+	}
+
+	#msform fieldset .form-control{
+		margin-top: 10px;
+	}
+
+	.error_message , .error_messaged {
+		margin-top: 0;
+		margin-bottom: 25px;
+		font-size: 15px;
+	}
+
+	
+}

@@ -1,0 +1,94 @@
+<div id="mapdiv" class="unique_class" style="height: 600px;"></div>
+
+<!-- Required Highcharts Scripts -->
+<script src="https://code.highcharts.com/maps/highmaps.js"></script>
+<script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/highcharts-3d.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+<script src="https://code.highcharts.com/modules/drilldown.js"></script>
+
+<script>
+indiaAllState();
+
+function indiaAllState() {
+    Highcharts.getJSON('https://jbfdashboard.indevconsultancy.com/js/indiass.json', function (geojson) {
+        Highcharts.mapChart('mapdiv', {
+            chart: {
+                map: geojson
+            },
+
+            title: {
+                text: 'Grasim Plant Locations'
+            },
+
+            mapNavigation: {
+                enabled: true,
+                buttonOptions: {
+                    verticalAlign: 'bottom'
+                }
+            },
+
+            tooltip: {
+                headerFormat: '',
+                pointFormat: '<b>{point.name}</b><br>Total Beneficiaries: {point.beneficiaries}'
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            exporting: {
+                enabled: false
+            },
+
+            plotOptions: {
+                series: {
+                    dataLabels: {
+                        enabled: true,
+                        format: '{point.name}',
+                        y: 5
+                    },
+                    point: {
+                        events: {
+                            click: function () {
+                                alert("Clicked: " + this.name);
+                            }
+                        }
+                    }
+                }
+            },
+
+            series: [
+                {
+                    name: 'India Base',
+                    borderColor: '#A0A0A0',
+                    nullColor: 'rgba(200, 200, 200, 0.1)',
+                    showInLegend: false
+                },
+                {
+                    name: 'Separators',
+                    type: 'mapline',
+                    nullColor: '#707070',
+                    showInLegend: false,
+                    enableMouseTracking: false
+                },
+                {
+                    type: 'mappoint',
+                    name: 'Total Beneficiaries',
+                    color: '#367E18',
+                    data: [
+                        { name: 'Gajraula', lat: 28.8457, lon: 78.2396, beneficiaries: 54416 },
+                        { name: 'Kapasan', lat: 24.8765, lon: 74.3177, beneficiaries: 30019 },
+                        { name: 'Nira', lat: 18.1674, lon: 74.2041, beneficiaries: 1331 },
+                        { name: 'Roorkee', lat: 29.854263, lon: 77.888000, beneficiaries: 27770 },
+                        { name: 'Savli', lat: 22.5601, lon: 73.2204, beneficiaries: 40647 },
+                        { name: 'Bharuch', lat: 21.705723, lon: 72.998199, beneficiaries: 20495 },
+                        { name: 'Nanjangud', lat: 12.120000, lon: 76.680000, beneficiaries: 38802 }
+                    ]
+                }
+            ]
+        });
+    });
+}
+</script>

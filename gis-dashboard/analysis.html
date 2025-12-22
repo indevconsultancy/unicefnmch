@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Bihar Drilldown — District → Sub-District → Village (Name-based, Streaming)</title>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/papaparse@5.4.1/papaparse.min.js"></script>
+<script src="https://unpkg.com/chroma-js@2.4.2/chroma.min.js"></script>
+<script src="https://unpkg.com/simple-statistics@7.8.3/dist/simple-statistics.min.js"></script>
+<script src="https://unpkg.com/leaflet-easyprint@2.1.9/dist/bundle.min.js"></script>
+<!-- streaming JSON parser for large GeoJSON -->
+<script src="https://unpkg.com/oboe@2.1.5/dist/oboe-browser.min.js"></script>
+
+<style>
+:root{ --bg:#0b1220; --panel:#0f172a; --muted:#94a3b8; --text:#e2e8f0; --accent:#38bdf8; --accent2:#8b5cf6; }
+*{ box-sizing:border-box } html,body{ height:100% }
+body{ margin:0; font-family:Inter,system-ui,Segoe UI,Roboto,sans-serif; background:#0b1220; color:var(--text) }
+.app{ display:grid; grid-template-columns: 360px 1fr; grid-template-rows:auto 1fr; height:100% }
+header{ grid-column:1/3; padding:12px 16px; border-bottom:1px solid #1f2937; display:flex; gap:12px; align-items:center; flex-wrap:wrap }
+h1{ margin:0; font-size:18px } .tag{ font-size:12px; color:#93c5fd; border:1px solid #1f2937; padding:2px 8px; border-radius:999px }
+.sidebar{ border-right:1px solid #1f2937; padding:14px; overflow:auto; background:linear-gradient(180deg,#0b1220,#0e1726) }
+.panel{ background:rgba(255,255,255,.04); border:1px solid #1f2937; border-radius:14px; padding:12px; margin-bottom:12px }
+.panel h3{ margin:0 0 8px; font-size:14px; color:#cbd5e1 }
+label{ font-size:12px; color:var(--muted) }
+select, input[type="number"], button{ width:100%; background:#0b1220; color:#e2e8f0; border:1px solid #243449; border-radius:10px; padding:8px 10px; margin-top:6px }
+button{ cursor:pointer } .btn-primary{ background:linear-gradient(90deg,var(--accent),var(--accent2)); border:none }
+.btn-row{ display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-top:8px }
+.grid2{ display:grid; grid-template-columns:1fr 1fr; gap:8px } .small{ font-size:11px; color:#8ea6c7 }
+.kpis{ display:grid; grid-template-columns:repeat(3,1fr); gap:10px }
+.kpi{ background:rgba(255,255,255,.04); border:1px solid #1f2937; border-radius:14px; padding:10px }
+.kpi .val{ font-weight:700; font-size:18px }
+.map-wrap{ position:relative } #map{ height:100%; width:100% }
+.legend{ position:absolute; bottom:14px; left:14px; background:#0b1220; border:1px solid #1f2937; padding:8px 10px; border-radius:10px; color:#cbd5e1; font-size:12px; box-shadow:0 8px 24px rgba(0,0,0,.25) }
+.legend .scale{ display:flex; gap:4px; align-items:center; margin:6px 0 } .legend .swatch{ width:18px; height:12px; border-radius:2px; border:1px solid rgba(0,0,0,.25) }
+.info{ position:absolute; top:14px; right:14px; background:#0b1220; border:1px solid #1f2937; padding:10px 12px; border-radius:10px; color:#cbd5e1; font-size:12px; max-width:360px }
+.hidden{ display:none } .breadcrumbs{ margin-left:auto; display:flex; gap:8px; align-items:center; flex-wrap:wrap }
+.breadcrumbs a{ font-size:12px; color:#93c5fd; text-decoration:none; cursor:pointer } .breadcrumbs .sep{ color:#475569 }
+.leaflet-tooltip.vlabel{ background:transparent; border:none; box-shadow:none; color:#e2e8f0; font-weight:700; font-size:11px; text-shadow:0 1px 2px rgba(0,0,0,.85) }
+.tbl{ border-collapse:collapse; width:100%; font-size:12px } .tbl td{ padding:2px 4px; border-bottom:1px solid #1f2937 }
+.badge{ display:inline-block; width:10px; height:10px; border-radius:2px; margin-right:6px; border:1px solid rgba(0,0,0,.25) }
+</style>
+</head>
+<body>
+<div class="app">
+  <header>
+    <span class="tag">GIS • Bihar</span>
+    <h1>District → Sub-District → Village (Name-based)</h1>
+    <div id="crumbs" class="breadcrumbs"></div>
+  </header>
+
+  <aside class="sidebar">
+    <div class="panel">
+      <h3>Data</h3>
+      <div class="small">
+        Auto-loads <code>BIHAR_SUBDISTRICTS.geojson</code> & <code>bihar_villages.csv</code>.<br>
+        Villages are <b>streamed on click</b> from <code>BIHAR_VILLAGE.geojson</code> (filtered by <code>SUB_DIST</code>).
+      </div>
+      <div class="btn-row" style="margin-top:8px">
+        <button id="btnReload">Reload</button>
+        <button id="btnReset">Reset View</button>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h3>Styling & Choropleth</h3>
+      <label>Indicator</label>
+      <select id="indicatorSelect">
+        <option value="nutrition">nutrition</option>
+        <option value="protection">protection</option>
+        <option value="education">education</option>
+        <option value="health_idx">health_idx</option>
+        <option value="child_ana">child_ana</option>
+        <option value="early_mar">early_mar</option>
+        <option value="anc_4plus">anc_4plus</option>
+        <option value="__composite__">COMPOSITE (weighted)</option>
+      </select>
+      <label style="margin-top:8px">Color mode</label>
+      <select id="colorMode">
+        <option value="choropleth">Choropleth by indicator</option>
+        <option value="unique">Unique color per shape</option>
+      </select>
+      <div class="btn-row"><button class="btn-primary" id="btnApply">Apply</button><button id="exportPng">Export Map</button></div>
+    </div>
+
+    <div class="panel">
+      <h3>Composite (0–1)</h3>
+      <div class="grid2" style="margin-top:8px">
+        <div><label>Nutrition</label><input id="wN" type="number" min="0" max="100" value="25"/></div>
+        <div><label>Protection</label><input id="wP" type="number" min="0" max="100" value="25"/></div>
+        <div><label>Education</label><input id="wE" type="number" min="0" max="100" value="25"/></div>
+        <div><label>Health</label><input id="wH" type="number" min="0" max="100" value="25"/></div>
+      </div>
+      <div class="btn-row"><button id="computeComposite" class="btn-primary">Compute & Use</button></div>
+    </div>
+
+    <div class="panel">
+      <h3>KPIs</h3>
+      <div class="kpis">
+        <div class="kpi"><div class="small">Units</div><div id="kpiUnits" class="val">–</div></div>
+        <div class="kpi"><div class="small">Avg</div><div id="kpiAvg" class="val">–</div></div>
+        <div class="kpi"><div class="small">Hotspots (90th)</div><div id="kpiHot" class="val">–</div></div>
+      </div>
+    </div>
+
+    <div class="small">Click a Sub-District (by name match) to stream its villages.</div>
+  </aside>
+
+  <main class="map-wrap">
+    <div id="map"></div>
+    <div id="legend" class="legend hidden"></div>
+    <div id="infoBox" class="info hidden">Loading…</div>
+  </main>
+</div>
+
+<script>
+/* ---------- Map ---------- */
+const map = L.map('map', { zoomSnap:.5, zoomControl:true }).setView([25.9,85.3], 7);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19, attribution:'© OpenStreetMap'}).addTo(map);
+
+/* ---------- Data URLs ---------- */
+const DATA_URLS = {
+  subdistricts: './BIHAR_SUBDISTRICTS.geojson',
+  villages:     './BIHAR_VILLAGE.geojson',  // large
+  csv:          './bihar_villages.csv'
+};
+
+/* ---------- FIXED KEY MAPPING (hidden) ---------- */
+const KEYS = {
+  dist_code:'Dist_LGD',   dist_name:'dtname',
+  sub_code:'Subdt_LGD',   sub_name:'stname',
+  vil_code:'CEN_2001',    vil_name:'NAME',
+  vil_parent:'SUB_DIST',  parent_match:'name' // match villages by Sub-District NAME
+};
+
+/* ---------- State ---------- */
+let fcSub=null, lyr=null;
+const legendEl=document.getElementById('legend'), infoEl=document.getElementById('infoBox'), crumbsEl=document.getElementById('crumbs');
+const ddStack=[]; let currentIndicator=null;
+const compositeKey='__composite__';
+let dataVillage={}, dataSub={}, dataDist={};
+const VIL_CACHE = {}; // cache by sub-district NAME (normalized)
+
+/* ---------- Utils ---------- */
+const notice = s => { infoEl.classList.remove('hidden'); infoEl.innerHTML=s; setTimeout(()=>infoEl.classList.add('hidden'), 1600); };
+const normKey = v => (v==null? '' : String(v)).trim().toUpperCase();
+function expandSci(s){ const str=String(s).trim(); if(!/e/i.test(str)) return str; try{ const [m,e]=str.toUpperCase().split('E'); const k=parseInt(e.replace('+',''),10); const parts=m.split('.'); let digits=parts.join(''); let dec=parts[1]?.length||0; const shift=k-dec; if(shift>=0) return digits+'0'.repeat(shift); return str; }catch(_){ return str; } }
+const style = lvl => ({ color:'#0b1220', weight:1, fillColor:'#334155', fillOpacity:0.75 });
+function clearLayer(){ if(lyr){ map.removeLayer(lyr); lyr=null; } legendEl.classList.add('hidden'); }
+function uniqueColorFor(id){ const s=String(id); let h=0; for(let i=0;i<s.length;i++){ h=(h*31 + s.charCodeAt(i))>>>0; } const p=['#EF4444','#F59E0B','#10B981','#3B82F6','#8B5CF6','#EC4899','#14B8A6','#F97316','#22C55E','#06B6D4','#A855F7','#FB7185','#4ADE80','#60A5FA','#FDE047','#34D399','#93C5FD','#F472B6','#7C3AED','#0EA5E9']; return p[h % p.length]; }
+const labelFor=(lvl,ft)=> lvl==='district'? (ft.properties[KEYS.dist_name]||ft.properties[KEYS.dist_code])
+                         : lvl==='subdistrict'? (ft.properties[KEYS.sub_name]||ft.properties[KEYS.sub_code])
+                         : (ft.properties[KEYS.vil_name]||ft.properties[KEYS.vil_code]);
+
+/* ---------- Build Districts from Sub-Districts ---------- */
+function buildDistrictFC(){
+  const groups = {};
+  fcSub.features.forEach(ft=>{
+    const dcode = normKey(ft.properties[KEYS.dist_code]);
+    if(!groups[dcode]) groups[dcode] = {name: ft.properties[KEYS.dist_name], polys:[]};
+    const g=ft.geometry; if(!g) return;
+    (g.type==='Polygon'? [g.coordinates] : g.coordinates).forEach(p=>groups[dcode].polys.push(p));
+  });
+  return { type:'FeatureCollection',
+    features: Object.entries(groups).map(([code,obj])=>({type:'Feature',
+      properties:{ [KEYS.dist_code]:code, [KEYS.dist_name]:obj.name },
+      geometry:{ type:'MultiPolygon', coordinates: obj.polys }
+    }))
+  };
+}
+
+/* ---------- CSV → stores and aggregations ---------- */
+function parseCSVText(text){ return Papa.parse(text, {header:true, dynamicTyping:false, skipEmptyLines:true}).data; }
+function loadCSV(rows){
+  dataVillage={};
+  rows.forEach(r=>{
+    const cen = normKey(expandSci(r[KEYS.vil_code]));         // CEN_2001
+    const sc  = normKey(r[KEYS.sub_code]);                    // Subdt_LGD
+    const dc  = normKey(r[KEYS.dist_code]);                   // Dist_LGD
+    dataVillage[cen] = { [KEYS.vil_code]: cen, [KEYS.sub_code]: sc, [KEYS.dist_code]: dc, [KEYS.vil_name]: r[KEYS.vil_name],
+      nutrition:+r.nutrition, protection:+r.protection, education:+r.education, health_idx:+r.health_idx,
+      child_ana:+r.child_ana, early_mar:+r.early_mar, anc_4plus:+r.anc_4plus };
+  });
+
+  const accS={}; Object.values(dataVillage).forEach(v=>{
+    const k=v[KEYS.sub_code]; if(!k) return;
+    (accS[k] ||= {n:0, nutrition:0, protection:0, education:0, health_idx:0, child_ana:0, early_mar:0, anc_4plus:0});
+    accS[k].n++; ['nutrition','protection','education','health_idx','child_ana','early_mar','anc_4plus'].forEach(c=> accS[k][c]+=(isFinite(v[c])?v[c]:0));
+  });
+  dataSub={}; Object.entries(accS).forEach(([k,a])=>{ const n=Math.max(1,a.n);
+    dataSub[k]={ [KEYS.sub_code]:k, nutrition:a.nutrition/n, protection:a.protection/n, education:a.education/n, health_idx:a.health_idx/n, child_ana:a.child_ana/n, early_mar:a.early_mar/n, anc_4plus:a.anc_4plus/n};
+  });
+
+  const accD={}; Object.values(dataVillage).forEach(v=>{
+    const k=v[KEYS.dist_code]; if(!k) return;
+    (accD[k] ||= {n:0, nutrition:0, protection:0, education:0, health_idx:0, child_ana:0, early_mar:0, anc_4plus:0});
+    accD[k].n++; ['nutrition','protection','education','health_idx','child_ana','early_mar','anc_4plus'].forEach(c=> accD[k][c]+=(isFinite(v[c])?v[c]:0));
+  });
+  dataDist={}; Object.entries(accD).forEach(([k,a])=>{ const n=Math.max(1,a.n);
+    dataDist[k]={ [KEYS.dist_code]:k, nutrition:a.nutrition/n, protection:a.protection/n, education:a.education/n, health_idx:a.health_idx/n, child_ana:a.child_ana/n, early_mar:a.early_mar/n, anc_4plus:a.anc_4plus/n};
+  });
+}
+
+/* ---------- Drill helpers ---------- */
+const order=['district','subdistrict','village'];
+const nextLevel=l=> order[order.indexOf(l)+1] || null;
+function datasetFor(level){
+  if(level==='district')   return { key:KEYS.dist_code, rows:dataDist };
+  if(level==='subdistrict')return { key:KEYS.sub_code,  rows:dataSub  };
+  return { key:KEYS.vil_code, rows:dataVillage };
+}
+function renderCrumbs(){
+  const parts = ddStack.map((s,i)=>`<a data-crumb="${i}">${s.filter?.label || (s.level[0].toUpperCase()+s.level.slice(1))}</a>`);
+  crumbsEl.innerHTML = parts.length? parts.join('<span class="sep">/</span>') : '';
+  crumbsEl.querySelectorAll('a').forEach(a=> a.onclick = ()=> drillUpTo(+a.getAttribute('data-crumb')));
+}
+function drillUpTo(idx){
+  while(ddStack.length-1 > idx){ const top=ddStack.pop(); try{ map.removeLayer(top.layer);}catch(e){} }
+  const last = ddStack.pop();
+  if(last){ drillTo(last.level, last.filter); } else { clearLayer(); renderCrumbs(); }
+}
+function bindHover(layer, level){
+  layer.on({
+    mouseover:e=>{
+      const l=e.target; l.setStyle({weight:2});
+      const {key, rows} = datasetFor(level);
+      const id = normKey(e.target.feature.properties[key]);
+      const r = rows[id];
+      const nm = labelFor(level, e.target.feature);
+      const keys=['nutrition','protection','education','health_idx', compositeKey, currentIndicator].filter(Boolean);
+      const lines = r? keys.filter(k=>r[k]!=null).map(k=> `<div class="small"><b>${k}</b>: ${(+r[k]).toFixed(2)}</div>`) : [];
+      infoEl.classList.remove('hidden');
+      infoEl.innerHTML = `<div style="font-weight:700;margin-bottom:6px">${nm}</div>${lines.join('') || '<span class="small">No data</span>'}`;
+    },
+    mouseout:()=> lyr.resetStyle(layer)
+  });
+  layer.on('click', ()=>{
+    const n = nextLevel(level); if(!n) return;
+    if(level==='district'){
+      drillTo('subdistrict', { value:normKey(layer.feature.properties[KEYS.dist_code]), label: labelFor(level, layer.feature) });
+    }else if(level==='subdistrict'){
+      // IMPORTANT: drill using Sub-District NAME (stname) to match village SUB_DIST
+      const value = normKey(layer.feature.properties[KEYS.sub_name]);
+      drillTo('village', { value, label: labelFor(level, layer.feature) });
+    }
+  });
+}
+function paintLayer(fc, level){
+  if(!fc.features.length){ notice(`No ${level} features found.`); return; }
+  clearLayer();
+  lyr = L.geoJSON(fc,{ style:()=>style(level), onEachFeature:(f,l)=>bindHover(l, level) }).addTo(map);
+  try{ map.fitBounds(lyr.getBounds(), {padding:[20,20]}); }catch(e){}
+  if(level==='village'){
+    lyr.eachLayer(l=>{ const nm=labelFor(level,l.feature); const c=l.getBounds?.().getCenter?.(); if(c) l.bindTooltip(nm,{permanent:true,direction:'center',className:'vlabel'}).openTooltip(); });
+  }
+  ddStack.push({level, layer:lyr, filter:null});
+  renderCrumbs(); applyChoropleth();
+}
+
+/* ---------- STREAM villages for the clicked Sub-District (NAME match) ---------- */
+function loadVillagesForParent(parentName){
+  const key = normKey(parentName);           // Sub-District NAME (stname)
+  if (VIL_CACHE[key]) return Promise.resolve(VIL_CACHE[key]);
+
+  return new Promise((resolve, reject)=>{
+    const feats = [];
+    infoEl.classList.remove('hidden');
+    infoEl.innerHTML = `Loading villages for <b>${key}</b>… (streaming)`;
+
+    oboe(DATA_URLS.villages)
+      .node('features.*', function(feature){
+        try{
+          const props = feature.properties || {};
+          const parentVal = normKey(expandSci(props[KEYS.vil_parent])); // SUB_DIST in village file
+          if (parentVal === key){
+            // normalize village code if present
+            if (props[KEYS.vil_code] != null)
+              props[KEYS.vil_code] = normKey(expandSci(props[KEYS.vil_code]));
+            props[KEYS.vil_parent] = parentVal;
+            feats.push({ type:'Feature', properties: props, geometry: feature.geometry });
+          }
+        }catch(e){}
+        return oboe.drop; // free memory for non-matching features
+      })
+      .done(function(){
+        const fc = { type:'FeatureCollection', features: feats };
+        VIL_CACHE[key] = fc;
+        resolve(fc);
+      })
+      .fail(function(err){ reject(err.thrown || err); });
+  });
+}
+
+function drillTo(level, filter=null){
+  if(level==='district'){
+    paintLayer(buildDistrictFC(), 'district');
+  }else if(level==='subdistrict'){
+    paintLayer(fcSub, 'subdistrict');
+  }else{
+    if(!filter?.value){ notice('Missing Sub-District NAME'); return; }
+    loadVillagesForParent(filter.value)
+      .then(fc => { paintLayer(fc, 'village'); notice(`Loaded ${fc.features.length} villages.`); })
+      .catch(err => { console.error(err); notice('Village stream failed (check path/CORS).'); });
+  }
+}
+
+/* ---------- Choropleth, KPIs & Popups ---------- */
+function computeBreak(values){ const arr=values.filter(Number.isFinite).sort((a,b)=>a-b); if(!arr.length) return null; return {min:arr[0], max:arr[arr.length-1]}; }
+function buildLegend_Choropleth(title, scale, min, max){
+  legendEl.classList.remove('hidden');
+  legendEl.innerHTML = `<div style="font-weight:600;margin-bottom:6px">${title}</div>`;
+  const sc=document.createElement('div'); sc.className='scale';
+  for(let i=0;i<6;i++){ const t=min+(i*(max-min))/5; const sw=document.createElement('span'); sw.className='swatch'; sw.style.background=scale(t); sc.appendChild(sw); }
+  legendEl.appendChild(sc);
+  legendEl.insertAdjacentHTML('beforeend', `<div>Low ${min.toFixed(2)} → High ${max.toFixed(2)}</div>`);
+}
+function buildLegend_Unique(){ legendEl.classList.remove('hidden'); legendEl.innerHTML = `<div style="font-weight:600;margin-bottom:6px">Unique colors</div><div class="small">Each shape has a fixed color.</div>`; }
+function updateKPIs(indKey){
+  if(!lyr) return; const top=ddStack.length? ddStack[ddStack.length-1] : null; const lvl = top? top.level : 'district';
+  const {key, rows} = datasetFor(lvl);
+  const vals=[]; lyr.eachLayer(l=>{ const id=normKey(l.feature.properties[key]); const r=rows[id]; const v=r?+r[indKey]:NaN; if(Number.isFinite(v)) vals.push(v); });
+  const n=vals.length, avg=n? vals.reduce((a,b)=>a+b,0)/n : NaN, q90=n? ss.quantile(vals,0.9):NaN;
+  document.getElementById('kpiUnits').textContent = n||'–';
+  document.getElementById('kpiAvg').textContent   = Number.isFinite(avg)? avg.toFixed(2) : '–';
+  document.getElementById('kpiHot').textContent   = Number.isFinite(q90)? vals.filter(v=>v>=q90).length : '–';
+}
+function popupTableHTML(title, color, row){
+  const cells = [['nutrition',row?.nutrition],['protection',row?.protection],['education',row?.education],['health_idx',row?.health_idx],['child_ana',row?.child_ana],['early_mar',row?.early_mar],['anc_4plus',row?.anc_4plus],['COMPOSITE',row?.[compositeKey]]]
+    .filter(([k,v])=> v!=null && !Number.isNaN(+v))
+    .map(([k,v])=> `<tr><td>${k}</td><td style="text-align:right">${(+v).toFixed(2)}</td></tr>`).join('');
+  return `<div style="display:flex;align-items:center;gap:6px;margin-bottom:6px"><span class="badge" style="background:${color}"></span><b>${title}</b></div>${cells? `<table class="tbl">${cells}</table>` : '<div class="small">No indicator values</div>'}`;
+}
+function wirePopups(indKey){
+  const top=ddStack.length? ddStack[ddStack.length-1] : null; const lvl=top? top.level : 'district'; const {key, rows} = datasetFor(lvl);
+  const mode=document.getElementById('colorMode').value;
+  lyr.eachLayer(l=>{
+    const id=normKey(l.feature.properties[key]); const r=rows[id]; const nm=labelFor(lvl,l.feature);
+    const color = (mode==='unique') ? uniqueColorFor(id||nm) : (l.options.fillColor || '#94a3b8');
+    l.bindPopup(popupTableHTML(nm, color, r));
+  });
+}
+function applyChoropleth(forceKey=null){
+  if(!lyr) return; const indKey = forceKey || document.getElementById('indicatorSelect').value || 'nutrition'; currentIndicator=indKey;
+  const top=ddStack.length? ddStack[ddStack.length-1] : null; const lvl=top? top.level : 'district'; const {key, rows} = datasetFor(lvl); const mode=document.getElementById('colorMode').value;
+
+  if(mode==='unique'){ lyr.setStyle(ft=>({ ...style(lvl), fillColor: uniqueColorFor(normKey(ft.properties[key]) || labelFor(lvl,ft)) })); buildLegend_Unique();
+  }else{
+    const vals=[]; lyr.eachLayer(l=>{ const r=rows[normKey(l.feature.properties[key])]; const v=r?parseFloat(r[indKey]):NaN; if(Number.isFinite(v)) vals.push(v); });
+    const br=computeBreak(vals); if(!br){ notice('No numeric values for this indicator.'); return; }
+    const scale=chroma.scale(['#f1f5f9','#fde047','#fb923c','#ef4444','#b91c1c']).domain([br.min,br.max]);
+    lyr.setStyle(ft=>{ const r=rows[normKey(ft.properties[key])]; const v=r?parseFloat(r[indKey]):NaN; const fill=Number.isFinite(v)? scale(v).hex():'#1f2937'; return {...style(lvl), fillColor:fill}; });
+    buildLegend_Choropleth(indKey, scale, br.min, br.max);
+  }
+  wirePopups(indKey); updateKPIs(indKey);
+}
+
+/* ---------- Autoload (sub-districts + CSV) ---------- */
+async function autoload(){
+  infoEl.classList.remove('hidden'); infoEl.innerHTML = 'Loading sub-districts & CSV…';
+  try{
+    const [gjSub, csvText] = await Promise.all([
+      fetch(DATA_URLS.subdistricts).then(r=>{ if(!r.ok) throw new Error('Sub-districts not found'); return r.json(); }),
+      fetch(DATA_URLS.csv).then(r=>{ if(!r.ok) throw new Error('CSV not found'); return r.text(); })
+    ]);
+    fcSub = gjSub;
+    loadCSV(parseCSVText(csvText));
+    drillTo('district'); applyChoropleth('nutrition');
+    notice('Loaded. Click a Sub-District to stream villages.');
+  }catch(err){
+    console.error(err);
+    infoEl.classList.remove('hidden');
+    infoEl.innerHTML = 'Failed to load. Check file paths/CORS.';
+  }
+}
+
+/* ---------- Controls ---------- */
+document.getElementById('btnApply').onclick = ()=> applyChoropleth();
+document.getElementById('exportPng').onclick = ()=>{
+  const p=L.easyPrint({sizeModes:['A4Landscape','A4Portrait'],filename:'bihar_drilldown_map',exportOnly:true,hideControlContainer:true}).addTo(map);
+  p.printMap('A4Landscape','Bihar Drilldown'); setTimeout(()=>map.removeControl(p),1200);
+};
+document.getElementById('computeComposite').onclick = ()=>{
+  const wN=+document.getElementById('wN').value||0, wP=+document.getElementById('wP').value||0, wE=+document.getElementById('wE').value||0, wH=+document.getElementById('wH').value||0;
+  const s=wN+wP+wE+wH; if(s<=0){ notice('Weights must sum to > 0.'); return; }
+  [dataVillage, dataSub, dataDist].forEach(store=>{
+    Object.values(store).forEach(r=>{
+      r[compositeKey] = ((+r.nutrition||0)*wN + (+r.protection||0)*wP + (+r.education||0)*wE + (+r.health_idx||0)*wH) / s;
+    });
+  });
+  document.getElementById('indicatorSelect').value = compositeKey;
+  applyChoropleth(compositeKey);
+  notice('Composite computed.');
+};
+document.getElementById('btnReset').onclick = ()=>{
+  while(ddStack.length){ const s=ddStack.pop(); try{ map.removeLayer(s.layer);}catch(e){} }
+  clearLayer(); crumbsEl.innerHTML=''; infoEl.classList.add('hidden');
+  drillTo('district'); applyChoropleth();
+};
+document.getElementById('btnReload').onclick = ()=> autoload();
+
+/* Boot */
+document.addEventListener('DOMContentLoaded', autoload);
+</script>
+</body>
+</html>

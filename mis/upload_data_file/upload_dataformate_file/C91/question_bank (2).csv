@@ -1,0 +1,362 @@
+question_bank_id,unique_id,question_bank_name,field_name,question_type,category_id,common_use,data_source,target_group,user_id,created_on,status
+1,4534636366,Have you ever attended school?,q_105,select_one,1,1,Admin,,3,0000-00-00 00:00:00,0
+2,4534636366,Now I would like you to read this sentence to me.,q_108,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+3,4534636366,"Do you read a newspaper or magazine at least once a week, less than once a week or not at all?",q_110,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+4,4534636366,"Do you listen to the radio at least once a week, less than once a week or not at all?",q_111,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+5,4534636366,"Do you watch television at least once a week, less than once a week or not at all?",q_112,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+6,4534636366,Do you usually go to a cinema hall or theatre to see a movie at least once a month?,q_113,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+7,4534636366,What is your religion?,q_114,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+8,4534636366,"Do you belong to a scheduled caste, a scheduled tribe, other backward class, or none of these?",q_116,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+9,4534636366,Now I would like to ask about all the births you have had during your life. Have you ever given birth?,q_201,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+10,4534636366,Do you have any sons or daughters to whom you have given birth who are now living with you?,q_202,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+11,4534636366,Do you have any sons or daughters to whom you have given birth who are alive but do not live with you?,q_204,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+12,4534636366,Have you ever given birth to a boy or girl who was born alive but later died?,q_206,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+13,4534636366,Have you had any live births since the birth of (NAME OF LAST BIRTH)?,q_222,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+14,4534636366,"Before the birth of (NAME OF FIRST BIRTH), did you have any other live births?",q_223,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+15,4534636366,Are you pregnant now?,q_226,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+16,4534636366,"When you got pregnant, did you want to get pregnant at that time?",q_229,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+17,4534636366,"Have you ever had a pregnancy that miscarried, was aborted, or ended in a stillbirth?",q_231,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+18,4534636366,"Did that pregnancy end in a miscarriage, an abortion, or a stillbirth?",q_234,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+19,4534636366,Where was the abortion performed?,q_238,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+20,4534636366,Who performed the abortion?,q_239,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+21,4534636366,What method was used for the abortion?,q_240,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+22,4534636366,What was the main reason for the abortion?,q_241,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+23,4534636366,Did you have any complication from the abortion?,q_242,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+24,4534636366,Did you seek treatment for the complication?,q_243,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+25,4534636366,Where did you go for treatment?,q_244,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+26,4534636366,Why did you not seek treatment?Any other reason?,q_245,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+27,4534636366,"Since January 2014, have you had any other pregnancies that did not result in a live birth?",q_246,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+28,4534636366,Did you have any pregnancies that terminated in 2013 or earlier that did not result in a live birth?,q_248,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+29,4534636366,Some women undergo an operation to remove the uterus. Have you undergone such an operation?,q_253,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+30,4534636366,Where was this operation performed?,q_255,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+31,4534636366,Why was this operation performed?Any other reason?,q_256,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+32,4534636366,"Women use different methods of protection during their menstrual period to prevent bloodstains from becoming evident. What do you use for protection, if anything?",q_260,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+33,4534636366,"From one menstrual period to the next, are there certain days when a woman is more likely to become pregnant if she has sexual relations?",q_261,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+34,4534636366,"Is this time just before her period begins, during her period, right after her period has ended, or halfway between two periods?",q_262,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+35,4534636366,Do you take a bath during your menstrual period ?,q_264,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+36,4534636366,"During your period, do you usually take a bath in the same bathroom as other household members take a bath?",q_265,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+37,4534636366,What is your current marital status?,q_301,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+38,4534636366,"Is your husband living with you now, or is he staying elsewhere?",q_302,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+39,4534636366,"Besides yourself, does your husband have other wives?",q_305,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+40,4534636366,Have you been married once or more than once?,q_307,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+41,4534636366,"Before you got married, was your (current) husband related to you in any way?",q_310,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+42,4534636366,What type of relationship was it?,q_311,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+43,4534636366,Have you ever had sexual intercourse?,q_315,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+44,4534636366,Have you ever heard of FEMALE STERILIZATION?,q_317_1,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+45,4534636366,Have you ever heard of MALE STERILIZATION?,q_317_2,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+46,4534636366,Have you ever heard of IUD OR PPIUD?,q_317_3,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+47,4534636366,Have you ever heard of INJECTABLES?,q_317_4,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+48,4534636366,Have you ever heard of PILL?,q_317_5,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+49,4534636366,Have you ever heard of CONDOM OR NIRODH?,q_317_6,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+50,4534636366,Have you ever heard of FEMALE CONDOM?,q_317_7,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+51,4534636366,Have you ever heard of EMERGENCY CONTRACEPTION?,q_317_8,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+52,4534636366,Have you ever heard of DIAPHRAGM?,q_317_9,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+53,4534636366,Have you ever heard of FOAM/JELLY?,q_317_10,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+54,4534636366,Have you ever heard of STANDARD DAYS METHOD?,q_317_11,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+55,4534636366,Have you ever heard o fLACTATIONAL AMENORRHOEA METHOD (LAM)?,q_317_12,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+56,4534636366,Have you ever heard of RHYTHM METHOD?,q_317_13,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+57,4534636366,Have you ever heard of WITHDRAWAL?,q_317_14,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+58,4534636366,Have you ever heard of any other ways or methods?,q_317_15A,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+59,4534636366,Have you ever heard of any other ways or methods?,q_317_16B,text,1,0,Admin,,3,0000-00-00 00:00:00,0
+60,4534636366,Have you ever used anything or tried in any way to delay or avoid getting pregnant?,q_319,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+61,4534636366,What have you used or done?,q_321,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+62,4534636366,Where did you get the emergency contraception?Anywhere else?,q_324,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+63,4534636366,Are you currently doing something or using any method to delay or avoid getting pregnant?,q_329,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+64,4534636366,Which method are you using?,q_330,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+65,4534636366,In what facility did the sterilization take place?,q_331,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+66,4534636366,"Before your sterilization operation, were you told by a healthcare provider that you would not be able to have any (more) children because of the operation?",q_333,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+67,4534636366,"How would you rate the care you received during and immediately after the operation: very good, all right, not so good, or bad?",q_334,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+68,4534636366,Did you receive any compensation for the sterilization?,q_336,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+69,4534636366,Do you regret that you had the sterilization?,q_338,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+70,4534636366,Did you receive compensation for use of the IUD/PPIUD?,q_340,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+71,4534636366,Was your IUD/PPIUD inserted within 48 hours following childbirth?,q_342,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+72,4534636366,"You started using (CURRENT METHOD) in (MONTH/YEAR). At that time, were you told about side effects or problems you might have with the method?",q_348,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+73,4534636366,Were you ever told by a health or family planning worker about side effects or problems you might have with the method?,q_349,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+74,4534636366,Were you told what to do if you experienced side effects or problems?,q_350,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+75,4534636366,"When you got sterilized, were you told about other methods of family planning that you could use?",q_351A,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+76,4534636366,"METHOD), were you told about other methods of family planning that you could use?",q_351B,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+77,4534636366,Were you ever told by a health or family planning worker about other methods of family planning that you could use?,q_352,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+78,4534636366,Where did you obtain (CURRENT METHOD) the last time?,q_354,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+79,4534636366,Were you ever told by a health worker about any methods of family planning that you can use to avoid pregnancy?,q_356,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+80,4534636366,Do you know of a place where you can obtain a method of family planning?,q_357,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+81,4534636366,Where is that?,q_358,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+82,4534636366,Now I would like to talk to you about any contacts you have had recently with an ANM or LHV. In the last three months have you met with an ANM or LHV?,q_359,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+83,4534636366,"In the last three months, have you met with an anganwadi worker, ASHA or other community health worker?",q_361,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+84,4534636366,Who did you meet?,q_362,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+85,4534636366,"During (this contact/all these contacts) with (PERSONS MENTIONED IN 359 AND 361) in the last three months, what were the different services provided and matters talked about?Anything else?",q_365,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+86,4534636366,Who did you meet during your (most recent) contact?,q_366,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+87,4534636366,"In the last three months, have you visited a health facility or camp for any reason for yourself (or for your children)?",q_368,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+88,4534636366,What type of health facility did you visit most recently for yourself (or for your children)?,q_369,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+89,4534636366,What service did you go for?,q_370,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+90,4534636366,"When you got pregnant with (NAME), did you want to get pregnant at that time?",q_405,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+91,4534636366,"Did you want to have a baby later on, or did you not want any children?",q_406A,text,1,0,Admin,,3,0000-00-00 00:00:00,0
+92,4534636366,"Did you want to have a baby later on, or did you not want any more children?",q_406B,text,1,0,Admin,,3,0000-00-00 00:00:00,0
+93,4534636366,Did you use a pregnancy testing kit to confirm this pregnancy?,q_409,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+94,4534636366,Was this pregnancy registered?,q_410,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+95,4534636366,With whom did you register?,q_412,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+96,4534636366,Did you receive a Mother and Child Protection Card after registration?,q_413,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+97,4534636366,Did you see anyone for antenatal care for this pregnancy?,q_414,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+98,4534636366,Whom did you see?,q_415,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+99,4534636366,Where did you receive antenatal care for this pregnancy?,q_416,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+100,4534636366,Were you weighed?,q_419A,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+101,4534636366,Was your blood pressure measured?,q_419B,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+102,4534636366,Did you give a urine sample?,q_419C,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+103,4534636366,Was a sample of your blood taken for testing?,q_419D,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+104,4534636366,Was your abdomen examined?,q_419E,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+105,4534636366,Told about the Vaginal bleeding?,q_420A,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+106,4534636366,Told about the Convulsions?,q_420B,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+107,4534636366,Told about the Prolonged labour?,q_420C,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+108,4534636366,Told about the Severe abdominal pain?,q_420D,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+109,4534636366,Told about the High blood pressure?,q_420E,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+110,4534636366,Were you told where to go if you had any pregnancy complications?,q_421,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+111,4534636366,Was (NAME's) father present during (any of) your antenatal visits?,q_422,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+112,4534636366,"During this pregnancy, were you given an injection in the arm to prevent the baby from getting tetanus, that is, convulsions after birth?",q_423,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+113,4534636366,"At any time before this pregnancy, did you receive any tetanus injections?",q_426,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+114,4534636366,"During this pregnancy, were you given or did you buy any iron folic acid tablets or syrup?",q_429,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+115,4534636366,"During this pregnancy, did you take any drug for intestinal worms?",q_431,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+116,4534636366,"During this pregnancy, did you use a mosquito net regularly, sometimes or never?",q_432,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+117,4534636366,"During this pregnancy, did you have difficulty with your vision during daylight?",q_433,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+118,4534636366,"During this pregnancy, did you have convulsions not from fever?",q_434,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+119,4534636366,"During this pregnancy, did you have swelling of the legs, body or face?",q_435,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+120,4534636366,Did you receive any supplementary nutrition from the anganwadi centre during this pregnancy?,q_436,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+121,4534636366,"During this pregnancy, were you always able to get the supplementary nutrition from the anganwadi centre?",q_437,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+122,4534636366,"During the last three months of this pregnancy, did you meet with an ANM, Lady Health Visitor, ASHA, anganwadi worker, or other community health worker?",q_438,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+123,4534636366,Where did you meet this/these person(s)?,q_439,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+124,4534636366,Did you receive advice on the importance of institutional delivery?,q_440A,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+125,4534636366,Did you receive advice on the Cord care?,q_440B,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+126,4534636366,Did you receive advice on the Breastfeeding?,q_440C,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+127,4534636366,Did you receive advice on the Keeping the baby warm?,q_440D,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+128,4534636366,Did you receive advice on the Family planning or delaying or avoiding another pregnancy?,q_440E,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+129,4534636366,"During delivery, did you experience a breech presentation?",q_441,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+130,4534636366,"During delivery, did you experience prolonged labour?",q_442,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+131,4534636366,"During delivery, did you experience excessive bleeding?",q_443,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+132,4534636366,"When (NAME) was born, was (he/she) very large, larger than average, average, smaller than average, or very small?",q_444,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+133,4534636366,Was (NAME) weighed at birth?,q_445,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+134,4534636366,Who assisted with the delivery of (NAME)?,q_447,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+135,4534636366,Where did you give birth to (NAME)?,q_448,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+136,4534636366,What was the main mode of transportation used by you to reach the health facility for delivery?,q_449,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+137,4534636366,Who arranged the transportation to take you to the health facility for delivery?,q_450,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+138,4534636366,How was the out of pocket cost met?,q_456,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+139,4534636366,Did you receive any financial assistance for delivery care?,q_457,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+140,4534636366,From where did you get assistance?,q_458,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+141,4534636366,"Was (NAME) delivered by caesarean section, that is, did they cut your belly open to take the baby out?",q_462,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+142,4534636366,When was the decision made for you to have a C-section? Was it before the onset of labour or after the onset of labour?,q_463,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+143,4534636366,"Immediately after the birth, was (NAME) put on your chest?",q_464,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+144,4534636366,Was (NAME)'s bare skin touching your bare skin?,q_465,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+145,4534636366,Did anyone check on your health while you were still in the facility?,q_467,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+146,4534636366,Who checked on your health at that time?,q_469,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+147,4534636366,Did anyone check on (NAME's) health while you were still in the facility?,q_470,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+148,4534636366,Who checked on (NAME's) health at that time?,q_472,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+149,4534636366,Now I would like to talk to you about what happened after you left the facility. Did any one check on your health after you left the facility?,q_473,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+150,4534636366,Who checked on your health at that time?,q_475,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+151,4534636366,Where did the check take place?,q_476,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+152,4534636366,Did any health care provider or a traditional birth attendent check on (NAME)'s health in the two months after you left the facility?,q_477,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+153,4534636366,Who checked on (NAME)'s health at that time?,q_479,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+154,4534636366,Where did this check of (NAME) take place?,q_480,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+155,4534636366,"In the two months after you were discharged, did any health personnel, anganwadi worker, ASHA, or traditional birth attendant [dai] check on your health?",q_481,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+156,4534636366,Why didn't you deliver in a health facility?,q_482,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+157,4534636366,Was a disposable delivery kit used?,q_483A,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+158,4534636366,Was the baby immediately wiped dry and then wrapped without being bathed?,q_483B,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+159,4534636366,Was a clean blade used to cut the cord?,q_483C,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+160,4534636366,"Did any health personnel, anganwadi worker, ASHA, or traditional birth attendant [dai] check on your health?",q_484,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+161,4534636366,Who checked on your health (the first time/at that time)?,q_487,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+162,4534636366,Where did this first check take place?,q_488,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+163,4534636366,"In the two months after (NAME) was born, did any health personnel, ASHA or traditional birth attendant check on his/her health?",q_489,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+164,4534636366,Who checked on (NAME)'s health at that time?,q_491,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+165,4534636366,Where did this first check of (NAME) take place?,q_492,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+166,4534636366," In the first two months after delivery, did you have Massive vaginal bleeding?",q_493A,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+167,4534636366," In the first two months after delivery, did you have Very high fever?",q_493B,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+168,4534636366,During the first two days after (NAME),q_494A,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+169,4534636366,During the first two days after (NAME),q_494B,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+170,4534636366,During the first two days after (NAME),q_494C,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+171,4534636366,During the first two days after (NAME),q_494D,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+172,4534636366,During the first two days after (NAME),q_494E,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+173,4534636366,Has your menstrual period returned since the birth of (NAME)?,q_495,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+174,4534636366,Did your period return between the birth of (NAME) and your next pregnancy?,q_496,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+175,4534636366,Have you had sexual relations since the birth of (NAME)?,q_499,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+176,4534636366,Did you ever breastfeed (NAME)?,q_499B,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+177,4534636366,"In the first three days after delivery, was (NAME) given anything to drink other than breast milk?",q_499D,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+178,4534636366,What was (NAME) given to drink?Anything else?,q_499E,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+179,4534636366,Are you still breastfeeding (NAME)?,q_499G,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+180,4534636366,Did (NAME) drink anything from a bottle with a nipple yesterday or last night?,q_499J,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+181,4534636366,"Did (NAME) eat any solid, semi-solid, or soft foods yesterday during the day or at night? IF ",q_499O,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+182,4534636366,"Within the last six months, was (NAME) given a vitamin A dose like (this/any of these)?",q_504,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+183,4534636366,"Within the last seven days, was (NAME) given iron pills or syrup or sprinkles with iron like (this/any of these)?",q_505,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+184,4534636366,Was (NAME) given any drug for intestinal worms in the last six months?,q_506,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+185,4534636366,Do you have a card or other document where (NAME)'s vaccinations are written down?,q_507,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+186,4534636366,Did you ever have a vaccination card for (NAME)?,q_508,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+187,4534636366,"Has (NAME) received any vaccinations that are not recorded on this card or other documents, including vaccinations received in a Pulse Polio campaign?",q_511,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+188,4534636366,"Did (NAME) ever receive any vaccinations to prevent (him/her) from getting diseases, including vaccinations received in a Pulse Polio campaign?",q_512,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+189,4534636366,"A BCG vaccination against tuberculosis, that is, an injection in the arm or shoulder that usually causes a scar?",q_513A,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+190,4534636366,"Polio vaccine, that is, drops in the mouth, including vaccine received in a Pulse Polio campaign?",q_513B,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+191,4534636366,Was the first polio vaccine received in the first two weeks after birth or later?,q_513C,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+192,4534636366,"A DPT vaccination, that is, an injection given in the thigh or buttocks, sometimes at the same time as polio drops?",q_513E,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+193,4534636366,"An flPV injection that is given in the upper arm to protect against polio, often at the same time as oral polio drops?",q_513G,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+194,4534636366,"A pentavalent vaccine/injection that is given in the thigh or buttocks, sometimes given at the same time as polio drops?",q_513I,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+195,4534636366,Was (NAME) given an injection at birth to prevent Hepatitis B?,q_513K,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+196,4534636366,Was the first Hepatitis B vaccine received in the first two weeks after birth or later?,q_513L,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+197,4534636366,"Has (NAME) received a rotavirus vaccine, that is, liquid in the mouth to prevent diarrhoea?",q_513N,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+198,4534636366,Did (NAME) ever receive a JE vaccination against Japanese encephalitis?,q_513P,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+199,4534636366,"Was (NAME) ever given a measles or MMR injection - that is, a shot in the arm at the age of 9 months or older - to prevent (him/her) from getting measles?",q_513R,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+200,4534636366,Was (NAME) ever given a DPT1 booster dose?,q_513T,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+201,4534636366,Where did (NAME) receive most of (his/her) vaccinations?,q_515,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+202,4534636366,Has (NAME) had diarrhoea in the last 2 weeks?,q_517,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+203,4534636366,Was there any blood in the stools?,q_517A,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+204,4534636366,"Was (NAME) given less than usual to drink, about the same amount, or more than usual to drink?",q_518,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+205,4534636366,"When (NAME) had diarrhoea, was (he/she) given less than usual to eat, about the same amount, more than usual, or nothing to eat?",q_519,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+206,4534636366,Did you seek advice or treatment for the diarrhoea from any source?,q_520,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+207,4534636366,Where did you seek advice or treatment?,q_521,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+208,4534636366,Was (he/she) given zinc at any time since (he/she) started having diarrhoea?,q_527,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+209,4534636366,Was anything (else) given to treat the diarrhoea?,q_528,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+210,4534636366,What (else) was given to treat the diarrhoea?,q_529,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+211,4534636366,Has (NAME) been ill with a fever at any time in the last 2 weeks?,q_530,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+212,4534636366,"At any time during the illness, did (NAME) have blood taken from (his/her) finger or heel for testing?",q_531,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+213,4534636366,Has (NAME) had an illness with a cough at any time in the last 2 weeks?,q_532,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+214,4534636366,"Has (NAME) had fast, short, rapid breaths or difficulty breathing at any time in the last 2 weeks?",q_533,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+215,4534636366,Was the fast or difficult breathing due to a problem in the chest or to a blocked or runny nose?,q_534,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+216,4534636366,"Was (he/she) given less than usual to drink, about the same amount, or more than usual to drink?",q_536,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+217,4534636366,"When (NAME) had a (fever/cough), was (he/she) given less than usual to eat, about the same amount, more than usual, or nothing to eat?",q_537,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+218,4534636366,Did you seek advice or treatment for the illness from any source?,q_538,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+219,4534636366,Where did you seek advice or treatment?,q_539,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+220,4534636366,"At any time during the illness, did (NAME) take any drugs for the illness?",q_543,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+221,4534636366,What drugs did (NAME) take?,q_544,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+222,4534636366,"How long after the fever started, did (NAME) first take (DRUG(S) FROM 544 A-G)?",q_546,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+223,4534636366,How long after the fever started did (NAME) first take an artemisinin combination therapy?,q_548,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+224,4534636366,"The last time (NAME OF YOUNGEST CHILD) passed stools, what was done to dispose of the stools?",q_551,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+225,4534636366,"Have you ever heard of a special product called (LOCAL NAME FOR ORS PACKET) you can get for the treatment of diarrhoea?IF SHE HAS NEVER HEARD OF ORS, SHOW GOVERNMENT AND COMMERCIAL ORS PACKETS AND ASK: Have you ever seen a packet like one of these before?",q_553,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+226,4534636366,"During the last 12 months, has (NAME) received any benefits from the anganwadi or ICDS centre?",q_558,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+227,4534636366,"In the last 12 months, how often has (NAME) received food from the anganwadi/ICDS centre?",q_559,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+228,4534636366,"In the last 12 months, how often has (NAME) had a health check-up from the anganwadi/ICDS centre?",q_560,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+229,4534636366,"In the last 12 months, has (NAME) received any immunizations through the anganwadi/ICDS centre?",q_561,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+230,4534636366,"In the last 12 months, how often did (NAME) go to the anganwadi/ICDS centre for early childhood care or for preschool: regularly, occasionally, or not at all?",q_562,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+231,4534636366,"In the last 12 months, how often has (NAME)'s weight been measured by the anganwadi/ICDS centre?",q_563,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+232,4534636366,"After (NAME) was weighed, did you ever receive counselling from the anganwadi/ICDS worker or ANM?",q_564,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+233,4534636366,"When you were pregnant with (NAME), did you receive any benefits from the anganwadi/ICDS centre?",q_565,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+234,4534636366,When you were breastfeeding (NAME) did you receive any benefits from the anganwadi/ICDS centre?,q_567,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+235,4534636366,"Now I have some questions about the future. After the child you are expecting now, would you like to have another child, or would you prefer not to have any more children?",q_605,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+236,4534636366,"Now I have some questions about the future. Would you like to have (a/another) child, or would you prefer not to have any (more) children?",q_606,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+237,4534636366,Do you think you will use a contraceptive method to delay or avoid pregnancy in the next 12 months?,q_613,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+238,4534636366,Do you think you will use a contraceptive method to delay or avoid pregnancy at any time in the future?,q_614,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+239,4534636366,"Would you say that using contraception is mainly your decision, mainly your husband's decision, or did you both decide together?",q_620,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+240,4534636366,"Does your husband want the same number of children that you want, or does he want more or fewer than you want?",q_623,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+241,4534636366,"The last time you got an injection, were the syringe and needle taken from a new, unopened package?",q_703,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+242,4534636366,Have you ever had a blood transfusion?,q_704,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+243,4534636366,"Do you currently smoke cigarettes every day, some days, or not at all?",q_705,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+244,4534636366,"Do you currently smoke bidis every day, some days, or not at all?",q_708,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+245,4534636366,Do you currently smoke or use tobacco in any other form?,q_711,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+246,4534636366,In what other form do you currently smoke or use tobacco?Any other form?,q_712,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+247,4534636366,"How often do you use smokeless tobacco: almost every day, about once a week or less than once a week?",q_713,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+248,4534636366,"During the last 12 months, have you ever tried to stop smoking or using tobacco in any other form?",q_716,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+249,4534636366,"In the last 12 months, have you visited a doctor or other health care provider?",q_717,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+250,4534636366,"During any of these visits, were you advised to quit smoking or using tobacco in any other form?",q_718,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+251,4534636366,"In the last 30 days, did someone (other than you) smoke in your home or anywhere else when you were present?",q_719,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+252,4534636366,Do you drink alcohol?,q_720,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+253,4534636366,"How often do you drink alcohol: almost every day, about once a week or less than once a week?",q_721,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+254,4534636366,What type of alcohol do you usually drink?,q_722,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+255,4534636366,Have you ever heard of an illness called tuberculosis or TB?,q_724,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+256,4534636366,How does tuberculosis spread from one person to another?,q_725,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+257,4534636366,Can tuberculosis be cured?,q_726,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+258,4534636366,"If a member of your family got tuberculosis, would you want it to remain a secret or not?",q_727,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+259,4534636366,Are you covered by any health scheme or any health insurance ?,q_729,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+260,4534636366,What type of health scheme or health insurance?,q_730,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+261,4534636366,"The first time you had sexual intercourse, was a condom used?",q_804,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+262,4534636366,"The last time you had sexual intercourse (with this other person), was a condom used?",q_807,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+263,4534636366,Was a condom used every time you had sexual intercourse with this person in the last 12 months?,q_808,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+264,4534636366,What was your relationship to this person with whom you had sexual intercourse?,q_809,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+265,4534636366,"Apart from this person, have you had sexual intercourse with any other person in the last 12 months?",q_816,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+266,4534636366,Do you know of a place where a person can get condoms?,q_820,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+267,4534636366,Where is that?,q_821,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+268,4534636366,"If you wanted to, could you yourself get a condom?",q_822,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+269,4534636366,From where did you obtain the condom last time?,q_824,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+270,4534636366,Did your (last) husband ever attend school?,q_903,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+271,4534636366,Has your husband done any work in the last 7 days?,q_907,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+272,4534636366,Has your husband done any work in the last 12 months?,q_908,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+273,4534636366,"In the last 12 months, has your husband been away from home for one month or more at a time?",q_909,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+274,4534636366,"In the last 12 months, has your husband been away from home for six months or more at a time?",q_910,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+275,4534636366,"Aside from your own housework, have you done any work in the last seven days?",q_911,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+276,4534636366,"As you know, some women take up jobs for which they are paid in cash or kind. Others sell things, have a small business or work on the family farm or in the family business. In the last seven days, have you done any of these things or any other work?",q_912,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+277,4534636366,"Although you did not work in the last seven days, do you have any job or business from which you were absent for leave, illness, vacation, maternity leave or any other such reason?",q_913,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+278,4534636366,Have you done any work in the last 12 months?,q_914,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+279,4534636366,"Do you do this work for a member of your family, for someone else, or are you self-employed?",q_916,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+280,4534636366,"Do you usually work throughout the year, or do you work seasonally, or only once in a while?",q_917,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+281,4534636366,"Are you paid in cash or kind for this work, or are you not paid at all?",q_918,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+282,4534636366,"In the last 12 months, have you been away from home other than parental/in-laws home for one month or more at a time?",q_919,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+283,4534636366,"In the last 12 months, have you been away from home other than parental/in-laws home for six months or more at a time?",q_920,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+284,4534636366,"Who decides how the money you earn will be used: mainly you, mainly your husband, or you and your husband jointly?",q_923,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+285,4534636366,"Would you say that the money that you earn is more than what your husband earns, less than what he earns, or about the same?",q_924,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+286,4534636366,"Who decides how your husband's earnings will be used: mainly you, mainly your husband, or you and your husband jointly?",q_925,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+287,4534636366,"Who usually makes decisions about health care for yourself: mainly you, mainly your husband, you and your husband jointly, or someone else?",q_926,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+288,4534636366,"Who usually makes decisions about making major household purchases: mainly you, mainly your husband, you and your husband jointly, or someone else?",q_927,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+289,4534636366,"Who usually makes decisions about visits to your family or relatives: mainly you, mainly your husband, you and your husband jointly, or someone else?",q_928,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+290,4534636366,Do you have any money of your own that you alone can decide how to use?,q_929,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+291,4534636366,Do you have a bank or savings account that you yourself use?,q_931,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+292,4534636366,Do you have any mobile phone that you yourself use?,q_932,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+293,4534636366,Do you use your mobile phone for any financial transactions?,q_933,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+294,4534636366,Have you ever used the internet?,q_934,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+295,4534636366,Are you able to read text (SMS) messages?,q_937,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+296,4534636366,Do you own this or any other house either alone or jointly with someone else?,q_938,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+297,4534636366,Do you own any agricultural or non-agricultural land either alone or jointly with someone else?,q_939,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+298,4534636366,Do you know of any programmes in this area that give loans to women to start or expand a business of their own?,q_940,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+299,4534636366,"Have you yourself ever taken a loan, in cash or in kind, from any of these programmes, to start or expand a business?",q_941,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+300,4534636366,"If a wife knows her husband has a sexually transmitted disease, is she justified in asking that they use a condom when they have sex?",q_944,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+301,4534636366,"If a wife knows her husband has sex with other women, is she justified in refusing to have sex with him?",q_945,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+302,4534636366,Can you say no to your husband if you do not want to have sexual intercourse with him?,q_947,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+303,4534636366,Now I would like to talk about something else. Have you ever heard of an illness called AIDS?,q_1001,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+304,4534636366,Have you ever heard of HIV?,q_1002,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+305,4534636366,From which sources of information have you learned about HIV/AIDS?,q_1004,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+306,4534636366,HIV is the virus that can lead to AIDS. Can people reduce their chance of getting HIV by having just one uninfected sex partner who has no other sex partners?,q_1005,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+307,4534636366,Can people get HIV from mosquito bites?,q_1006,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+308,4534636366,Can people reduce their chances of getting HIV by using a condom every time they have sex?,q_1007,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+309,4534636366,Can people get HIV from blood products or blood transfusions?,q_1008,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+310,4534636366,Can people get HIV by injecting drugs?,q_1009,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+311,4534636366,Can people get HIV by sharing food with a person who has HIV?,q_1010,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+312,4534636366,Is there anything else a person can do to avoid or reduce the chances of getting HIV/AIDS?,q_1011,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+313,4534636366,What can a person do?,q_1012,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+314,4534636366,Is it possible for a healthy-looking person to have HIV?,q_1013,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+315,4534636366,Are there any special drugs that a doctor or a nurse can give to a woman infected with HIV to reduce the risk of transmission to the baby?,q_1016,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+316,4534636366,Have you heard about special antiretroviral drugs (USE LOCAL (NAME)'s) that people infected with HIV/AIDS can get from a doctor or a nurse to help them live longer?,q_1017,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+317,4534636366,Were you offered a test for HIV as part of your antenatal care?,q_1022,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+318,4534636366,"I don't want to know the results, but were you tested for HIV as part of your antenatal care?",q_1023,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+319,4534636366,Where was the test done?,q_1024,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+320,4534636366,"I don't want to know the results, but did you get the results of the test?",q_1025,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+321,4534636366,"All women are supposed to receive counseling after being tested. After you were tested, did you receive counseling?",q_1026,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+322,4534636366,"Between the time you went for delivery but before the baby was born, were you offered a test for HIV?",q_1028,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+323,4534636366,"I don't want to know the results, but were you tested for HIV at that time?",q_1029,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+324,4534636366,"I don't want to know the results, but did you get the results of the test?",q_1030,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+325,4534636366,Have you been tested for HIV since that time you were tested during your pregnancy?,q_1031,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+326,4534636366,"I don't want to know the results, but have you ever been tested to see if you have HIV?",q_1033,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+327,4534636366,"I don't want to know the results, but did you get the results of the test?",q_1035,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+328,4534636366,Where was the test done?,q_1036,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+329,4534636366,Do you know of a place where people can go to get tested for HIV?,q_1037,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+330,4534636366,Where is that?,q_1038,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+331,4534636366,Would you buy fresh vegetables from a shopkeeper or vendor if you knew that this person had HIV?,q_1039,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+332,4534636366,Do you think a child with HIV should be allowed to attend school with students who are HIV negative?,q_1040,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+333,4534636366,"If a member of your family got infected with HIV/AIDS, would you want it to remain a secret or not?",q_1041,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+334,4534636366,Do you fear that you could get HIV if you come into contact with the saliva of a person living with HIV?,q_1042,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+335,4534636366,"If a relative of yours became sick with HIV/AIDS, would you be willing to care for her or him in your own household?",q_1043,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+336,4534636366,"In your opinion, if a female teacher has HIV/AIDS but is not sick, should she be allowed to continue teaching in the school?",q_1044,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+337,4534636366,"In your opinion, if a male teacher has HIV/AIDS but is not sick, should he be allowed to continue teaching in the school?",q_1045,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+338,4534636366,Do you think that people living with HIV/AIDS should be treated in the same public hospital with patients who are HIV negative?,q_1046,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+339,4534636366,Do you think that people living with HIV/AIDS should be allowed to work in the same office with people who are HIV negative?,q_1047,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+340,4534636366,"Now I would like to ask you some questions about your health in the last 12 months. During the last 12 months, have you had a disease which you got through sexual contact?",q_1051,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+341,4534636366,"Sometimes women experience a bad smelling abnormal genital discharge. During the last 12 months, have you had a bad smelling abnormal genital discharge?",q_1052,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+342,4534636366,"Sometimes women have a genital sore or ulcer. During the last 12 months, have you had a genital sore or ulcer?",q_1053,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+343,4534636366,"The last time you had (PROBLEM FROM 1051/1052/1053), did you seek any kind of advice or treatment?",q_1055,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+344,4534636366,Where did you go?,q_1056,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+345,4534636366,"Have you ever hit, slapped, kicked, or done anything else to physically hurt your (last) husband at times when he was not already beating or physically hurting you?",q_1111,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+346,4534636366,"In the last 12 months, how often have you done this to your (last) husband: often, only sometimes, or not at all?",q_1112,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+347,4534636366,(Does/did) your (last) husband drink alcohol?,q_1113,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+348,4534636366,"How often (does/did) he get drunk: often, only sometimes, or never?",q_1114,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+349,4534636366,"Are (Were) you afraid of your (last) husband: most of the time, sometimes, or never?",q_1115,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+350,4534636366,Who has hurt you in this way?,q_1119,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+351,4534636366,"In the last 12 months, how often (has this person/have these persons) physically hurt you: often, only sometimes, or not at all?",q_1120,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+352,4534636366,"Has any one ever hit, slapped, kicked, or done anything else to hurt you physically while you were pregnant?",q_1122,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+353,4534636366,Who has done any of these things to physically hurt you while you were pregnant?Anyone else?,q_1123,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+354,4534636366,"Now I want to ask you about things that may have been done to you by someone other than (your/any) husband. At any time in your life, as a child or as an adult, has anyone ever forced you in any way to have sexual intercourse or perform any other sexual acts when you did not want to?",q_1125,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+355,4534636366,"At any time in your life, as a child or as an adult, has anyone ever forced you in any way to have sexual intercourse or perform any other sexual acts when you did not want to?",q_1126,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+356,4534636366,Who was the person who was forcing you the very first time this happened?,q_1127,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+357,4534636366,"Thinking about what you yourself have experienced among the different things we have been talking about, have you ever tried to seek help?",q_1132,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+358,4534636366,From whom have you sought help?,q_1133,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+359,4534636366,Have you ever told any one else about this?,q_1134,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+360,4534636366,Where did you go for medical help?,q_1136,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0
+361,4534636366,"As far as you know, did your father ever beat your mother?",q_1137,select_one,1,0,Admin,,3,0000-00-00 00:00:00,0

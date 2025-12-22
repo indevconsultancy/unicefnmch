@@ -1,0 +1,599 @@
+            <div class="panel panel-default"> 
+              <div class="panel-body">
+              <form method="post" enctype="multipart/form-data">
+                <div class="row" style="padding: 10px;">
+                  											
+                      <div class="col-md-12" style="padding-bottom: 10px;">
+                        <div class="form-group select-custom-margin">
+                                                      
+                            														
+														                                Choices                                
+                                <div class="form-check">
+																  <div class="custom-formchecks">
+                                  																		
+                                    <div class="custom-radio">
+																			<label>
+																				 <input class="form-check-input" type="radio" name="select-1679740500783-0" id="exampleRadiosvalue-1" value="value-1" >
+                                      		 Option-1																			</label>
+																		
+																		</div>
+                                    																		
+                                    <div class="custom-radio">
+																			<label>
+																				 <input class="form-check-input" type="radio" name="select-1679740500783-0" id="exampleRadiosvalue-2" value="value-2" >
+                                      		 Option-2																			</label>
+																		
+																		</div>
+                                    																		
+                                    <div class="custom-radio">
+																			<label>
+																				 <input class="form-check-input" type="radio" name="select-1679740500783-0" id="exampleRadiosvalue-3" value="value-3" >
+                                      		 Option-3																			</label>
+																		
+																		</div>
+                                                                      </div>
+																</div>
+                                
+                                                          
+                                                    </div>
+                      </div>
+                      
+                                          
+                    
+                                          
+                    											
+                      <div class="col-md-6" style="padding-bottom: 10px;">
+                        <div class="form-group select-custom-margin">
+                                                      Date of interview<span class="required">*</span>                            <br/>
+                            <input type="text" class="form-control datepicker" name="Date_of_interview" placeholder="Please select Date" autocomplete="off" required />
+                                                  </div>
+                      </div>
+                      
+                                          
+                    
+                                          
+                    											
+                      <div class="col-md-6" style="padding-bottom: 10px;">
+                        <div class="form-group select-custom-margin">
+                                                      Mapper’s name                             <input type="text" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="mapper_name" name="mapper_name" >
+                            <div id="mapper_name19238"></div>
+														
+                                                    </div>
+                      </div>
+                      
+                                          
+                    											
+                      <div class="col-md-6" style="padding-bottom: 10px;">
+                        <div class="form-group select-custom-margin">
+                                                      1. Number of family member <span class="required">*</span>                            <input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="q_1" name="q_1" required >
+                            <div id="q_1119657"></div>
+														
+                                                    </div>
+                      </div>
+                      
+                                            <script>
+                          $("#q_1").keyup(function(e){
+                            //var This_id = $(this).attr("id");
+                            //alert('SSS');
+                            var q_1 = $("#q_1").val();
+                            $.ajax({
+                             type:'POST',
+                             url:'ajax_page.php',
+                             data:{'questionId':119657,'input_value':q_1,'survey_id':},
+                             success:function(result){
+                               $('#q_1119657').html(result);
+                             }
+                            });
+                          });
+                        </script>
+                                            
+                    											
+                      <div class="col-md-6" style="padding-bottom: 10px;">
+                        <div class="form-group select-custom-margin">
+                                                      1.Serial number of structure. <span class="required">*</span>                            <input type="text" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="q_1" name="q_1" required >
+                            <div id="q_150541"></div>
+														
+                                                    </div>
+                      </div>
+                      
+                                          
+                    											
+                      <div class="col-md-6" style="padding-bottom: 10px;">
+                        <div class="form-group select-custom-margin">
+                                                      Mapper’s code                             <input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="mapper_code" name="mapper_code" >
+                            <div id="mapper_code19239"></div>
+														
+                                                    </div>
+                      </div>
+                      
+                                          
+                    											
+                      <div class="col-md-6" style="padding-bottom: 10px;">
+                        <div class="form-group select-custom-margin">
+                                                      2.Address/location/ description of the structure. <span class="required">*</span>                            <input type="text" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="q_2" name="q_2" required >
+                            <div id="q_250542"></div>
+														
+                                                    </div>
+                      </div>
+                      
+                                          
+                    											
+                      <div class="col-md-6" style="padding-bottom: 10px;">
+                        <div class="form-group select-custom-margin">
+                                                      Lister’s name                             <input type="text" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="lister_name" name="lister_name" >
+                            <div id="lister_name19240"></div>
+														
+                                                    </div>
+                      </div>
+                      
+                                          
+                    											
+                      <div class="col-md-6" style="padding-bottom: 10px;">
+                        <div class="form-group select-custom-margin">
+                                                      3.Name of head of the household. <span class="required">*</span>                            <input type="text" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="q_3" name="q_3" required >
+                            <div id="q_350543"></div>
+														
+                                                    </div>
+                      </div>
+                      
+                                          
+                    											
+                      <div class="col-md-6" style="padding-bottom: 10px;">
+                        <div class="form-group select-custom-margin">
+                                                      Lister’s code                             <input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="lister_code" name="lister_code" >
+                            <div id="lister_code19241"></div>
+														
+                                                    </div>
+                      </div>
+                      
+                                          
+                    											
+                      <div class="col-md-12" style="padding-bottom: 10px;">
+                        <div class="form-group select-custom-margin">
+                                                      
+                            														
+														                                4. Do you agree to answer some questions for us to determine if anyone in your family would be a good participant for the next phase of our study?<span class="required">*</span>                                
+                                <div class="form-check">
+																  <div class="custom-formchecks">
+                                  																		
+                                    <div class="custom-radio">
+																			<label>
+																				 <input class="form-check-input" type="radio" name="q_4" id="exampleRadios1" value="1" >
+                                      		 Yes																			</label>
+																		
+																		</div>
+                                    																		
+                                    <div class="custom-radio">
+																			<label>
+																				 <input class="form-check-input" type="radio" name="q_4" id="exampleRadios2" value="2" >
+                                      		 No																			</label>
+																		
+																		</div>
+                                                                      </div>
+																</div>
+                                
+                                                          
+                                                    </div>
+                      </div>
+                      
+                                          
+                    											
+                      <div class="col-md-6" style="padding-bottom: 10px;">
+                        <div class="form-group select-custom-margin">
+                                                      FSU number                             <input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="fsu" name="fsu" >
+                            <div id="fsu19242"></div>
+														
+                                                    </div>
+                      </div>
+                      
+                                          
+                    											
+                      <div class="col-md-6" style="padding-bottom: 10px;">
+                        <div class="form-group select-custom-margin">
+                                                      5.Number of members aged 18 or above who usually live here. <span class="required">*</span>                            <input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="q_5" name="q_5" required >
+                            <div id="q_550545"></div>
+														
+                                                    </div>
+                      </div>
+                      
+                                          
+                    											
+                      <div class="col-md-6" style="padding-bottom: 10px;">
+                        <div class="form-group select-custom-margin">
+                                                      State                             <input type="text" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="state_name" name="state_name" >
+                            <div id="state_name19243"></div>
+														
+                                                    </div>
+                      </div>
+                      
+                                          
+                    											
+                      <div class="col-md-6" style="padding-bottom: 10px;">
+                        <div class="form-group select-custom-margin">
+                                                      6.Telephone number of #q_3 <span class="required">*</span>                            <input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="q_5" name="q_5" required >
+                            <div id="q_550546"></div>
+														
+                                                    </div>
+                      </div>
+                      
+                                          
+                    											
+                      <div class="col-md-6" style="padding-bottom: 10px;">
+                        <div class="form-group select-custom-margin">
+                                                      District                             <input type="text" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="district_name" name="district_name" >
+                            <div id="district_name19244"></div>
+														
+                                                    </div>
+                      </div>
+                      
+                                          
+                    											
+                      <div class="col-md-6" style="padding-bottom: 10px;">
+                        <div class="form-group select-custom-margin">
+                                                  </div>
+                      </div>
+                      
+                                          
+                    											
+                      <div class="col-md-6" style="padding-bottom: 10px;">
+                        <div class="form-group select-custom-margin">
+                                                      7.Preferable time to call #q_3<span class="required">*</span>                            <select class="form-control js-example-basic-multiple select2" data-placeholder="Please 7.Preferable time to call #q_3" multiple required >
+                                                              <option value="1">MORNING </option>
+                                                                <option value="2">Noon </option>
+                                                                <option value="3">AFTERNOON</option>
+                                                                <option value="4">Evening </option>
+                                                                <option value="5">Do not know</option>
+                                                            </select>
+                                                    </div>
+                      </div>
+                      
+                                          
+                    											
+                      <div class="col-md-6" style="padding-bottom: 10px;">
+                        <div class="form-group select-custom-margin">
+                                                      Block                             <input type="text" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="block_name" name="block_name" >
+                            <div id="block_name19245"></div>
+														
+                                                    </div>
+                      </div>
+                      
+                                          
+                    											
+                      <div class="col-md-6" style="padding-bottom: 10px;">
+                        <div class="form-group select-custom-margin">
+                                                      Enter Second Member count                             <input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="second_mem" name="second_mem" >
+                            <div id="second_mem119664"></div>
+														
+                                                    </div>
+                      </div>
+                      
+                                            <script>
+                          $("#second_mem").keyup(function(e){
+                            //var This_id = $(this).attr("id");
+                            //alert('SSS');
+                            var second_mem = $("#second_mem").val();
+                            $.ajax({
+                             type:'POST',
+                             url:'ajax_page.php',
+                             data:{'questionId':119664,'input_value':second_mem,'survey_id':},
+                             success:function(result){
+                               $('#second_mem119664').html(result);
+                             }
+                            });
+                          });
+                        </script>
+                                            
+                    											
+                      <div class="col-md-6" style="padding-bottom: 10px;">
+                        <div class="form-group select-custom-margin">
+                                                      8.what is the name of the fruit <span class="required">*</span>                            <input type="text" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="q_8" name="q_8" required >
+                            <div id="q_850548"></div>
+														
+                                                    </div>
+                      </div>
+                      
+                                          
+                    											
+                      <div class="col-md-6" style="padding-bottom: 10px;">
+                        <div class="form-group select-custom-margin">
+                                                      Village                             <input type="text" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="village_name" name="village_name" >
+                            <div id="village_name19246"></div>
+														
+                                                    </div>
+                      </div>
+                      
+                                          
+                    											
+                      <div class="col-md-12" style="padding-bottom: 10px;">
+                        <div class="form-group select-custom-margin">
+                                                      
+                            														
+														                                9.This song was released in which year?<span class="required">*</span>                                
+                                <div class="form-check">
+																  <div class="custom-formchecks">
+                                  																		
+                                    <div class="custom-radio">
+																			<label>
+																				 <input class="form-check-input" type="radio" name="q_9" id="exampleRadios1" value="1" >
+                                      		 2012																			</label>
+																		
+																		</div>
+                                    																		
+                                    <div class="custom-radio">
+																			<label>
+																				 <input class="form-check-input" type="radio" name="q_9" id="exampleRadios2" value="2" >
+                                      		 1990																			</label>
+																		
+																		</div>
+                                    																		
+                                    <div class="custom-radio">
+																			<label>
+																				 <input class="form-check-input" type="radio" name="q_9" id="exampleRadios3" value="3" >
+                                      		 1975																			</label>
+																		
+																		</div>
+                                    																		
+                                    <div class="custom-radio">
+																			<label>
+																				 <input class="form-check-input" type="radio" name="q_9" id="exampleRadios4" value="4" >
+                                      		 1992																			</label>
+																		
+																		</div>
+                                                                      </div>
+																</div>
+                                
+                                                          
+                                                    </div>
+                      </div>
+                      
+                                          
+                    											
+                      <div class="col-md-6" style="padding-bottom: 10px;">
+                        <div class="form-group select-custom-margin">
+                                                      What is the fruit's name?                             <input type="text" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="fruit_name" name="fruit_name" >
+                            <div id="fruit_name19247"></div>
+														
+                                                    </div>
+                      </div>
+                      
+                                          
+                    											
+                      <div class="col-md-12" style="padding-bottom: 10px;">
+                        <div class="form-group select-custom-margin">
+                                                      
+                            														
+														                                10.Identify the correct movie name of the video clip shown<span class="required">*</span>                                
+                                <div class="form-check">
+																  <div class="custom-formchecks">
+                                  																		
+                                    <div class="custom-radio">
+																			<label>
+																				 <input class="form-check-input" type="radio" name="q_10" id="exampleRadios1" value="1" >
+                                      		 Baazigar																			</label>
+																		
+																		</div>
+                                    																		
+                                    <div class="custom-radio">
+																			<label>
+																				 <input class="form-check-input" type="radio" name="q_10" id="exampleRadios2" value="2" >
+                                      		 Sholey																			</label>
+																		
+																		</div>
+                                    																		
+                                    <div class="custom-radio">
+																			<label>
+																				 <input class="form-check-input" type="radio" name="q_10" id="exampleRadios3" value="3" >
+                                      		 Welcome																			</label>
+																		
+																		</div>
+                                    																		
+                                    <div class="custom-radio">
+																			<label>
+																				 <input class="form-check-input" type="radio" name="q_10" id="exampleRadios4" value="4" >
+                                      		 Phool Aur Kaante																			</label>
+																		
+																		</div>
+                                                                      </div>
+																</div>
+                                
+                                                          
+                                                    </div>
+                      </div>
+                      
+                                          
+                    											
+                      <div class="col-md-6" style="padding-bottom: 10px;">
+                        <div class="form-group select-custom-margin">
+                                                      Approximate current population of FSU                             <input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="population_unit" name="population_unit" >
+                            <div id="population_unit19248"></div>
+														
+                                                    </div>
+                      </div>
+                      
+                                          
+                    											
+                      <div class="col-md-6" style="padding-bottom: 10px;">
+                        <div class="form-group select-custom-margin">
+                                                      Approximate population of selected sub-unit                             <input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="sub_unit" name="sub_unit" >
+                            <div id="sub_unit19249"></div>
+														
+                                                    </div>
+                      </div>
+                      
+                                          
+                    
+                                          
+                    											
+                      <div class="col-md-6" style="padding-bottom: 10px;">
+                        <div class="form-group select-custom-margin">
+                                                      FSU start date                            <br/>
+                            <input type="text" class="form-control datepicker" name="fsu_start" placeholder="Please select Date" autocomplete="off" />
+                                                  </div>
+                      </div>
+                      
+                                          
+                    											
+                      <div class="col-md-6" style="padding-bottom: 10px;">
+                        <div class="form-group select-custom-margin">
+                                                      1.Serial number data.                             <input type="text" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="q_1" name="q_1" >
+                            <div id="q_119251"></div>
+														
+                                                    </div>
+                      </div>
+                      
+                                          
+                    
+                                          
+                    											
+                      <div class="col-md-6" style="padding-bottom: 10px;">
+                        <div class="form-group select-custom-margin">
+                                                      2.Address/location/ description of the structure.                             <input type="text" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="q_2" name="q_2" >
+                            <div id="q_219252"></div>
+														
+                                                    </div>
+                      </div>
+                      
+                                          
+                    											
+                      <div class="col-md-12" style="padding-bottom: 10px;">
+                        <div class="form-group select-custom-margin">
+                                                      
+                            														
+														                                3.Residential ddd                                
+                                <div class="form-check">
+																  <div class="custom-formchecks">
+                                  																		
+                                    <div class="custom-radio">
+																			<label>
+																				 <input class="form-check-input" type="radio" name="q_3" id="exampleRadios1" value="1" >
+                                      		 Yes																			</label>
+																		
+																		</div>
+                                    																		
+                                    <div class="custom-radio">
+																			<label>
+																				 <input class="form-check-input" type="radio" name="q_3" id="exampleRadios2" value="2" >
+                                      		 No1																			</label>
+																		
+																		</div>
+                                                                      </div>
+																</div>
+                                
+                                                          
+                                                    </div>
+                      </div>
+                      
+                                          
+                    											
+                      <div class="col-md-6" style="padding-bottom: 10px;">
+                        <div class="form-group select-custom-margin">
+                                                      4.household serial number within structure.                             <input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="q_4" name="q_4" >
+                            <div id="q_419254"></div>
+														
+                                                    </div>
+                      </div>
+                      
+                                          
+                    											
+                      <div class="col-md-6" style="padding-bottom: 10px;">
+                        <div class="form-group select-custom-margin">
+                                                      6.Name of head of the household.                             <input type="text" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="q_6" name="q_6" >
+                            <div id="q_619255"></div>
+														
+                                                    </div>
+                      </div>
+                      
+                                          
+                    
+                                          
+                    											
+                      <div class="col-md-12" style="padding-bottom: 10px;">
+                        <div class="form-group select-custom-margin">
+                                                      
+                            														
+														                                7. Do you agree to answer some questions for us to determine if anyone in your family would be a good participant for the next phase of our study?                                
+                                <div class="form-check">
+																  <div class="custom-formchecks">
+                                  																		
+                                    <div class="custom-radio">
+																			<label>
+																				 <input class="form-check-input" type="radio" name="q_7" id="exampleRadios1" value="1" >
+                                      		 Yes																			</label>
+																		
+																		</div>
+                                    																		
+                                    <div class="custom-radio">
+																			<label>
+																				 <input class="form-check-input" type="radio" name="q_7" id="exampleRadios2" value="2" >
+                                      		 No1																			</label>
+																		
+																		</div>
+                                                                      </div>
+																</div>
+                                
+                                                          
+                                                    </div>
+                      </div>
+                      
+                                          
+                    
+                                          
+                    
+                                          
+                    											
+                      <div class="col-md-6" style="padding-bottom: 10px;">
+                        <div class="form-group select-custom-margin">
+                                                      8.Total number of members who usually live here.                             <input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="q_8" name="q_8" >
+                            <div id="q_819259"></div>
+														
+                                                    </div>
+                      </div>
+                      
+                                          
+                    											
+                      <div class="col-md-6" style="padding-bottom: 10px;">
+                        <div class="form-group select-custom-margin">
+                                                      9.Number of members aged 18 or above who usually live here.                             <input type="number" onkeypress="return this.value.length < 15;" oninput="if(this.value.length>=15) { this.value = this.value.slice(0,15); } {this.value = Math.abs(this.value)}" class="form-control" placeholder="" id="q_9" name="q_9" >
+                            <div id="q_919260"></div>
+														
+                                                    </div>
+                      </div>
+                      
+                                            <script>
+                          $("#q_9").keyup(function(e){
+                            //var This_id = $(this).attr("id");
+                            //alert('SSS');
+                            var q_9 = $("#q_9").val();
+                            $.ajax({
+                             type:'POST',
+                             url:'ajax_page.php',
+                             data:{'questionId':19260,'input_value':q_9,'survey_id':},
+                             success:function(result){
+                               $('#q_919260').html(result);
+                             }
+                            });
+                          });
+                        </script>
+                                            
+                    
+                                          
+                    											
+                      <div class="col-md-6" style="padding-bottom: 10px;">
+                        <div class="form-group select-custom-margin">
+                                                  </div>
+                      </div>
+                      
+                                          
+                    
+                                          
+                    
+                                          
+                    									<!--<div class="col-md-12 text-right" style="padding-bottom: 10px;">
+                  	<button type="button" class="btn btn-primary" name="saveData" >Submit</button>
+									</div>-->
+                </div>
+              </form>
+              </div>
+            </div>
+						
+						

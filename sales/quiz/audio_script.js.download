@@ -1,0 +1,65 @@
+const recordAudio = () =>
+  new Promise(async resolve => {
+    const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+    const mediaRecorder = new MediaRecorder(stream);
+    var audioChunks = [];
+    mediaRecorder.addEventListener("dataavailable", event => {
+      audioChunks.push(event.data);
+    });
+
+    const start = () => mediaRecorder.start();
+
+    const stop = () =>
+      new Promise(resolve => {
+        mediaRecorder.addEventListener("stop", () => {
+          const audioBlob = new Blob(audioChunks);
+          $("#action").removeAttr("disabled");
+          audioChunks = [];
+		  console.log(audioBlob);
+		  console.log('audio uploaded');
+		  
+      
+		  var xhr=new XMLHttpRequest();
+		  xhr.onload=function(e) {
+			if(this.readyState === 4) {
+				console.log("Server returned: ",e.target.responseText);
+				//  $("#action").removeAttr("disabled");
+				//actionButton.disabled = false;
+			}
+		  };
+		  var fd=new FormData();
+		  fd.append("audio_data",audioBlob, "filename");
+		  xhr.open("POST","save_audio.php",true);
+		  xhr.send(fd);
+      
+		  
+        });
+
+        mediaRecorder.stop();
+      });
+
+    resolve({ start, stop });
+  });
+
+const sleep = time => new Promise(resolve => setTimeout(resolve, time));
+
+const handleAction = async () => {
+ 
+  
+  const recorder = await recordAudio();
+  const actionButton = document.getElementById('action');
+  actionButton.disabled = true;
+  
+  recorder.start();
+  $("#action").attr("disabled");
+  console.log("Recoding Start");
+  // $("#action").removeAttr("disabled");
+  await sleep(20000);
+  
+  // actionButton.disabled = false;
+
+  this.recognition.stop();
+  const audio = await recorder.stop();
+ 
+}
+ 

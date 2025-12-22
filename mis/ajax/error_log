@@ -1,0 +1,25 @@
+[18-Sep-2024 22:45:30 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in /home/unicef/public_html/mis/includes/config.php on line 47
+[18-Sep-2024 22:45:30 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in /home/unicef/public_html/mis/includes/config.php on line 48
+[18-Sep-2024 22:45:30 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in /home/unicef/public_html/mis/includes/config.php on line 49
+[18-Sep-2024 22:45:30 UTC] PHP Warning:  session_set_cookie_params(): Session cookie parameters cannot be changed when a session is active in /home/unicef/public_html/mis/includes/config.php on line 57
+[18-Sep-2024 22:45:47 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in /home/unicef/public_html/mis/includes/config.php on line 47
+[18-Sep-2024 22:45:47 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in /home/unicef/public_html/mis/includes/config.php on line 48
+[18-Sep-2024 22:45:47 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in /home/unicef/public_html/mis/includes/config.php on line 49
+[18-Sep-2024 22:45:47 UTC] PHP Warning:  session_set_cookie_params(): Session cookie parameters cannot be changed when a session is active in /home/unicef/public_html/mis/includes/config.php on line 57
+[18-Sep-2024 22:46:09 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in /home/unicef/public_html/mis/includes/config.php on line 47
+[18-Sep-2024 22:46:09 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in /home/unicef/public_html/mis/includes/config.php on line 48
+[18-Sep-2024 22:46:09 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in /home/unicef/public_html/mis/includes/config.php on line 49
+[18-Sep-2024 22:46:09 UTC] PHP Warning:  session_set_cookie_params(): Session cookie parameters cannot be changed when a session is active in /home/unicef/public_html/mis/includes/config.php on line 57
+[18-Sep-2024 22:47:50 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in /home/unicef/public_html/mis/includes/config.php on line 47
+[18-Sep-2024 22:47:50 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in /home/unicef/public_html/mis/includes/config.php on line 48
+[18-Sep-2024 22:47:50 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in /home/unicef/public_html/mis/includes/config.php on line 49
+[18-Sep-2024 22:47:50 UTC] PHP Warning:  session_set_cookie_params(): Session cookie parameters cannot be changed when a session is active in /home/unicef/public_html/mis/includes/config.php on line 57
+[24-Sep-2024 18:21:13 UTC] PHP Parse error:  Unclosed '{' on line 149 in /home/unicef/public_html/mis/ajax/loginajax1.php on line 615
+[24-Sep-2024 18:21:33 UTC] PHP Parse error:  Unclosed '{' on line 149 in /home/unicef/public_html/mis/ajax/loginajax1.php on line 615
+[24-Sep-2024 18:21:38 UTC] PHP Parse error:  Unclosed '{' on line 149 in /home/unicef/public_html/mis/ajax/loginajax1.php on line 615
+[24-Sep-2024 18:22:18 UTC] PHP Parse error:  Unclosed '{' on line 149 in /home/unicef/public_html/mis/ajax/loginajax1.php on line 615
+[24-Sep-2024 18:22:38 UTC] PHP Parse error:  Unclosed '{' on line 149 in /home/unicef/public_html/mis/ajax/loginajax1.php on line 615
+[24-Sep-2024 18:23:46 UTC] PHP Parse error:  Unclosed '{' on line 149 in /home/unicef/public_html/mis/ajax/loginajax1.php on line 615
+[24-Sep-2024 18:33:44 UTC] PHP Parse error:  syntax error, unexpected token "exit" in /home/unicef/public_html/mis/ajax/loginajax1.php on line 154
+[24-Sep-2024 18:34:08 UTC] PHP Parse error:  syntax error, unexpected token "exit" in /home/unicef/public_html/mis/ajax/loginajax1.php on line 154
+[24-Sep-2024 18:36:57 UTC] PHP Parse error:  syntax error, unexpected token "exit" in /home/unicef/public_html/mis/ajax/loginajax1.php on line 155

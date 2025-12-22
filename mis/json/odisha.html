@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="map" style="height: 100vh; width: 100%;"></div>
+</body>
+
+<script src="https://code.highcharts.com/maps/highmaps.js"></script>
+<script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/maps/modules/offline-exporting.js"></script>
+<script src="https://code.highcharts.com/maps/modules/accessibility.js"></script>
+
+<script>
+  stateMap('odisha');
+
+  function stateMap(stateLGD) {
+    var stateName = stateLGD.replace(/\ /g, '').toLowerCase();
+    Highcharts.getJSON('http://traningl.indevconsultancy.in/anand/json/' + stateName + '.json', function (geojson) {
+      Highcharts.mapChart('map', {
+        chart: {
+          borderWidth: 1,
+          borderColor: 'silver',
+          borderRadius: 3,
+          height: '550px',
+          shadow: true,
+          map: geojson
+        },
+        title: {
+          text: ''
+        },
+        accessibility: {
+          typeDescription: ''
+        },
+        mapNavigation: {
+          enabled: true,
+          buttonOptions: {
+            verticalAlign: 'bottom'
+          }
+        },
+        colorAxis: {
+          min: 1,
+          max: 1000,
+          type: 'logarithmic',
+          stops: [
+            [0, '#59d95b'], // Less than 10 in 1000 Population
+            [0.5, '#fed05b'], // 10 to 50 in 1000 Population
+            [0.9, '#ff5757'], // Above 50 in 1000 Population
+          ],
+          marker: {
+            color: '#343'
+          }
+        },
+        plotOptions: {
+          series: {
+            point: {
+              events: {
+                click: function () {
+                  var dtname = this.properties.dtname;
+                  dtname = dtname.replace(/\ /g, '').toLowerCase();
+                  districtMap(dtname);
+                }
+              }
+            }
+          }
+        },
+        tooltip: {
+          pointFormatter: function () {
+            return '<b>' + this.properties.dtname + '</b>: ' + this.value;
+          }
+        },
+        exporting: {
+          enabled: true,
+        },
+        series: [{
+          borderWidth: 1,
+          borderColor: 'gray',
+          data: [['357', 1]],
+          keys: ['Dist_LGD', 'value'],
+          joinBy: 'Dist_LGD',
+          name: 'Total Disease Cases',
+          states: {
+            hover: {
+              color: '#a4edba'
+            }
+          },
+          dataLabels: {
+            enabled: true,
+            format: '{point.properties.dtname}'
+          }
+        }]
+      });
+    });
+  }
+
+  function districtMap(districtLGD) {
+    var districtName = districtLGD.replace(/\ /g, '').toLowerCase();
+
+    Highcharts.getJSON('http://traningl.indevconsultancy.in/anand/json/OD/' + districtName + '.json', function (geojson) {
+      Highcharts.mapChart('map', {
+        chart: {
+          borderWidth: 1,
+          borderColor: 'silver',
+          borderRadius: 3,
+          height: '550px',
+          shadow: true,
+          map: geojson
+        },
+        title: {
+          text: ''
+        },
+        accessibility: {
+          typeDescription: ''
+        },
+        mapNavigation: {
+          enabled: true,
+          buttonOptions: {
+            verticalAlign: 'bottom'
+          }
+        },
+        colorAxis: {
+          min: 1,
+          max: 1000,
+          type: 'logarithmic',
+          stops: [
+            [0, '#59d95b'], // Less than 10 in 1000 Population
+            [0.5, '#fed05b'], // 10 to 50 in 1000 Population
+            [0.9, '#ff5757'], // Above 50 in 1000 Population
+          ],
+          marker: {
+            color: '#343'
+          }
+        },
+        plotOptions: {
+          series: {
+            point: {
+              events: {
+                click: function () {
+                  var sdtname = this.properties.sdtname;
+                  sdtname = sdtname.replace(/\ /g, '').toLowerCase();
+                  // districtMap(dtname);
+                  //stateMap('pashchim_champaran');
+                }
+              }
+            }
+          }
+        },
+        tooltip: {
+          pointFormatter: function () {
+            return '<b>' + this.properties.sdtname + '</b>: ' + this.value;
+          }
+        },
+        exporting: {
+          enabled: true,
+        },
+        series: [{
+          borderWidth: 1,
+          borderColor: 'gray',
+          data: [['2772', 1]],
+          keys: ['Subdt_LGD', 'value'],
+          joinBy: 'Subdt_LGD',
+          name: 'Total Disease Cases',
+          states: {
+
+            hover: {
+              color: '#a4edba'
+            }
+          },
+          dataLabels: {
+            enabled: true,
+            format: '{point.properties.sdtname}'
+          }
+
+        }]
+      });
+    });
+  }
+</script>
+
+</html>

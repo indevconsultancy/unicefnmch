@@ -1,0 +1,21 @@
+@media (max-width:575px) {
+    .logo-login img {
+        width: 50px;
+    }
+
+    .navbar-brand br {
+        display: block;
+    }
+
+    .navbar-brand {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    .navbar-header{
+        height: 110px;
+    }
+    [data-layout=horizontal] .page-content {
+        padding: calc(70px + 1.5rem* 1.8) calc(1.5rem* .5) 60px calc(1.5rem* .5);
+    }
+}
+

@@ -1,0 +1,653 @@
+<?php include_once('includes/config.php'); ?>
+<?php define("title", "AWC Quality Report | UNICEF"); ?>
+<?php include_once('includes/header.php'); ?>
+<?php include_once('includes/functions.php'); ?>
+<?php include_once('includes/left-sidebar.php'); ?>
+
+<?php
+
+function standardDeviation($values) {
+    $mean = array_sum($values) / count($values);
+    $sumOfSquares = 0;
+
+    foreach ($values as $value) {
+        $sumOfSquares += pow($value - $mean, 2);
+    }
+
+    $variance = $sumOfSquares / (count($values) - 1); // Sample variance (n-1)
+    return sqrt($variance);
+}
+
+
+
+
+$month = date('m'); // October
+$year = date('Y');
+$mindate = '2024-01';
+$maxdate = $year . '-' . $month;
+
+if(isset($_REQUEST['fromDate']))
+{
+$fromDate = new DateTime($_REQUEST['fromDate']); 
+$toDate = new DateTime($_REQUEST['toDate']);     
+
+$MonthCount1 = (($toDate->format('Y') - $fromDate->format('Y')) * 12) + ($toDate->format('m') - $fromDate->format('m'))+1;
+$MonthCount = (($toDate->format('Y') - $fromDate->format('Y')) * 12) + ($toDate->format('m') - $fromDate->format('m')) + 1;
+$m=$MonthCount1;
+$months = [];
+$fullfilterText=[];
+$fullfilter=[];
+for ($i = 0; $i <= $MonthCount; $i++) {
+    $months[] = $fromDate->format('m');
+	$fullfilterText[] = $fromDate->format('F').'-'.$fromDate->format('Y');
+	$fullfilter[] = $fromDate->format('Y').'-'.$fromDate->format('m');
+    $fromDate->modify('+1 month');     
+}
+$first = $fullfilterText[0];
+$last = $fullfilterText[count($fullfilterText)-2];
+$monthsName = "'" . implode("', '", $months) . "'"; 
+}
+else {
+	//echo "chala";
+$sstdate=date('Y-m-01');
+$eetdate=date('Y-m-d');
+$fromDate = new DateTime($sstdate); 
+$toDate = new DateTime($eetdate);     
+
+$MonthCount1 = (($toDate->format('Y') - $fromDate->format('Y')) * 12) + ($toDate->format('m') - $fromDate->format('m'))+1;
+$MonthCount = (($toDate->format('Y') - $fromDate->format('Y')) * 12) + ($toDate->format('m') - $fromDate->format('m')) + 1;
+$m=$MonthCount1;
+$months = []; 
+$fullfilterText=[];
+$fullfilter=[];
+for ($i = 0; $i <= $MonthCount; $i++) {
+    $months[] = $fromDate->format('m');
+	$fullfilterText[] = $fromDate->format('F').'-'.$fromDate->format('Y');
+	$fullfilter[] = $fromDate->format('Y').'-'.$fromDate->format('m');
+    $fromDate->modify('+1 month');     
+}
+$first = $fullfilterText[0];
+$last = $fullfilterText[count($fullfilterText)-2];
+$monthsName = "'" . implode("', '", $months) . "'";
+}
+
+$districtText='';
+	if (isset($_REQUEST['district_code']) && !empty($_REQUEST['district_code'])) {
+			$districtType = array_filter($_REQUEST['district_code']); // Remove empty values
+			if (!empty($districtType)) {
+				$districtText=implode(", ", $districtType);
+			}	
+		}
+
+$weightage1=0.5;
+$weightage2=0.5;
+$weightage3=0.5;
+$weightage4=0.5;
+$weightage5=1.0;
+$weightage6=0.5;
+$weightage7=0.5;
+$weightage8=0.5;
+$weightage9=0.5;
+$weightage10=1.0;
+$weightage11=1.0;
+$weightage12=1.0;
+$weightage13=0.5;
+$weightage14=0.5;
+$weightage15=0.5;
+$weightage16=0.5;
+$weightage17=1.0;
+$weightage18=1.0;
+$weightage19=2.0;
+$weightage20=1.0;
+$weightage21=0.5;
+$weightage22=1.0;
+$weightage23=2.0;
+$weightage24=2.0;
+$weightage25=0.5;
+$weightage26=1.0;
+$weightage27=2.0;
+
+// Get the number of days in the selected month
+$numDays = cal_days_in_month(CAL_GREGORIAN, $month, $year);
+
+
+$qry = "";
+	//////////////////////////////////////////////////////////
+	if (isset($_REQUEST['search'])) {
+		if($qryfield1=='')
+		{
+			if (isset($_REQUEST['fromDate']) && isset($_REQUEST['toDate'])) {
+				$startDate = new DateTime($_REQUEST['fromDate']);
+				 $endDate = new DateTime($_REQUEST['toDate']);
+				//$qry .= " AND MONTHNAME(dom) IN ($monthsName)";
+				$qry .= " AND date(dov) BETWEEN '" . $startDate->format('Y-m-d') . "' AND '" . $endDate->format('Y-m-d') . "'";
+			}
+		}
+		else {
+			
+			$qry .=" and date(dov) like'".$qryfield1."%'";
+		}
+		
+		if (isset($_REQUEST['district_code'])) {
+			$districtType = array_filter($_REQUEST['district_code']); // Remove empty values
+			if (!empty($districtType)) {
+				
+				 $districtTypeList = "'" . implode("','", $districtType) . "'"; // Convert to integer to prevent SQL injection
+				$qry .= " AND _District IN ($districtTypeList)";
+			}	
+		}
+		if (isset($_REQUEST['uType']) && !empty($_REQUEST['uType'])) {
+		
+        $userTypes = array_filter($_REQUEST['uType']); // Remove empty values
+		//print_r($userTypes);
+        if (!empty($userTypes)) {
+             $userTypeList = "'" . implode("','", $userTypes) . "'"; // Convert to integer to prevent SQL injection
+			$qry .= " AND assessor_design IN ($userTypeList)";
+        }
+		
+		
+    }
+	}
+	
+
+
+function getcountAWCHVQR($conn, $tablename, $field, $qryfield, $value, $qryfield1 = '', $value1 = '')
+{
+	// Get the number of days in the selected month
+	$numDays = cal_days_in_month(CAL_GREGORIAN, $month, $year);
+	$qry = "";
+	//////////////////////////////////////////////////////////
+	if (isset($_REQUEST['search'])) {
+		if($qryfield1=='')
+		{
+			if (isset($_REQUEST['fromDate']) && isset($_REQUEST['toDate'])) {
+				$startDate = new DateTime($_REQUEST['fromDate']);
+				 $endDate = new DateTime($_REQUEST['toDate']);
+				//$qry .= " AND MONTHNAME(dom) IN ($monthsName)";
+				$qry .= " AND date(dov) BETWEEN '" . $startDate->format('Y-m-d') . "' AND '" . $endDate->format('Y-m-d') . "'";
+			}
+		}
+		else {
+			
+			$qry .=" and date(dov) like'".$qryfield1."%'";
+		}
+		
+		if (isset($_REQUEST['district_code'])) {
+			$districtType = array_filter($_REQUEST['district_code']); // Remove empty values
+			if (!empty($districtType)) {
+				
+				 $districtTypeList = "'" . implode("','", $districtType) . "'"; // Convert to integer to prevent SQL injection
+				$qry .= " AND _District IN ($districtTypeList)";
+			}	
+		}
+		if (isset($_REQUEST['uType']) && !empty($_REQUEST['uType'])) {
+		
+        $userTypes = array_filter($_REQUEST['uType']); // Remove empty values
+		//print_r($userTypes);
+        if (!empty($userTypes)) {
+             $userTypeList = "'" . implode("','", $userTypes) . "'"; // Convert to integer to prevent SQL injection
+			$qry .= " AND assessor_design IN ($userTypeList)";
+        }
+		
+		
+    }
+	}
+	
+	
+	
+	
+	/////////////////////////////////////////////////////////
+	
+	/*if (isset($_REQUEST['search'])) {
+		if (isset($_REQUEST['reporting_period']) && $_REQUEST['reporting_period'] != '') {
+			$month = date('m', strtotime($_REQUEST['reporting_period'])); // October
+			$year = date('Y', strtotime($_REQUEST['reporting_period']));
+			$mindate = '2024-01';
+			$maxdate = $year . '-' . $month;
+			$qry .= " AND dom like'" . $_REQUEST['reporting_period'] . "%'";
+		}
+		if (isset($_REQUEST['district_code']) && $_REQUEST['district_code'] != '') {
+			$qry .= " AND district='" . $_REQUEST['district_code'] . "'";
+		}
+	} else {
+		//	$qry = " and dom like'" . $maxdate . "%'";
+	}
+     */
+	$qryv = '';
+	if ($qryfield1 != '') {
+		$qryv = " AND $qryfield1='$value1'";
+	}
+	$query = "SELECT  COUNT(DISTINCT($field)) as total FROM $tablename WHERE $qryfield='$value' $qryv $qry";
+	$result = mysqli_query($conn, $query);
+	$row = mysqli_fetch_object($result);
+
+	return $row->total;
+}
+
+$month = date('m'); // October
+$year = date('Y');
+$mindate = '2024-01';
+$maxdate = $year . '-' . $month;
+
+$sqlVHSNDvisit = mysqli_query($conn, "select * from a27ycjonhei3rt5h4badxn where 1=1 $qry");
+$totalRecord= mysqli_num_rows($sqlVHSNDvisit);
+								
+									$weightage1tot=$weightage1*$totalRecord;
+									$weightage2tot=$weightage2*$totalRecord;
+									$weightage3tot=$weightage3*$totalRecord;
+									$weightage4tot=$weightage4*$totalRecord;
+									$weightage5tot=$weightage5*$totalRecord;
+									$weightage6tot=$weightage6*$totalRecord;
+									$weightage7tot=$weightage7*$totalRecord;
+									$weightage8tot=$weightage8*$totalRecord;
+									$weightage9tot=$weightage9*$totalRecord;
+									$weightage10tot=$weightage10*$totalRecord;
+									$weightage11tot=$weightage11*$totalRecord;
+									$weightage12tot=$weightage12*$totalRecord;
+									$weightage13tot=$weightage13*$totalRecord;
+									$weightage14tot=$weightage14*$totalRecord;
+									$weightage15tot=$weightage15*$totalRecord;
+									$weightage16tot=$weightage16*$totalRecord;
+									$weightage17tot=$weightage17*$totalRecord;
+									$weightage18tot=$weightage18*$totalRecord;
+									$weightage19tot=$weightage19*$totalRecord;
+									$weightage20tot=$weightage20*$totalRecord;
+									$weightage21tot=$weightage21*$totalRecord;
+									$weightage22tot=$weightage22*$totalRecord;
+									$weightage23tot=$weightage23*$totalRecord;
+									$weightage24tot=$weightage24*$totalRecord;
+									$weightage25tot=$weightage25*$totalRecord;
+									$weightage26tot=$weightage26*$totalRecord;
+									$weightage27tot=$weightage27*$totalRecord;
+
+
+
+?>
+
+<?php 
+                        $tablevalues=''; 
+						$i=0; //Row
+						$j=0; //Column
+						$sqlAWCvisit = mysqli_query($conn, "select * from a27ycjonhei3rt5h4badxn where 1=1 $qry group by hf_name order by dov");
+						while ($dataAWCvisit = mysqli_fetch_object($sqlAWCvisit)) { 
+							 $bgc='';
+							 $chkService='';
+							if($dataAWCvisit->is_admin=='yes')
+							{
+								 $chkService='yes';
+							}
+							$tablevalues.=' <tr>
+							    <td class="td_head3" align="left" valign=bottom  data-fill-color="FFFFFF" data-f-color="000000" data-b-s="thin" data-b-c="000000" data-b-r-s="thin" data-b-r-c="000000" data-wrap="true">
+									'.($i+1).'
+								</td>
+								<td class="td_head4" height="20" align="left" valign=bottom  data-fill-color="'.$bgc.'" data-f-color="000000" data-b-s="thin" data-b-c="000000" data-b-r-s="thin" data-b-r-c="000000" data-wrap="true">
+									'.ucfirst($dataAWCvisit->_District).'
+								</td> 
+								
+								<td class="td_head3" align="left" valign=bottom data-fill-color="'.$bgc.'" data-f-color="000000" data-b-s="thin" data-b-c="000000" data-b-r-s="thin" data-b-r-c="000000" data-wrap="true">
+									'.ucfirst($dataAWCvisit->hf_name).'
+								</td>';
+								if($chkService!='')
+								{
+									 $c1 = 'NV';
+									 $bgc='F9BB87';
+									$np = $dataAWCvisit->mon1_ref_vhsnd+$dataAWCvisit->mon1_ref_vhsnd+$dataAWCvisit->mon1_ref_pmsma+$dataAWCvisit->mon1_ref_g_o+$dataAWCvisit->mon1_ref_oth;
+									if ($np>0) {
+										$c1 = $np;
+										$bgc='CCFF66';
+									}
+								}
+								else { $c1='NA'; $bgc='FFFFFF'; }
+								$tablevalues.= '
+								
+								<td class="td_head3" align="center" valign=bottom bgcolor="'.$bgc.'" sdval="1" sdnum="1033;" data-fill-color="'.$bgc.'" data-f-color="000000" data-b-r-s="thin" data-b-r-c="000000" data-b-r-s="thin" data-b-r-c="000000">'; 
+								
+                                    $column1[$i]=$c1;
+									$tablevalues.=$c1;
+									
+									////////////////////////////
+									if($chkService!='')
+								{
+								   $cc2=0;
+									if ($dataAWCvisit->est_heam=='dig_heam' || $dataAWCvisit->est_heam=='aut_ana') {
+										$c2 = 'Yes';
+										$cc2=1;
+										$bgc='CCFF66';
+									} else {
+										$c2 = 'NV';
+										$bgc='F9BB87';
+									}
+								} else { $c2='NA'; $bgc='FFFFFF'; }
+									
+									
+									$tablevalues.= '
+								</td>
+								<td class="td_head3" align="center" valign=bottom bgcolor="'.$bgc.'" sdval="0.5" sdnum="1033;" data-fill-color="'.$bgc.'" data-f-color="000000" data-b-r-s="thin" data-b-r-c="000000" data-b-r-s="thin" data-b-r-c="000000">';
+								   
+									$column2[$i]=$cc2;
+									$tablevalues.=$c2;
+									/////////////////////////////
+									 if($chkService!='')
+								    {
+									if ($dataAWCvisit->am_coun_mat=='yes') {
+										$c3 = 'Yes';
+										$bgc='CCFF66';
+									} else {
+										$c3 = 'NV';
+										$bgc='F9BB87';
+									}
+									} else { $c3 = 'NA'; $bgc='FFFFFF'; }
+									
+									$tablevalues.= '
+									<td class="td_head3" align="center" valign=bottom bgcolor="'.$bgc.'" sdval="0" sdnum="1033;" data-fill-color="'.$bgc.'" data-f-color="000000" data-b-r-s="thin" data-b-r-s="thin" data-b-r-c="000000" data-b-r-c="000000">'; 
+									
+									$column3[$i]=$c3;
+									$tablevalues.=$c3;
+									////////////////////////////////
+									if($chkService!='')
+								    {
+									if (is_numeric($dataAWCvisit->ivis_dose4)) {
+										$c4 = $dataAWCvisit->ivis_dose4;
+										$bgc='CCFF66';
+									} else {
+										$c4 = 'NV';
+										$bgc='F9BB87';
+									}
+									} else{ $c4='NA'; $bgc='FFFFFF'; }
+									
+									$tablevalues.= '
+									
+								</td>
+								<td class="td_head3" align="center" valign=bottom bgcolor="'.$bgc.'" sdval="0.5" sdnum="1033;" data-fill-color="'.$bgc.'" data-f-color="000000" data-b-r-s="thin" data-b-r-c="000000" data-b-r-s="thin" data-b-r-c="000000">'; 
+									 
+							       
+									$column4[$i]=$c4;
+									$tablevalues.=$c4;
+									////////////////////////////////////
+									if($chkService!='')
+								    {
+								  $c5 = 0;
+								    //if(if (is_numeric($dataAWCvisit->ivis_dose4)) )
+									//{
+									
+									 $c5ctot=round((($dataAWCvisit->ivis_dose4*100)/$np),1);
+										
+										if ($c5ctot>=0) {
+											$c5 = $c5ctot;
+											$bgc='CCFF66';
+										} else {
+											$c5 = 'NV';
+											$bgc='F9BB87';
+										}
+									//}
+									//else {
+									//	$c5='NA*'; $bgc='CCFF66'; 
+									//}
+									} else { $c5='NA'; $bgc='FFFFFF'; }
+									$tablevalues.= '
+									
+								</td>
+								<td class="td_head3" align="center" valign=bottom bgcolor="'.$bgc.'" sdval="0" sdnum="1033;" data-fill-color="'.$bgc.'" data-f-color="000000" data-b-r-s="thin" data-b-r-c="000000" data-b-r-s="thin" data-b-r-c="000000">';
+								
+									$column5[$i]=$c5.'%';
+									if(is_infinite($c5ctot))
+									{
+										$tablevalues.='NA*';
+									}
+									else {
+									$tablevalues.=$c5;}
+									///////////////////////////////////////
+									if($chkService!='')
+								    {
+									$c6 = 0;
+									if ($dataAWCvisit->am_register!='' && $dataAWCvisit->am_register=='yes') {
+										if($c1=='NV' && is_numeric($c5))
+										{
+										$c6 = 'No';
+										$bgc='F9BB87';	
+										} else {
+										$c6 = 'Yes';
+										$bgc='CCFF66';
+										}
+									} else {
+										$c6 = 'NV';
+										$bgc='F9BB87';
+									}
+									} else { $c6='NA'; $bgc='FFFFFF'; }
+									$tablevalues.= '
+									
+								</td>
+								<td class="td_head3" align="center" valign=bottom bgcolor="'.$bgc.'" sdval="0" sdnum="1033;" data-fill-color="'.$bgc.'" data-f-color="000000" data-b-r-s="thin" data-b-r-c="000000" data-b-r-s="thin" data-b-r-c="000000">';
+								   
+									$column6[$i]=$c6;
+									$tablevalues.=$c6;
+									///////////////////////////////////
+									if($chkService!='')
+								   {
+									$c7 = 0;
+									if ($dataAWCvisit->am_coun_mat!='' && $dataAWCvisit->am_coun_mat== 'yes') {
+										$c7 = 'Yes';
+										$bgc='CCFF66';
+									} else {
+										$c7 = 'NV';
+										$bgc='F9BB87';
+									}
+								   } else { $c7='NA'; $bgc='FFFFFF'; }
+									$tablevalues.= '
+									
+								</td>
+								<td class="td_head3" align="center" valign=bottom bgcolor="'.$bgc.'" sdval="0" sdnum="1033;" data-fill-color="'.$bgc.'" data-f-color="000000" data-b-r-s="thin" data-b-r-c="000000" data-b-r-s="thin" data-b-r-c="000000">';
+									
+									$column7[$i]=$c7;
+									$tablevalues.=$c7;
+									$tablevalues.= '
+
+								</td>
+							</tr>'; ?>
+						<?php $i++; $j++; }
+						?>
+
+
+
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdn.jsdelivr.net/gh/linways/table-to-excel@v1.0.4/dist/tableToExcel.js"></script>
+<title>AWC Quality Parameter Analysis</title>
+
+
+<style type="text/css">
+    tbody, td, tfoot, th, thead, tr {
+    border-color: inherit;
+    border-style: solid;
+    border-width: 1px;
+	padding:5px;
+	}
+	body {
+		font-family: "Calibri";
+
+	}
+
+	.td_head {
+
+		border: 1px solid #000000;
+		text-align: left;
+		vertical-align: bottom;
+		background-color: #F2F2F2;
+	}
+
+	.td_head1 {
+		border: 1px solid #000000;
+		border-bottom: 1px solid #000000;
+		border-left: 1px solid #000000;
+		border-right: 2px solid #000000;
+	}
+
+	.td_head2 {
+		border: 1px solid #000000;
+	}
+
+	.td_head3 {
+		border: 1px solid #000000;
+	}
+
+	.td_head4 {
+		border: 1px solid #000000;
+	}
+</style>
+<section id="main-content">
+	<section class="wrapper">
+		<div class="row">
+			<div class="col-lg-12">
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><i class="icon_documents_alt"></i>Report</li>
+						<li class="breadcrumb-item active"><i class="fa fa-calandar"></i>IV Iron Sucrose Implementation Report</li>
+					</ol>
+
+				</nav> 
+			</div>
+		</div>
+		<div class="container-fluid1">
+		   <form method="GET">
+				<div class="row filter_css clearfix g-1">
+					<div class="col-lg-2 col-md-4 col-sm-12">
+						<div class="form-group">
+							<b>Select District</b>
+							
+							<select class="form-select select2" id="district_ids" name="district_code[]" multiple >
+							<option value="" <?= (empty($_REQUEST['district_code']) || in_array("", $_REQUEST['district_code'])) ? 'selected' : '' ?>> All</option>
+							<?php 
+							$allDistricts='';
+							$selected=''; $kl=1;
+							$qryDistrictType = mysqli_query($conn, "SELECT distinct(_District) as district from a27ycjonhei3rt5h4badxn");
+								while ($dataDistrictType = mysqli_fetch_object($qryDistrictType)) {
+									if($kl>1)
+									{
+										$allDistricts.=', ';
+									}
+									$allDistricts.=ucfirst($dataDistrictType->district);
+									
+								if(isset($_REQUEST['district_code']))
+								{
+								$selected = (!empty($_REQUEST['district_code']) && in_array($dataDistrictType->district, $_REQUEST['district_code'])) ? 'selected' : '';
+								}
+								else {
+									$selected='';
+								}
+								
+								?>
+								<option value="<?=$dataDistrictType->district?>" <?=$selected?> > <?=ucfirst($dataDistrictType->district)?> </option>
+							<?php $kl++; } ?>
+							</select>
+
+						</div>
+					</div>
+					<!-- <div class="col-lg-3 col-md-3 col-sm-12">
+						<div class="form-group">
+							<b> Select Month </b>
+							<input class="form-control" type="month" id="start" name="reporting_period" min="<?= $mindate ?>" value="<?= $maxdate ?>" />
+						</div>
+					</div> -->
+					<div class="col-lg-2 col-md-3 col-sm-12">
+						<div class="form-group">
+							<b>From Date</b>
+							<input class="form-control" type="date" id="fromDate" name="fromDate" value="<?= isset($_REQUEST['fromDate']) ? $_REQUEST['fromDate'] : date('Y-m-01') ?>" required style="border-radius: 4px; padding-bottom: 7px; padding-right: 5px; padding-top: 9px;" />
+						</div>
+					</div>
+
+					<div class="col-lg-2 col-md-3 col-sm-12">
+						<div class="form-group">
+							<b>To Date</b>
+							<input class="form-control" type="date" id="toDate" name="toDate" value="<?= isset($_REQUEST['toDate']) ? $_REQUEST['toDate'] : date('Y-m-d') ?>" required style="border-radius: 4px; padding-bottom: 7px; padding-right: 5px; padding-top: 9px;" />
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-3 col-sm-12">
+						<div class="form-group"> 
+							<b>Users Type</b>
+							<select class="form-select select2" id="uType" name="uType[]" multiple >
+							<option value="" <?= (empty($_REQUEST['uType']) || in_array("", $_REQUEST['uType'])) ? 'selected' : '' ?>> All</option>
+							<?php 
+							$selected='';
+							$qryUserType = mysqli_query($conn,"SELECT DISTINCT assessor_design FROM a27ycjonhei3rt5h4badxn ORDER BY assessor_design ASC");
+							while($dataUserType = mysqli_fetch_object($qryUserType)) {
+								if(isset($_REQUEST['uType']))
+								{
+								$selected = (!empty($_REQUEST['uType']) && in_array($dataUserType->assessor_design, $_REQUEST['uType'])) ? 'selected' : '';
+								}
+								else {
+									$selected='';
+								}
+								
+								?>
+								<option value="<?=$dataUserType->assessor_design?>" <?=$selected?> > <?=$dataUserType->assessor_design?> </option>
+							<?php } ?>
+							
+							</select>
+						</div>
+					</div>
+					<div class="col-lg-1 col-md-4 mt-4">
+						<div class="form-group ">
+							<button type="submit" class="btn btn-primary width-md waves-effect waves-light form-control" id="btnsearch" name="search">Search</button>
+						</div>
+					</div>
+					<div class="col-lg-1 col-md-4 mt-4">
+						<div class="form-group ">
+							<a href="AWC_quality_report.php" class="btn btn-warning width-md waves-effect waves-light form-control">Reset</a>
+						</div>
+					</div>
+					
+					<div class="col-lg-2 col-md-4 mt-4">
+						<div class="form-group ">
+							<button class="btn btn-success width-md waves-effect waves-light form-control" id="button-excel"><i class="fas fa-file-excel"></i> Export to excel</button>
+						</div>
+					</div>
+				</div>
+			</form>
+		
+			<section class="panel p-1">
+				<div class="table-responsive">
+						  <table cellspacing="1"   border="1" id="simpleTable1" style="border-collapse: collapse;"  data-fill-color="F2F2F2" data-f-color="000000"  data-b-s="thin" data-b-c="000000">
+  <tr>
+   <td height="34" colspan="10" align="left" valign="middle" bgcolor="#806000" data-fill-color="806000" data-f-color="FFFFFF" ><h4 style="color:#FFFFFF; padding:5px; "><strong >IV Iron Sucrose Implementation Report  (District: <?php if($districtText!='') { echo ucwords($districtText); } else { echo $allDistricts; }  ?>) <?php if($first==$last) { ?> <?=date('F-Y',strtotime($last))?> <?php } else { ?> <?=date('F Y',strtotime($first))?> - <?=date('F Y',strtotime($last))?> <?php } ?></strong></h4></td>
+  </tr>
+  <tr>
+    <td width="64" style="font-weight:700" data-b-r-s="thin" data-b-r-c="000000">S.No</td>
+    <td width="64" style="font-weight:700" data-b-r-s="thin" data-b-r-c="000000">District</td>
+    <td width="202" style="font-weight:700" data-b-r-s="thin" data-b-r-c="000000">Indicators/    Facility Name</td>
+    <td width="64" style="font-weight:700" data-b-r-s="thin" data-b-r-c="000000">1.<br />
+      No. of PW referred for treatment     from VHSND/PMSMA/OPD</td>
+    <td width="64" style="font-weight:700" data-b-r-s="thin" data-b-r-c="000000">2. <br />
+      Provision of measuring Hemoglobin using an Auto analyzer or Digital    HB-meter</td>
+    <td width="" style="font-weight:700" data-b-r-s="thin" data-b-r-c="000000">3. <br />
+      Treatment being provided as per protocol (correct dose calculation and    under medical supervision)</td>
+    <td width="64" style="font-weight:700" data-b-r-s="thin" data-b-r-c="000000">No of PW    completed All doses</td>
+    <td width="" style="font-weight:700" data-b-r-s="thin" data-b-r-c="000000">4. <br />
+      No and % of PW completed all doses (No. of PW completed all doses / No. of    PW received IV Iron Sucrose)</td>
+    <td width="" style="font-weight:700" data-b-r-s="thin" data-b-r-c="000000">5. <br />
+      Record/ register updated</td>
+    <td width="143" style="font-weight:700" data-b-r-s="thin" data-b-r-c="000000">6. <br />
+      IV Iron Sucrose protocol / IEC material&nbsp;available</td>
+  </tr>
+						<?=$tablevalues?>
+
+						
+					</table>
+				</div>
+			</section>
+	</section>
+	<?php include_once('includes/footer.php'); ?>
+	<SCRIPT>
+	let button = document.querySelector("#button-excel");
+	button.addEventListener("click", (e) => {
+		let table = document.querySelector("#simpleTable1");
+		TableToExcel.convert(table, {
+			name: "IV Iron Sucrose Implementation Report.xlsx", // Set your desired file name here
+			sheet: {
+				name: "AWC & HV Quality Report" // Set the sheet name here
+			}
+		});
+	});
+</SCRIPT>
+	<!-- ************************************************************************** -->

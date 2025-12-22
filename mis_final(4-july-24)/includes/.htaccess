@@ -1,0 +1,12 @@
+Header set Cache-Control "no-cache, private"
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?/$1 [L]
+Options -Indexes
+
+<IfModule mod_php7.c>
+    #Session timeout
+    php_value session.cookie_lifetime 1440
+    php_value session.gc_maxlifetime 1440
+</IfModule>

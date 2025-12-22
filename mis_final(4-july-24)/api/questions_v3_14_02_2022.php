@@ -1,0 +1,325 @@
+<?php
+
+include('config.php');
+
+header('Content-Type: application/json');
+
+$surveyid=$_REQUEST['survey_id'];
+
+$batch_final=array();
+
+$batches1=array();
+
+$optionsDetails=array();
+
+ $optionsDetail=array();
+
+ 	$question_types=array();
+
+  $question_input_types=array();
+
+  $validations=array();
+
+  $languages=array();
+
+  $screens=array();
+
+  $Maingroup=array();
+
+  $LanguageGroup=array();
+
+  $LanguageId=array();
+
+  ///////////////////////////////////////////////
+
+  $getSurveyLanguages = mysqli_query($conn, "SELECT GROUP_CONCAT(DISTINCT(language_id)) AS language_ids FROM questions_language WHERE survey_id='".$surveyid."' ");
+  $surveyLanguages = mysqli_fetch_object($getSurveyLanguages);
+  $language_ids = $surveyLanguages->language_ids;
+  
+  $languageQuery = mysqli_query($conn, "SELECT language_id FROM languages where status=0 and language_id IN ($language_ids) order by language_id asc");
+
+while($language_data = mysqli_fetch_object($languageQuery)){
+
+	$LanguageId['language_id'] = $language_data->language_id;
+
+  $groupQuery = mysqli_query($conn, "SELECT distinct(group_id) as group_id FROM questions_language where status=0 and language_id='".$language_data->language_id."' and survey_id='".$surveyid."' order by group_id asc");
+
+while($groups = mysqli_fetch_object($groupQuery)){
+
+	$groupId['group_id'] = $groups->group_id;
+
+$screenQuery = mysqli_query($conn, "SELECT distinct(screen_no) FROM questions_language where status=0 and group_id='".$groups->group_id."' and language_id='".$language_data->language_id."' and survey_id='".$surveyid."' order by screen_no asc");
+
+while($screen = mysqli_fetch_object($screenQuery)){
+
+////////////////////////////////////////////////
+
+$batchQuery = mysqli_query($conn, "SELECT questions_language.* FROM questions_language,questions  where questions.question_id=questions_language.question_id and questions_language.status=0 and questions_language.question_name!='' and questions_language.language_id='".$language_data->language_id."' and questions_language.screen_no='".$screen->screen_no."' and questions_language.group_id='".$groups->group_id."' and questions_language.survey_id='".$surveyid."' order by questions.sequence_no asc");
+
+while($batches = mysqli_fetch_object($batchQuery)){
+ 
+/////////////////////// questions /////////////////
+
+
+
+	$batch['question_id'] = $batches->question_id;
+
+    $batch['language_id'] = 1;
+
+   //if($batches->questions_type_id==6)
+
+    // {
+
+    //  $batch['question_name'] = $batches->question_description;
+
+    // }
+
+    // else
+
+    // {
+
+    //   $batch['question_name'] = $batches->question_name;
+
+    // }
+
+    // echo $batches->input_field_type;
+
+    $questions_type_id=1;
+
+    $question_input_type_id="";
+
+    if($batches->input_field_type=='number'){
+        $questions_type_id = "2";
+        $question_input_type_id = "2";
+    }
+    if($batches->input_field_type=='text'){
+
+        $questions_type_id = "1";
+
+    }
+    /*if($batches->input_field_type=='radio'){
+
+        $questions_type_id = "2";
+
+    }*/
+    if($batches->input_field_type=='select_one'){
+        $questions_type_id = "4";
+    }
+
+    if($batches->input_field_type=='select_multiple'){
+
+        $questions_type_id = "3";
+    }
+    if($batches->input_field_type=='header'){
+        $questions_type_id = "6";
+        $question_input_type_id = "4";
+    }
+    $batch['question_name'] = $batches->question_name;
+
+    $batch['question_type'] = $batches->questions_type_id;
+
+    $batch['question_input_type'] = $batches->input_field_type;//$batches->question_input_type_id;
+
+    $batch['validation_id'] = $batches->validation_id;
+
+    $batch['max_limit'] = $batches->max_input;
+
+    $batch['pre_field'] = $batches->prefill;
+
+    $batch['screen_no'] = $batches->screen_no;
+
+    $batch['group_id'] = $batches->group_id;
+
+    $batch['group_relation_id'] = $batches->group_relation_id;
+
+    $batch['field_name'] = $batches->field_name;
+
+    $batch['ref_table'] = $batches->ref_table;
+
+    $batch['parameters'] = $batches->parameters;
+
+    $batch['read_only'] = $batches->read_only;
+
+    $batch['calculation'] = $batches->calculation;
+
+    $batch['constraints'] = $batches->constraints;
+
+    $batch['constraint_msg'] = $batches->constraint_msg;
+    $batch['repeat_count'] = in_array($batches->repeat_count, [null, '']) ? '' : $batches->repeat_count;
+
+    $batch['relevant'] = $batches->relevant;
+    $batch['limit'] = $batches->limit?:"";
+    $batch['required'] = $batches->required;
+    $batch['choice_filter'] = $batches->choice_filter;
+    $batch['appearance'] = $batches->appearance;
+    $batch['choice_relation'] = $batches->choice_relation;
+    $batch['default_response'] = $batches->default_response?:"";
+	$batch['repeated'] = $batches->repeated;
+
+
+
+/////////////// OPTIONS DETAILS////////////////////
+
+	
+
+	$OptionQuery = mysqli_query($conn, "SELECT * FROM options_language WHERE question_id='".$batches->question_id."' and language_id='".$language_data->language_id."' and status=0 order by serial_no_for_app");
+
+    while($options = mysqli_fetch_object($OptionQuery)){
+
+        $optionsDetails['option_value'] = $options->option_name;
+
+        //$optionsDetails['option_id'] = $options->option_id;
+		$optionsDetails['option_id'] = $options->option_sequence;
+        $optionsDetails['is_terminate'] = $options->is_terminate;
+		$optionsDetails['option_type'] = $options->option_type?:"";
+		$optionsDetails['likert_img'] = $options->likert_img;
+
+        $optionsDetail[]=$optionsDetails;
+
+	    }
+
+	$batch['question_options'] = $optionsDetail;
+
+  $batches1[]=$batch;
+
+ $optionsDetail=array();
+
+    }
+
+$batch=array();
+
+$Qscreen['screen_no']=$screen->screen_no;
+
+$Qscreen['questions']=$batches1;
+
+$screens[]=$Qscreen;
+
+$batches1=array();	
+
+}
+
+$groupId['screens']=$screens;
+
+$screens=array();
+
+$Maingroup[]=$groupId;
+
+}
+
+$LanguageId['group']=$Maingroup;
+
+$LanguageGroup[]=$LanguageId;
+
+$Maingroup=array();
+
+}
+
+
+
+////////////// Question Type /////////////////////////
+
+$QtypeQuery = mysqli_query($conn, "SELECT * FROM question_type where status=0");
+
+    while($Qtype = mysqli_fetch_object($QtypeQuery)){
+
+        $question_type['question_type'] = $Qtype->questions_type_name;
+
+        $question_type['question_type_id'] = $Qtype->questions_type_id;
+
+        $question_types[]=$question_type;
+
+	}
+
+
+
+
+
+
+
+////////////  Question Input Type /////////////////////////////
+
+$QIntypeQuery = mysqli_query($conn, "SELECT * FROM question_input_type where status=0");
+
+    while($QIntype = mysqli_fetch_object($QIntypeQuery)){
+
+        $question_input_type['question_input_type_name'] = $QIntype->question_input_type_name;
+
+        $question_input_type['questions_input_type_id'] = $QIntype->question_input_type_id;
+
+	      $question_input_types[]=$question_input_type;
+
+  }
+
+	
+
+////////////  Validation /////////////////////////////
+
+$ValidQuery = mysqli_query($conn, "SELECT * FROM validations where status=0");
+
+    while($ValidData = mysqli_fetch_object($ValidQuery)){
+
+        $validation['validation_type'] = $ValidData->validation_type;
+
+        $validation['questions_input_type_id'] = $ValidData->validation_id;
+
+        $validations[]=$validation;
+
+	}
+    $position=1;
+	$ValidQuery = mysqli_query($conn, "SELECT id,group_name,survey_id,client_id FROM questions_group where survey_id='".$_REQUEST['survey_id']."' ");
+    while($ValidData = mysqli_fetch_object($ValidQuery)){
+        $questionsgroup['id'] = $ValidData->id;
+        $questionsgroup['group_name'] = $ValidData->group_name;
+		$questionsgroup['survey_id'] = $ValidData->survey_id;
+		$questionsgroup['client_id'] = $ValidData->client_id;
+        $questionsgroup['position_id'] = $position;
+        $groups[$ValidData->id]=$questionsgroup;
+        $position++;
+	}	
+
+////////////  Language /////////////////////////////
+
+$LangQuery = mysqli_query($conn, "SELECT * FROM languages where status=0 and language_id IN ($language_ids) ");
+
+    while($languageData = mysqli_fetch_object($LangQuery)){
+
+        $language['language_name'] = $languageData->language_name;
+
+        $language['language_id'] = $languageData->language_id;
+
+        $languages[]=$language;
+
+	}
+
+	
+
+////////////  Final JSON /////////////////////////////
+
+                $batch_final['language_group']=$LanguageGroup;
+
+               // $batch_final['group']=$Maingroup;
+
+                //$batch_final['screen']=$screens;
+
+			  	//$batch_final['questions']=$batches1;
+
+				$batch_final['question_type']=$question_types;
+
+                $batch_final['question_input_type']=$question_input_types;
+
+                $batch_final['validations']=$validations;
+				$batch_final['groups']=$groups;
+				
+                $batch_final['language']=$languages;
+
+
+
+/////////////////////////////////////////////////////
+
+
+
+echo json_encode($batch_final);
+
+
+
+?>

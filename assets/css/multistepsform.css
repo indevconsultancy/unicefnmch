@@ -1,0 +1,104 @@
+#multistepsform {
+    position: relative;
+}
+
+#multistepsform fieldset {
+    width: 100%;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+    position: relative;
+    padding: 1rem;
+    display: none;
+}
+
+#multistepsform fieldset:first-of-type {
+    display: block;
+}
+
+#multistepsform #progressbar {
+    display: flex;
+    padding: 0px;
+}
+
+#multistepsform #progressbar li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    position: relative;
+}
+
+#multistepsform #progressbar li:nth-last-child(1)>span::before {
+    content: none;
+}
+
+#multistepsform #progressbar li>span::before {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #b5a2a2;
+    position: absolute;
+    top: 50%;
+    transform: translateY(50%);
+    left: 0px;
+    z-index: -1;
+}
+
+#multistepsform #progressbar li>span {
+    width: 100%;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+#multistepsform #progressbar li>span>b {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+#multistepsform #progressbar li.active>span>b {
+    background-color: #003b64;
+    color: #fff;
+    border-color: #003b64;
+}
+
+#multistepsform #progressbar li.active>span::before {
+    background-color: #003b64;
+}
+
+.action-button {
+    min-width: 100px;
+    float: right;
+    margin-left: 10px;
+}
+
+.cotam-ul {
+    overflow-y: scroll;
+    height: 245px;
+}
+
+#check_id {
+    margin: 0px 10px;
+}
+
+.cotam-ul li {
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 600;
+    list-style-type: disclosure-closed;
+}
+
+div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
+    border: 0;
+    border-radius: .25em;
+    background: initial;
+    background-color: #ec7070;
+    color: #fff;
+    font-size: 1em;
+}
