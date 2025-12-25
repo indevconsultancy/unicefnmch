@@ -22,12 +22,12 @@
                     </div>
                 </div>
             </div>
-            <!-- end page titlehhh -->
+            <!-- end page title -->
             <div class="row">
                 <div class="col-lg-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4 class="card-title mb-0">SNCU Facility Listt</h4>
+                            <h4 class="card-title mb-0">SNCU Facility List</h4>
                         </div><!-- end card header -->
 
                         <div class="card-body">
